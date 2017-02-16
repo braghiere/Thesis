@@ -1,0 +1,303 @@
+\documentclass[a4paper,11pt]{report}
+%\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{url,natbib,amssymb,hyperref,graphicx,wrapfig,setspace,multirow,booktabs,subfig,array,wrapfig,calc}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{booktabs,caption,fixltx2e}
+\usepackage[round]{natbib}      % References with names and years
+%[round]
+\usepackage{xr}                 % reference anothe chapter
+%\externaldocument[2-]{../CHAPTER2/ch2_LSM_v11}
+%\externaldocument[3-]{../CHAPTER3/ch3_sensitivity_v10}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{appendix}
+%\usepackage{subfigure}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{paralist}                % inline lists
+\usepackage{gensymb}    % degrees celsius as {\celsius}
+%\usepackage{textcomp]    % arrows
+\newcommand{\tildetext}{\raise.17ex\hbox{$\scriptstyle\mattt{\sim}$}}
+\usepackage{rotating}   %rotate table
+%\renewcommand{\arraystretch}{1.5}  %increase space between rows in tables (default is 1) because there is already baselinestrech 1.5 tables become too separated, maybe with normal spacing this command should be used
+\usepackage{rotating,booktabs}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{color}% color the text
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{lscape}
+% Page setup from thesis template
+\topmargin=-10mm
+\textwidth=150mm
+\textheight=234mm
+\headsep=12mm
+\oddsidemargin=14mm
+%\oddsidemargin=12mm
+\evensidemargin=-1mm
+%\evensidemargin=1mm
+\parindent=6mm
+\parskip=1em 
+
+\newlength{\rulewidth}
+\setlength{\rulewidth}{150mm} % change to 150mm for printing on
+			      % gordon, 149 otherwise???
+% 1.5 line spacing so my supervisor can scrawl all over it
+\renewcommand{\baselinestretch}{1.50}
+
+\pagestyle{headings}    % chapter number on top
+
+\setcounter{secnumdepth}{4}              %Numbers subsubsections, and lower.
+\setcounter{tocdepth}{4}                 %Sets depth of table of contents to include subsubsections.
+
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{\fancyplain{}{\textit{\nouppercase\rightmark}}}
+\fancyhead[L]{Chapter 5. Deriving vegetation architectural parameters from observed data}
+\fancyfoot[C]{ \thepage\ }
+
+%opening
+\title{}
+\author{Renato Kerches Braghiere \\ This document was written in \LaTeX \\ Number of words: 12213}
+\date{\today}
+
+\begin{document}
+\maketitle
+\setcounter{chapter}{4} %so next one is 4
+
+\chapter{Deriving vegetation architectural parameters from observed data}
+
+\section{Introduction}\label{introduction}
+
+\section{Estimating P$_{gap}$ for all study sites}\label{section:hemiphotos}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/sites_map.png}
+\caption{Study sites on map.} 
+\label{f:studysites}
+\end{figure}
+
+\begin{sidewaystable}
+\caption{Study sites categorised by plant functional types (PFT), country, latitude and longitude, climate, and dominant tree species. P$_{gap}$ column indicates the derivation method: DHP for digital hemispherical photographs; and 3D refers to the 3D tree based model MAESPA. Dates indicate the period when DHPs were collected. }
+%\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} *{17}{l}}
+\begin{tabular}{p{1.0cm} p{1.5cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.5cm} p{1.0cm} p{2.1cm}}
+%\begin{tabular*}
+\hline
+\hline   
+\bf PFT & \bf Country & \bf Site & \bf Latitude & \bf Longitude & \bf Climate & \bf Species & \bf P$_{gap}$ & \bf Date & \bf Reference\\
+ \hline
+\multirow{9}{*}{ENF} 
+     & Canada &  NSA-OBS-FLXT &   55.880$^{\circ}$ N & 98.481$^{\circ}$ W & Boreal & Black Spruce & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  NSA-OJP-FLXT &   55.928$^{\circ}$ N & 98.624$^{\circ}$ W & Boreal & Jack Pine    & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  NSA-YJP-FLXT &   55.896$^{\circ}$ N & 98.287$^{\circ}$ W & Boreal & Jack Pine & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  SSA-OBS-FLXT &   53.987$^{\circ}$ N & 105.118$^{\circ}$ W & Boreal & Black Spruce & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  SSA-OJP-FLXT &   53.916$^{\circ}$ N & 104.692$^{\circ}$ W & Boreal & Jack Pine & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  SSA-YJP-FLXT &   53.876$^{\circ}$ N & 104.645$^{\circ}$ W & Boreal & Jack Pine & DHP & 1994 & \citet{Sellers1997}\\
+     & USA    &  US-Me2       &   44.452$^{\circ}$ N & 121.557$^{\circ}$ W & Temperate Mediterranean & Ponderosa Pine & DHP & 2006 & \citet{DeKauwe2011,Thomas2009}\\
+     & USA    &  US-Me4       &   53.876$^{\circ}$ N & 104.645$^{\circ}$ W & Temperate Mediterranean & Ponderosa Pine & DHP & 2006 & \citet{DeKauwe2011,Law2001}\\
+     & USA    &  US-Ha2       &   42.539$^{\circ}$ N & 72.178$^{\circ}$ W  & Continental & Hemlock & DHP & 2015 & \citet{Hadley2002}\\
+\hline
+\multirow{1}{*}{MF} 
+     & UK   &  Alice Holt   &   51.117$^{\circ}$ N & 0.850$^{\circ}$ W & Temperate oceanic & Oak Woodland & DHP & 2015 & \citet{Wilkinson2012}\\
+\hline
+\multirow{1}{*}{DBF} 
+     &  Canada & SSA-OBS-FLXT &   53.876$^{\circ}$ N & 104.645$^{\circ}$ W & Boreal & Aspen & DHP and 3D modelling & 1994 & \citet{Chen1997}\\
+\hline
+\multirow{1}{*}{WSA} 
+     &  USA & Us-Ton &  38.432$^{\circ}$ N & 120.966$^{\circ}$ W & Mediterranean & Blue Oak & DHP and 3D modelling & 2006 &\citet{ryu2012}\\
+\hline
+\hline
+ \end{tabular}
+\label{tab:sites}
+\begin{tablenotes}
+      \small
+      \item \textbf{ENF:} Evergreen Needle-leaf. \textbf{MF:} Mixed Forest. \textbf{DBF:} Deciduous Broadleaf Forest. \textbf{WSA:} Woody Savannah.
+\end{tablenotes}
+\end{sidewaystable}
+\newpage
+
+
+
+\begin{figure}[ht!]
+\centering
+
+\begin{tabular}{lll}
+\subfloat[Tonzi Ranch]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_tonzi_18.png}}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-9OA-FLXTR.png}}
+\subfloat[NSA-OBS-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_NSA-OBS-FLXTR.png}}
+\end{tabular}
+
+\begin{tabular}{lll}
+\subfloat[NSA-OJP-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_NSA-OJP-FLXTR.png}}
+\subfloat[NSA-YJP-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_NSA-YJP-FLXTR.png}}
+\subfloat[Alice Holt]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_all_alice.png}}
+\end{tabular}
+
+\begin{tabular}{lll}
+\subfloat[SSA-OBS-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-OBS-FLXTR.png}}
+\subfloat[SSA-OJP-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-OJP-FLXTR.png}}
+\subfloat[SSA-YJP-FLXTR]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-YJP-FLXTR.png}}
+\end{tabular}
+
+\begin{tabular}{lll}
+\subfloat[US-Me2]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_oregon_inter.png}}
+\subfloat[US-Me4]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_oregon_mature.png}}
+\subfloat[US-Ha2]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_hemlock_sep_2015.png}}
+\end{tabular}
+
+\caption{Pgap for all sites} 
+\label{f:pgap}
+\end{figure}
+
+
+\section{Comparison of modelled and observed P$_{gap}$}\label{section:MAESPA_build}
+
+\begin{figure}[ht!]
+\centering
+
+\begin{tabular}{ll}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/SSA-9OA_tree_plot.png}}
+\subfloat[Tonzi Ranch]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/Tonzi_ranch_tree_plot.png}}
+\end{tabular}
+
+\begin{tabular}{ll}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[trim=0 0 0 0, clip,width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/SSA-OA-BOREAS-3.png}}
+\subfloat[Tonzi Ranch]{\includegraphics[trim=1cm 0 0 9cm, clip,width=0.6\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/tonzi_ranch_300.png}}
+\end{tabular}
+
+\begin{tabular}{ll}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[trim=0 0 0 0, clip,width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/Pgap_ssa_oa_dhp_maespa.png}}
+\subfloat[Tonzi Ranch]{\includegraphics[trim=0 0 0 0, clip,width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/Pgap_tonzi_dhp_maespa.png}}
+\end{tabular}
+
+\label{f:tree_plot}
+\end{figure}
+
+
+
+\section{Statiscal evaluation of structural parameterisation fit with observed data}\label{section:statistical}
+
+\begin{figure}[ht!]
+\centering
+\begin{tabular}{ll}
+\subfloat[Clumping index]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/SSA-9OA-FLXTR_adj_nilson.png}}
+\subfloat[Structure factor]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/SSA-9OA-FLXTR_pinty.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[Clumping index]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/tonzi_adj_nilson.png}}
+\subfloat[Structure factor]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/tonzi_adj_pinty.png}}
+\end{tabular}
+\caption{a. PAI = 4.63 from DHP (0.3 m); date: 02$^{nd}$ June 1994; b. LAI = 0.7 from estimates presented in \citet{ryu2012}.} 
+\label{f:fiting }
+\end{figure}
+
+
+\begin{sidewaystable}
+\caption{Statistical evaluation}
+\begin{tabular}{p{4.0cm} p{2.1cm} p{1.5cm} p{4.1cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm}}
+\hline
+\hline   
+\bf Site & \bf LAI &  \bf Index & \bf Value & \bf AIC & \bf BIC & \bf r &  \bf RMSE\\
+ \hline
+\multirow{2}{*}{NSA-OBS-FLXT} 
+     & 4.95  &  \bf $\Omega$         &  0.408(0.372,0.444) & -23.01 &	-22.30	& 0.988 &	0.694\\
+     &       &  \bf $\zeta(\mu)$     &  a =0.280(0.242,0.318); b =0.310(0.199,0.421) & -48.76 & -47.34 & 0.847 & 0.084\\
+\multirow{2}{*}{NSA-OJP-FLXT} 
+     & 2.25  &  \bf $\Omega$     &  0.563(0.529,0.597) & -24.34	& -23.63 & 0.994 & 0.952\\
+     &       &  \bf $\zeta(\mu)$ &  a =0.456(0.441,0.471); b =0.235(0.191,0.279) & -76.73 &	-75.32	& 0.952 &	0.057\\
+\multirow{2}{*}{NSA-YJP-FLXT} 
+     & 1.61 &  \bf $\Omega$         &  0.4913(0.440,0.543) & -12.27 &	-11.56 &	0.983	& 0.839\\
+     & &  \bf $\zeta(\mu)$          &  a =0.321(0.243,0.398); b =0.427(0.203,0.651) & -27.67 &	-26.25	& 0.73 &	0.132\\
+\multirow{2}{*}{SSA-OBS-FLXT} 
+     & 4.76 &  \bf $\Omega$         &  0.336(0.300,0.372) & -23.03 & -22.33 & 0.982 & 0.575\\
+     & &  \bf $\zeta(\mu)$          &  a =0.211(0.166,0.256); b =0.312(0.181,0.443) & -43.74	& -42.32 & 0.803 & 0.097
+\\
+\multirow{2}{*}{SSA-OJP-FLXT} 
+     & 3.20 &  \bf $\Omega$         &  0.531(0.490,0.571) & -19.64 & -18.64 & 0.991 & 0.900\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.395(0.339,0.452); b =0.331(0.167,0.495) & -37.07 & -35.65 & 0.751 & 0.100\\
+\multirow{2}{*}{SSA-YJP-FLXT} 
+     & 2.98 &  \bf $\Omega$         &  0.236(0.220,0.252) & -47.16 & -46.45 & 0.993 & 0.400\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.194(0.166,0.221); b =0.116(0.037,0.196) & -58.86 & -57.44 & 0.627 & 0.041\\
+\multirow{2}{*}{US-Me2} 
+    & 2.25  &  \bf $\Omega$         &  0.439(0.383,0.495) & -1.00 & -0.16 & 0.976 & 1.055\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.306(0.239,0.373); b =0.290(0.117,0.464) & -37.59	& -35.93 & 0.595 & 0.094\\
+\multirow{2}{*}{US-Me4} 
+    & 2.84  &  \bf $\Omega$         &  0.482(0.432,0.532) & 4.08 & 4.91 & 0.969 & 1.079\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.394(0.323,0.466); b =0.210(0.026,0.395) & -36.60 & -34.93 & 0.231 & 0.08
+\\
+\multirow{2}{*}{US-Ha2} 
+    & 4.37  &  \bf $\Omega$        &   0.404(0.373,0.434) & -28.21 & -27.50 & 0.991 & 0.684\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.504(0.498,0.509); b =-0.219(-0.236,-0.203) & -106.52 & -105.52 & 0.992 & 0.052\\
+\hline
+\multirow{1}{*}{Alice Holt} 
+    & 4.29  &  \bf $\Omega$         &  0.293(0.230,0.356) & -6.09 & -5.38 & 0.932 & 0.526\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.519(0.488,0.549); b =-0.517(-0.604,-0.429) & -55.92 & -54.5 & 0.959 & 0.125\\
+\hline
+\multirow{1}{*}{SSA-9OA-FLXTR} 
+    & 4.63  &  \bf $\Omega$         &  0.660(0.585,0.734) & -1.02 & -0.31 & 0.980 & 1.130\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.394(0.356,0.432); b =0.627(0.517,0.736) & -49.09	& -47.67 & 0.957 & 0.152\\
+\hline
+\multirow{1}{*}{US-Ton} 
+    & 0.70  &  \bf $\Omega$         &  0.462(0.434,0.490)                               & -30.60 & -29.89 & 0.994 & 0.781\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.492(0.447,0.537); b$^*$ =-0.097(-0.230,0.031)& -43.89	& -42.47 & 0.331 & 0.056\\
+\hline
+\hline
+ \end{tabular}
+\label{tab:sites}
+\begin{tablenotes}
+      \small
+      \item *p-value = 0.123. All other p-values $<$ 0.05.
+\end{tablenotes}
+\end{sidewaystable}
+\newpage
+
+
+
+\begin{figure}[ht!]
+\centering
+\begin{tabular}{ll}
+\subfloat[Structure Factor correlation]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/LAI_r_pinty.png}}
+\subfloat[Difference AIC correlation]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/LAI_r_AIC_dif.png}}
+\end{tabular}
+\caption{a. Pearson coefficient for Structure Factor adjust for all study sites; b. The absolute AIC difference between clumping index and structure factor plots.} 
+\label{f:lai_r}
+\end{figure}
+
+Bullet points:
+\begin{item}
+ \item AIC and BIC from $\zeta(\mu)$ are always smaller than $\Omega$ for P$_{gap}$ fits. This result is expected because $\zeta(\mu)$ has two free parameters ($a$ and $b$), while $\Omega$ has only one, and a function with more free parameters would have a better agreement with the adjusted data.
+ \item The RMSE for $\Omega$ is always larger than $\zeta(\mu)$ but it is not clear wether this behaviour is a direct effect of the adjust itself, or because they have different units.
+\item The Pearson coefficient, or $r$ has no obvious relation with the functions, i.e.m for few sites $r^{\Omega}$ is smaller than  $r^{\zeta(\mu)}$ (e.g., Alice Holt); while for other cases (e.g., Tonzi Ranch) $r^{\Omega}$ is greater than $r^{\zeta(\mu)}$.
+\item Figure~\ref{f:lai_r} indicates that $r^{\zeta(\mu)}$ should be preferably used over $r^{\Omega}$ for sites with larger LAI, once $r^{\zeta(\mu)}$ increases with LAI, and the absolute difference between $\Omega$ and $\zeta(\mu)$ also increases with LAI.
+\item There is no statiscally significant relationship between LAI and $\Omega$, or the parameters $a$ and $b$ in $\zeta(\mu)$.
+\end{item}
+
+
+
+
+
+
+
+\newpage
+\pagestyle{plain}
+\bibliographystyle{/home/mn811042/Thesis/format_files/ametsoc}
+\bibliography{/home/mn811042/Thesis/chapter5/ch5_v2}
+%\bibliography{../bib_docs/library_15_7_2016}
+%\bibliography{../bib_docs/library_24_3_2016}
+%\bibliographystyle{abbrvnat}   % initials
+
+%\begin{appendices}
+%\normalsize
+%\chapter{fAPAR vertical distribution}\label{appendix:a}
+
+
+
+%\end{appendices}
+
+\end{document}
