@@ -1,0 +1,28 @@
+\BOOKMARK [0][-]{chapter.3}{Models and methods}{}
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Radiative transfer models}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{The Two-stream scheme}{section.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Canopy radiative transfer option 4}{subsection.3.2.1}
+\BOOKMARK [3][-]{subsubsection.3.2.1.2}{Canopy radiative transfer option 5}{subsection.3.2.1}
+\BOOKMARK [1][-]{section.3.3}{Handling vegetation heterogeneity in LSMs}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Tree-based model: MAESPA}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Geometric optics model: GORT}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Monte-Carlo model: RAYTRAN}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{The Two-stream scheme with clumping: parameterisation schemes}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{Adapting the two-stream scheme}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{The clumping index by Kucharik et al. \(1999\)}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{The structure factor of Pinty et al. \(2006\)}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.4}{The clumping index by Ni-Meister et al. \(2010\)}{section.3.4}
+\BOOKMARK [1][-]{section.3.5}{Modelling photosynthesis: the Farquhar model}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.5.1}{Carbon limitation}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.2}{Electron transport limitation}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.3}{Light limitation}{section.3.5}
+\BOOKMARK [1][-]{section.3.6}{FLUXNET dataset}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.6.1}{Eddy covariance theory}{section.3.6}
+\BOOKMARK [2][-]{subsection.3.6.2}{Study sites}{section.3.6}
+\BOOKMARK [3][-]{subsubsection.3.6.2.1}{Boreal forests: the BOREAS sites}{subsection.3.6.2}
+\BOOKMARK [3][-]{subsubsection.3.6.2.2}{Temperate conifereous forest: Oregon sites}{subsection.3.6.2}
+\BOOKMARK [3][-]{subsubsection.3.6.2.3}{Woody-savannah: Tonzi ranch}{subsection.3.6.2}
+\BOOKMARK [1][-]{section.3.7}{Global experiment setup}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.7.1}{MODIS clumping index}{section.3.7}
+\BOOKMARK [2][-]{subsection.3.7.2}{Reanalysis data}{section.3.7}
