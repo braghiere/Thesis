@@ -1,0 +1,49 @@
+Nilson
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.980
+Model:                            OLS   Adj. R-squared:                  0.977
+Method:                 Least Squares   F-statistic:                     343.9
+Date:                Fri, 03 Feb 2017   Prob (F-statistic):           3.29e-07
+Time:                        15:19:27   Log-Likelihood:                 5.4764
+No. Observations:                   8   AIC:                            -8.953
+Df Residuals:                       7   BIC:                            -8.873
+Df Model:                           1
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+x1             0.4391      0.024     18.544      0.000         0.383     0.495
+==============================================================================
+Omnibus:                        1.275   Durbin-Watson:                   0.529
+Prob(Omnibus):                  0.529   Jarque-Bera (JB):                0.863
+Skew:                           0.660   Prob(JB):                        0.649
+Kurtosis:                       2.080   Cond. No.                         1.00
+==============================================================================
+
+
+
+Pinty 
+                  OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.736
+Model:                            OLS   Adj. R-squared:                  0.692
+Method:                 Least Squares   F-statistic:                     16.71
+Date:                Fri, 03 Feb 2017   Prob (F-statistic):            0.00644
+Time:                        15:19:33   Log-Likelihood:                 13.708
+No. Observations:                   8   AIC:                            -23.42
+Df Residuals:                       6   BIC:                            -23.26
+Df Model:                           1
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+const          0.3057      0.027     11.143      0.000         0.239     0.373
+x1             0.2904      0.071      4.088      0.006         0.117     0.464
+==============================================================================
+Omnibus:                        0.239   Durbin-Watson:                   1.237
+Prob(Omnibus):                  0.888   Jarque-Bera (JB):                0.164
+Skew:                          -0.213   Prob(JB):                        0.921
+Kurtosis:                       2.443   Cond. No.                         4.36
+==============================================================================
+
