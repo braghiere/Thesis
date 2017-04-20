@@ -1,0 +1,959 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[round]{natbib}      % References with names and years
+\usepackage{xr}                 % reference anothe chapter
+\externaldocument[2-]{../CHAPTER2/ch2_LSM_v11}
+\externaldocument[3-]{../CHAPTER3/ch3_sensitivity_v10}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{appendix}
+%\usepackage{subfigure}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{paralist}                % inline lists
+\usepackage{gensymb}    % degrees celsius as {\celsius}
+%\usepackage{textcomp]    % arrows
+\usepackage{amsmath}
+\newcommand{\tildetext}{\raise.17ex\hbox{$\scriptstyle\mattt{\sim}$}}
+\usepackage{rotating}   %rotate table
+%\renewcommand{\arraystretch}{1.5}  %increase space between rows in tables (default is 1) because there is already baselinestrech 1.5 tables become too separated, maybe with normal spacing this command should be used
+\usepackage{rotating,booktabs}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{color}% color the text
+
+% Page setup from thesis template
+\topmargin=-10mm
+\textwidth=150mm
+\textheight=234mm
+\headsep=12mm
+\oddsidemargin=14mm
+%\oddsidemargin=12mm
+\evensidemargin=-1mm
+%\evensidemargin=1mm
+\parindent=6mm
+\parskip=1em 
+
+\newlength{\rulewidth}
+\setlength{\rulewidth}{150mm} % change to 150mm for printing on
+			      % gordon, 149 otherwise???
+% 1.5 line spacing so my supervisor can scrawl all over it
+\renewcommand{\baselinestretch}{1.5}
+
+\pagestyle{headings}    % chapter number on top
+
+\setcounter{secnumdepth}{4}              %Numbers subsubsections, and lower.
+\setcounter{tocdepth}{4}                 %Sets depth of table of contents to include subsubsections.
+
+
+%opening
+\title{}
+\author{Andrea Manrique Su\~n\'en}
+\date{\today}
+
+\begin{document}
+\maketitle
+\setcounter{chapter}{3} %so next one is 4
+\tableofcontents
+
+\chapter{FLUXES AT THE ECOSYSTEM LEVEL}
+The previous chapter analysed the carbon assimilation reproduced by photosynthesis schemes at the leaf level. In this chapter, the exchange of carbon dioxide and water vapour as predicted by the full land surface models at the ecosystem level is analysed and compared at 10 locations. The main purpose is to compare CTESSEL and JULES' representation of vegetation's exchange of fluxes with the atmosphere as well as their responses to environmental factors. The values of energy and carbon fluxes have their origin at the leaf level photosynthesis schemes, whose differences were analysed in the previous chapter. At the ecosystem level, another source of dissimilarity is added, the scaling up from the leaf level to canopy level (described in Section \ref{2-sub:upscaling}). Finally, canopy level fluxes are affected by the degree of coupling between vegetation and and the atmosphere \citep{Jarvis1986}. To validate the models estimates, eddy covariance measurements of turbulent and carbon fluxes from FLUXNET towers are used \citep{Baldocchi2001}. The observational data sets have been obtained from the web portal European Fluxes Database Cluster (EFDC) (http://gaia.agraria.unitus.it/). Ten sites located in Europe were selected, 5 evergreen needle leaf trees, 4 broadleaved trees and one grass site. The models were driven with meteorological data from the sites and with the most similar settings possible, to focus on the differences in photosynthesis model. 
+%
+\section{FLUXNET tower observations}
+The FLUXNET network offers a valuable collection of continuous and long-term measurements of land-atmosphere fluxes of water vapour, carbon and energy \citep{Baldocchi2001}. The observations are continuously taken at micrometeorological tower sites situated at diverse locations across the globe, surveying different ecosystems and climates. At some pioneering sites the datasets go back to the early 1990s. The long time series and fine temporal resolution of the measurements (30 minutes) provide invaluable monitoring of fluxes at sub-daily, seasonal and interannual time scales. Fluxes are measured using the eddy covariance technique, which is based on the turbulent motion in the surface layer. Fluctuations in the vertical component of the wind are related with variations in concentrations of water vapour and CO$_2$ to derive the net vertical transport. The measured fluxes are suited for the study of ecosystem physiology as they capture the response of the whole ecosystem to changes in environmental factors with a minimal disturbance of the canopy environment \citep{Baldocchi2003}. The representative area or flux footprint is variable and can have a longitudinal direction that spans from a hundred meters to several kilometers \citep{Schmid1994}. The method is most accurate when atmospheric conditions are steady, the underlying vegetation extends upwind for an extended distance and terrain is flat. 
+Along with the flux measurements, a series of meteorological variables are measured, such as incoming solar radiation, temperature, humidity, net radiation, precipitation and surface pressure. Specific properties of the vegetation and soil are sampled for a good site characterisation, providing ancillary information to modellers.\\
+%Applications
+%monitoring-understanding processes
+The continuous measurement of the interchange of water carbon and fluxes between terrestrial biosphere and the atmosphere has different applications and offers valuable information at the different temporal resolutions. At short timescales (sub-daily), it provides information of physiological processes and fast responses to drivers like temperature, humidity, radiation. At seasonal timescale it reflects the vegetation phenology, driven by the environmental variables as well as each species phenotype. At this timescale vegetation's response to soil moisture can be identified. Interannual timeseries capture the natural variability and the influence of climate on vegetation. With the changes in environmental factors due to climate change, a continuous monitoring of ecosystems gas exchange with the atmosphere is crucial, as it can reveal changes in the vegetation phenology and long term variations of the CO$_2$ terrestrial sink determining the actual amount of CO$_2$ that resides in the atmosphere at any moment in time. \\
+%
+FLUXNET energy and carbon fluxes are frequently used for the validation and calibration of land surface models \citep{Blyth2010,Bonan2011,Boussetta2013,Balzarolo2014,Friend2007}.
+%FLUXNET carbon fluxes have been used in the development and application of global carbon models \citep{Friend2007}.\\
+Carbon fluxes values are also being used to produce defensible estimates of annual carbon exchange,
+% despite the sources of error associated with the eddy covariance method,
+ with values converging with estimates from independent biomass inventory and soil carbon change studies over multiple years \citep{Baldocchi2003,Curtis2002,Ehman2002}.
+Although the greatest value of FLUXNET data for carbon cycle modelling is in evaluating process representation \citep{Friend2007}.  
+%models
+%EOS products validation
+Other uses include the validation of satellite products used for monitoring terrestrial ecosystems \citep{Running1999}. %combining fluxes with flask data for inversion \citep{Friend2007}\\
+The available products comprise different levels of data. Level 2 data are directly provided by the PI’s of the sites; level 3 data have quality flags added to them and level 4 data have been gap-filled and carbon flux has been partitioned into ecosystem respiration (R$_{eco}$) and gross primary productivity (GPP). The data used as driving variables and fluxes in this study are level 4, except for windspeed and surface pressure which are level 2.
+%
+\subsection{Eddy covariance measurements}
+The eddy covariance technique is based on Reynold's decomposition of turbulent vertical motion and the conservation of mass. The typical instrumentation in a FLUXNET tower is a three-dimensional sonic anemometer that measures wind velocity and virtual temperature, and a open path or close path infrared gas analyser to measure concentration fluctuations in CO$_2$ and water vapour \citep{Moncrieff1997}. The mean flux densities of CO$_2$, latent and sensible heat between the vegetation and the atmosphere is proportional to the mean covariance between the vertical velocity fluctuation ($w'$) and the respective scalar fluctuation $c'$ (CO$_2$, water vapour or temperature ):
+\begin{equation}
+ F \propto \overline{\rho_a} \overline{w'c'}
+\end{equation}
+$\rho_a$ is the air density and primes represent fluctuations of around the mean according to Reynolds decomposition. The covariance term is derived from the sensors measurements by sampling at a frequency of generally 10 Hz to ensure the detection the smaller scales of motion and averaging over 30-60 minutes periods to capture lower frequency contributions. Despite these efforts some high and low pass filtering is assumed to occur, and the measured flux might be smaller than the true gas exchange. There are different techniques to compensate for these losses \citep{Massman2002}. At night when there is thermal stratification, the flux from the vegetation might not entirely reach the instruments and some storage occurs within the canopy. This produces an underestimation of the night timefluxes. At dawn, when the stable nocturnal boundary layer breaks, the accumulated CO$_2$ is vented and sensors will overestimate the actual flux. For a correct estimation of biosphere-atmosphere exchange the storage term must be accounted for. The detailed methodology to compute the fluxes is described in \citet{Aubinet2000,Aubinet2012}.\\
+
+% Storage: 
+\subsubsection{Energy balance closure}
+A long known problem with the eddy covariance method is the lack of closure of the energy balance \citep{Wilson2002,Franssen2010}. The energy balance at the surface can be represented by:
+\begin{equation}\label{eq:en_bal}
+ NR - G - S = LE + H
+\end{equation}
+The term on the left is the available energy,  net radiation ($R_n$) minus ground heat flux ($G$) and change in heat storage of canopy and air mass ($S$).
+For most FLUXNET sites the combined eddy covariance measurements of latent heat ($LE$) and sensible heat ($H$) account only for approximately 80\% of the available energy. The imbalance between leaf hand righ hand side of Eq. \ref{eq:en_bal} could be related to an underestimation of turbulent fluxes with the eddy covariance technique but could also be caused by errors in calculating the available energy terms. Several hypotheses for the lack of closure are discussed by \citet{Wilson2002}: \begin{inparaenum} [(i)] \item Sampling errors associated with the footprint mismatch of the sensors measuring the terms left and right in Eq. \ref{eq:en_bal}, resulting in different representativeness of the source areas. \item systematic errors in instrumentation, \item neglected energy sinks, \item loss of high/low freqency contributions to the turbulent flux and \item neglected advection.
+\end{inparaenum}
+The greatest imbalance is associated to low friction velocities, and hence the lack of closure is more severe during nighttime, when conditions are typically more stable. %This supports the hypothesis (iv).\\
+Although the closure problem concerns energy fluxes, if the cause of the imbalance is related to the eddy covariance technique (hypotheses (ii), (iv) and/or (v)), then CO$_2$ flux measurements would be affected as well. \citet{Wilson2002} found lower values of CO$_2$ fluxes were associated to worse energy balance closure, suggesting CO$_2$ measurements could be underestimated. Nevertheless, the lack of closure in the energy balance is a fact that needs to be acknowledged when interpreting both energy and carbon fluxes. 
+%Caveats
+\subsubsection{Carbon fluxes - Net Ecosystem Exchange partition}\label{sub:NEE_partition}
+The eddy covariance instruments measure the total carbon flux, from which net ecosystem exchange (NEE) is derived by taking into account canopy storage terms. The EFDC dataportal provides NEE derived from two alternative methods: NEE standardized (calculated using the storage obtained with the discrete approach with the same method for all the sites) and NEE original (calculated using the storage term sent by the PI that can be obtained with the discrete approach or using the profile system). In this study, the standardized NEE has been used for the model validation. \\
+Measured NEE is separated into the components of the carbon balance, gross primary productivity (GPP) and ecosystem respiration (R$_{eco}$). 
+\begin{equation}\label{eq:nee}
+NEE=R_{eco}-GPP
+\end{equation}
+The sign convection in \ref{eq:nee} is the one typically used in the ecology community, NEE and R$_{eco}$ are positive upwards and GPP is positive downwards.
+The partition into GPP and R$_{eco}$ distinguishes between assimilation and respiratory fluxes which is useful for the purpose of calibration and validation of ecosystem models. However, there is no standard method to partition into GPP and R$_{eco}$, and due to their dependence, a bias in one will result in a bias in the other. Several algorithms have been proposed to perform the flux partitioning, for a review see \citet{Reichstein2005}. These methods are divided into those that use exclusively night time values and those that exploit daytime or both daytime and night time data. The methods that use night time data derive a direct estimate of R$_{eco}$ at night from the eddy covariance measurements. Then this estimate is extrapolated to daytime based on a relation between respiration and soil temperature \citep{Lloyd1994}, which requires a value for the sensitivity of respiration to temperature. Once R$_{eco}$ is determined, GPP is calculated by substraction in Eq. \ref{eq:nee}. The methods that use both day and night time data are able to simultaneously solve the NEE partitioning \citep{Gilmanov2003}, however they rely more heavily on models, particularly of carbon assimilation's light dependence and therefore suffer from model assumptions.\\
+ In the EFDC dataset, the flux partitioning algorithm proposed by \citet{Reichstein2005} is used. This method uses filtered night time values to estimate R$_{eco}$, which is then extrapolated to day time using short-term temperature sensitivity as opposed to previous calculations \citep{Falge2002} which used long-term temperature sensitivity. The estimation of temperature sensitivity is based on the same exponential relation \citep{Lloyd1994} but the regression is performed at shorter periods (15 days) instead of annual. They argue that a long-term sensitivity factor does not reflect the short-term (hour to hour) temperature sensitivity that is effective when extrapolating from night to day, because the annual sensitivity may be contaminated by other seasonally varying factors that covary with temperature (e.g. soil moisture, growth effects). They show that the use of long-term sensitivity overestimated respiration (and consequently GPP) in summer-active ecosystems (high latitudes) and underestimated it in summer-passive ecosystems (Mediterranean).
+%
+\subsubsection{Gapfilling}
+It is inevitable that the flux dataseries contain some gaps. These can be caused by system or sensor breakdown or maintenance, periods when instruments are off-scale, spikes in the raw data or vertical angle of attack by the wind vector is too severe \citep{Baldocchi2001}. For a review on gap filling methods for carbon fluxes see \citet{Falge2001}. EFDC datasets provide fluxes processed applying two different gap-filling procedures: marginal distribution sampling (MDS) and artificial neural network (ANN). In the present study the carbon fluxes gapfilled with MDS were used.\\
+%
+\subsection{Sites}\label{sub:sites}
+Ten sites were selected to represent different vegetation types and climates across Europe. Sites with a long record of meteorological data and eddy covariance fluxes were selected. A description of the sites is given in Table \ref{tab:sites} and their geographical distribution is shown in Figure \ref{fig:europe}. There are 4 broadleaved or mixed forests, three of them in temperate climate (Hesse Forest-Sarrebourg in France, Vielsalm and Brasschaat in Belgium); and one in Mediterranean climate (Roccarespampani in Italy). Five towers are located in needle leaf forests sampling boreal climate (Hyyti\"{a}l\"{a} in Finland), humid continental conditions in a mountainous region (Bily Kriz-Beskidy Mountains in Czech Republic), temperate climate (Loobos in the Netherlands and Tharandt-Anchor Station in Germany) and Mediterranean climate (El Saler in Spain). Finally Cabauw in the Netherlands is representative of grasslands under temperate climate conditions. 
+\begin{figure}[t]
+      	\centering
+ 	\includegraphics[scale=0.6]{/home/gp030065/PhdDocs/MCReports/europe}
+        \caption{FLUXNET sites and their corresponding PFT. ENT: Evergreen needle leaf trees, DBT: deciduous broadleaf trees, GRA: Grass}
+        \label{fig:europe}
+\end{figure}
+%
+\begin{sidewaystable}
+\begin{threeparttable}
+\caption{Description of the FLUXNET sites. IGPB land classification: MODIS v5 determined IGBP land use designation. DBF: Deciduous broadleaf forest, MF: Mixed forest, ENF: Evergreen needle leaf forest, GRA: Grasslands.}
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} *{6}{l}}
+     \hline
+     \hline
+     \textbf{Site} & \textbf{Site code} &  \parbox[t]{2.5cm}{\textbf{IGBP} \textbf{land cover}} &\parbox[t]{5cm}{\textbf{K\"{o}ppen- Geiger Climatic Classification}}& \textbf{Years of data}  \\ 
+    \noalign{\smallskip}\hline
+     Hesse Forest-Sarrebourg&	FR-Hes&	DBF&	 \parbox[t]{5cm}{Cfb - Warm temperate fully humid with warm summer} &	(1998 - 2009)\\
+    \smallskip 
+    Vielsalm	&BE-Vie	&MF	&\parbox[t]{5cm}{Cfb - Warm temperate fully humid with warm summer}	&(1998 - 2008)\\
+    \smallskip
+    Brasschaat (De Inslag Forest)	&BE-Bra	&MF 	&\parbox[t]{5cm}{Cfb - Warm temperate fully humid with warm summer}	&(2004 - 2010)\\
+     \smallskip
+    Loobos	&NL-Loo	&ENF	&\parbox[t]{5cm}{Cfb - warm temperate fully humid with warm summer}	&(1998, 2012)\\
+    \smallskip
+    Tharandt-Anchor Station	&DE-Tha		&ENF	 &\parbox[t]{5cm}{Cfb - Warm temperate fully humid with warm summer}	&(1998 - 2008)\\
+    \smallskip
+    Roccarespampani	&IT-Ro1		&DBF 	&\parbox[t]{5cm}{Csa - Warm temperate with dry, hot summer}	&(2000 - 2008)\\
+     \smallskip
+    El Saler	&ES-ES1		&ENF	&\parbox[t]{5cm}{Csa - Warm temperate with dry, hot summer}	&(1999 - 2006)\\
+     \smallskip
+    Bily Kriz- Beskidy Mountains & CZ-BK1	&ENF	&\parbox[t]{5cm}{Dfb - Snow fully humid warm summer}	&(2004 - 2005)\\
+    \smallskip
+     Hyyti\"al\"a 	&FI-Hyy&		ENF	&\parbox[t]{5cm}{Dfc - Snow fully humid cool summer}&	(1998 - 2009)\\
+    \smallskip
+   Cabauw	&NL-Ca1 	&GRA	&\parbox[t]{5cm}{Cfb - Warm temperate fully humid with warm summer}	&(2003 - 2008)\\
+  \noalign{\smallskip}\hline
+  \hline
+\end{tabular*}
+\label{tab:sites}
+\end{threeparttable}
+\end{sidewaystable}
+%
+\section{Model setup}\label{sub:model}
+ The model settings have been selected to be as similar as possible in both models to allow for analysis of the differences in the representation of vegetation physiology. Both models are run in coupled mode, so that stomatal conductance obtained from the photosynthesis module is used for transpiration is the one. JULES model is version 4.1 and CTESSEL is version 41r3 version 3. Both models were run offline for the selected sites using the meteorological data collected at each tower, after being gapfilled with climatology (See Section \ref{sub:driving}). The length of the simulation varied across sites depending on the data availability. For most cases it was possible to run for several continuous years providing result to analyse the interannual variability. The model timestep was 30 minutes in agreement with the temporal resolution of the observations.\\
+To achieve equilibrium at the soil variables, JULES was spin up for the first year of each simulation period. The model was left to run continuously for the same year for as many cycles as needed until soil moisture content and soil temperature reached a stable state, which was defined when the variables varied less than 1 kg m$^{-2}$ and 0.1 K respectively at each of the four soil layers. The equilibrium values were used to initialise CTESSEL model as well.
+%
+\subsection{Meteorological driving data}\label{sub:driving}
+The L4 meteorological data available for the sites are: global radiation, net radiation, precipitation, air temperature and vapour pressure deficit. Windspeed and surface pressure were available as L2 or L3 variables. All data have a temporal frequency of 30 minutes, and the model timestep was also 30 minutes. Like the flux data, meteorological data also suffer from some lack of data. To be able to run the models using the in-situ timeseries of observations, the missing data were gapfilled in a simple way. A climatology of 30 minute values was computed with the available data for each site. Then the missing values in the timeseries were replaced by the corresponding value in the climatology.\\ %For each site, the percentage of gapfilled data is indicated in table \ref{}.\\
+Vapour pressure deficit (hPa) was converted to specific humidity (kg kg $^{-1}$) using the surface pressure and air temperature. Specific humidity was forced to stay below the saturation value for each air temperature to ensure there are no saturation events in the models that could result in sudden negative latent heat fluxes. \\
+JULES has more flexibility than CTESSEL in the combinations of meteorological variables that can be used to drive the model. 
+In the case of radiation JULES accepts either short and long wave downwelling fluxes or shortwave downwards and net radiation. Since the available EFDC data contained net radiation, JULES was run in the first place and the modelled downward longwave flux was used to drive CTESSEL. \\
+For precipitation, JULES admits rainfall and snowfall variables to be provided separately or added  together as single precipitation field, leaving the model to make the distinction between liquid and solid precipitation by using a temperature threshold. The available field from EFDC dataportal was precipitation, so again the snowfall and rainfall partitioned by JULES were used as driving variables in CTESSEL.
+It was noticed that both models failed to reproduce enough snow accumulation at Hyyti\"al\"a  in Finland, a site that is snow covered for most part of the winter. The precipitation field downloaded from EFDC dataportal was verified against a daily dataset of liquid water and melted snow provided by the Finnish Meteorological Institute (FMI) for a nearby station Juupajoki Hyyti\"al\"a. It was found that the EFDC precipitation only contained rainfall. The FMI daily dataset was disaggregated to 30 minute periods and the EFDC precipitation was subtracted to yield an estimate of the snowfall. These snowfall values were used to drive the models providing satisfactory snow depths for the site. \\
+The height of each FLUXNET tower varies from site to site (see Table \ref{tab:site_soils}). The height at which the forcing variables are introduced to the models, or blending height, is the difference between tower height and canopy height.
+%
+\subsection{Vegetation and snow}
+The simulations are run for a single point (gridbox). The vegetation type of the whole gridbox has been set to be homogeneous, only one single type corresponding to the representative species of each FLUXNET tower. This allows for a more direct model comparison and clearer interpretation of results as they can be related to the leaf level analysis of vegetation types in Chapter 3. Coniferous forests in Hyyti\"{a}l\"{a}, El Saler, Loobos, Bily Kriz and Tharandt are represented by needle leaf trees (PFT = 2) in JULES and evergreen needle leaf trees in CTESSEL (vegetation type 3). Broadleaf forests in Hesse forest, Roccarespampani, Vielsalm and Brasschaat are modelled with broadleaf (PFT = 1) in JULES and deciduous broadleaf tree (vegetation type 5) in CTESSEL. Finally, Cabauw is represented by C$_3$ grass (PFT = 3) in JULES and short grass (vegetation type 2) in CTESSEL.\\
+The choice of canopy model in JULES is the most realistic option available: \texttt{can\_model = 4}, which uses a canopy heat capacity (called surface capacity, C$_s$, in Eq. \ref{2-Eq:JULES_energy}) and radiative coupling between the canopy and the underlying ground (first term in Eq. \ref{2-Eq:JULES_G}). It also enables the representation of snow beneath the canopy.
+The upscaling method from leaf to canopy in JULES is the most advanced multilayer approach (\texttt{can\_rad\_mod = 4}) in the JULES version being used (v3.3). CTESSEL upscaling uses a single layer and radiation interception is based on Beer's law. See Section \ref{2-sub:upscaling}) for details on each model's upscaling procedure.\\
+CTESSEL represents snow on the surface with a dedicated dynamic tile that only has a fraction above zero when there is snow on the ground \citep{Dutra2010}. A multilayer model is used to represent the thermodynamics of the snow pack. In JULES, the snow model was activated, with three snow layers (\texttt{nsmax = 3}), snow was allowed underneath canopy (\texttt{cansnowpft = True}) and (\texttt{l\_snowdep\_surf = True}). Model  defaults were used for snow related parameters (\texttt{total\_snow = False}).
+%Use equivalent canopy snow depth for surface calculations on tiles with a snow canopy
+
+\begin{threeparttable}
+\centering
+\caption{Sites characteristics used in models setup}
+\begin{tabular*}{\textwidth}{ l@{\extracolsep{\fill}} *{4}{c}}
+     \hline
+     \hline
+\textbf{Site}   & \textbf{Vegetation type} & \textbf{Tower height (m)} & \textbf{Soil type} \\
+\noalign{\smallskip}\hline
+FR-Hes  & Broadleaf tree & 22 & Medium \\
+BE-Vie  & Broadleaf tree & 40 & Medium \\
+BE-Bra  & Broadleaf tree & 39 & Coarse \\
+NL-Loo  & Needle leaf tree  & 24 & Coarse \\ 
+DE-Tha  & Needle leaf tree  & 42 & Medium \\
+IT-Ro1  & Broadleaf tree & 20 & Medium-Fine\\
+ES-ES1  & Needle leaf tree  & 13 & Coarse \\
+CZ-BK1  & Needle leaf tree  & 36 & Coarse \\
+FI-Hyy  & Needle leaf tree  & 73 & Medium \\
+NL-Ca1  & C$_3$ grass     & 5 & Medium \\ 
+\hline
+\hline\noalign{\bigskip}
+\end{tabular*}
+\label{tab:site_soils}
+\end{threeparttable}
+
+\subsection{LAI and surface albedo}
+Both models were run with the same prescribed monthly leaf area index (LAI). It is derived from ECMWF's `climate package' to characterise the land surface \citep{IFS2015} Chapter 11. It is based on MODIS MOD15A2 LAI product, temporally smoothed and disaggregated to high and low vegetation components. Because the simulations are run for a single vegetation type, only high or low component was used. The LAI values for each site are shown in Appendix \ref{app:LAI}. The seasonally varying LAI allows for a better representation of plant phenology, which has an impact on the fluxes. \citet{Blyth2010} showed that the use of a fixed annual LAI can result in poorly represented evaporation in sites where vegetation has a marked phenology and \citet{Boussetta2013} found a positive of effect of seasonally varying LAI on forecasts of screen level temperatures through the effect of improved seasonal course of evapotranspiration. \\
+Snow free surface albedo is also prescribed as a monthly climatology derived from MODIS products interpolated for a smooth temporal transition \citep{IFS2015,Schaaf2002}.
+%
+\subsection{Soil types and hydraulic schemes} 
+The soil type of each site was derived from the FAO Digital Soil Map of the World, by taking the dominant soil texture class for the deep soil layer (30-100 cm) as detailed in \citet{Balsamo2009}; the corresponding classes are listed in Table \ref{tab:site_soils}. There is one exception to this soil selection, El Saler, in Spain is a pine forest located on a narrow land barrier between the Mediterranean and an inland lagoon. It would be allocated `fine' soil according to the soil map, but was characterised as `coarse' to better describe the sandy soil at this location as recommended by the site PI.\\
+%
+ The soil moisture factor was found to be a key variable for photosynthesis (Section \ref{3-sec:GSA}) and its value is determined by the soil type via the volumetric soil moisture contents at permanent wilting point and critical point. The associated soil moisture contents for each soil type were taken from CTESSEL soils characterisation \citep{IFS2015} and are those used operationally \citep{Balsamo2009}. The values are listed in Table \ref{tab:soils} together with field capacity and residual level for each soil type.\\
+\begin{threeparttable}
+\centering
+\caption{Volumetric soil moisture content values at saturation, field capacity, permanent wilting point and residual level (m$^3$ m$^{-3}$). Values correspond to CTESSEL settings and have been used in JULES as well.}
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} *{5}{l}}
+     \hline
+     \hline
+\textbf{Texture }  & \textbf{$\theta_{sat}$} &\textbf{$\theta_{cap}$} & \textbf{$\theta_{pwp}$} &\textbf{$\theta_{res}$}\\
+\noalign{\smallskip}\hline
+Coarse    & 0.403 & 0.244 & 0.059 & 0.025\\
+Medium    & 0.439 & 0.347 & 0.151 & 0.01\\
+Medium-Fine & 0.430 & 0.383 & 0.133 & 0.01\\
+Fine      & 0.520 & 0.448 & 0.279 & 0.01 \\
+Organic   & 0.766 & 0.663 & 0.267 & 0.01 \\ 
+\hline
+\hline\noalign{\bigskip}
+\end{tabular*}
+\label{tab:soils}
+\end{threeparttable}
+%
+
+The model hydraulic scheme used by both models is \citet{VanGenuchten1980}. JULES also offers the use of \citet{Clapp1978}. Because CTESSEL uses the \citet{VanGenuchten1980} formulation \citep{Balsamo2009}, this scheme was selected in JULES to keep both models as similar as possible. 
+%
+The hydraulic scheme determines the conductivity and hydraulic diffusivity that control  the flow of water in the subsoil and condition the soil moisture available for root extraction at the each soil layer. The hydraulic variables are related to the soil moisture content and type of soil by the water retention curve which is determined by the hydraulic parameters. The Van Genuchten parameters were chosen to yield the soil moisture content values indicated in Table \ref{tab:soils}, and are listed in Table \ref{tab:soil_VG}. \\
+The optional schemes for subgrid heterogeneity available in JULES TOPMODEL and PDM are not activated.\\
+The soil carbon in JULES was set to 5 kg m$^{-2}$ for all sites except for DE-Tha were 10 kg m$^{-2}$. This parameter determines the rate of soil respiration, affecting the total ecosystem respiration (R$_{eco}$) and ultimately net ecosystem carbon balance (NEE). It is difficult to determine the value of this parameter which exerts such an important influence in the net carbon balance. Although ecosystem respiration and NEE output will be compared, the main focus will be GPP, which is not affected by soil carbon. 
+%
+\begin{table}
+\begin{threeparttable}
+\caption{Van Genuchten hydraulic parameters }
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} *{5}{l}}
+     \hline
+     \hline
+\textbf{Texture} & $\alpha$ $(m^{-1})$ & $l\tnote{\dag}$ (-) & $n$ (-) &$\gamma_{sat}$ (m s$^{-1}$)\\
+\noalign{\smallskip}\hline
+Coarse      & 3.83 & 1.25   & 1.38 & 6.94 10$^{-6}$\\
+Medium      & 3.14 & -2.342 & 1.28 & 1.16 10$^{-6}$\\
+Medium-Fine & 0.83 & -0.588 & 1.25 & 0.26 10$^{-6}$\\
+Fine        & 3.67 & -1.977 & 1.10 & 2.87 10$^{-6}$ \\
+Very fine   & 2.65 & 2.5    & 1.10 & 1.74 10$^{-6}$\\
+Organic     & 1.30 & 0.4  & 1.20 & 0.93 10$^{-6}$ \\ 
+\hline
+\hline\noalign{\bigskip}
+\end{tabular*}
+\begin{tablenotes}
+\small
+\item[\dag] In JULES $l$ is fixed to 0.5
+\end{tablenotes}
+\label{tab:soil_VG}
+\end{threeparttable}
+\end{table}
+%
+%\clearpage
+\section{Results}
+JULES and CTESSEL comply to the settings described in previous sections which were designed to make the simulations as equal as possible, allowing model difference to emerge. The comparison aims to identify differences in the model structure that affect vegetation processes. The focus will be on GPP, but a general comparison of other carbon and energy fluxes against FLUXNET observations is performed at different timescales.
+\subsection{Monthly validation of fluxes}\label{sub:mon}
+The monthly means of  energy and carbon fluxes from models and observations when available are presented for each full period of simulation at each site in Figures \ref{fig:FRHes} to \ref{fig:NLCa1}. These fluxes shape the energy (Eq. \ref{eq:en_bal}) and carbon (Eq. \ref{eq:nee}) balances. The energy fluxes are shown in the top panels \subref{fig:FRHes_en}: net radiation (NR), latent heat (LE), sensible heat (H) and ground heat flux (G); and carbon fluxes are shown in the bottom panels \subref{fig:FRHes_ca}: gross primary production (GPP) ecosystem respiration (R$_{eco}$) and net ecosystem exchange (NEE). The sign convention used is positive downwards for NR and G and positive upwards for the turbulent fluxes. In the case of carbon fluxes, GPP is positive downwards (i.e. carbon assimilated by canopy) while R$_{eco}$ and NEE are positive upwards (i.e. negative NEE indicates ecosystem carbon sink). \\
+%carbon
+The main variable analysed in terms of carbon is GPP, this is because from the model perspective this variable is the one that links more directly with the photosynthesis scheme at the leaf level and reflects the influence of environmetal variables. The NEE gives a more complete representation of the carbon budget, as it includes the respiratory contribution. However due to the carbon model consisting of a single pool in the soil, the respiration values are not necessarily realistic.  
+%Reco
+The ecosystem respiration is the sum of the plant respiration and the soil respiration, it is mainly dominated by temperature in models. The soil respiration in JULES has been found to be very sensitive to the magnitude of the carbon soil pool. The modelled net ecosystem exchange  suffers from the possible errors in R$_{eco}$ due to an ill characterisation of the soil carbon pool. 
+On the other hand, from the observations perspective, NEE is the variable that is directly obtained from the sensors, offering the highest value; while GPP and R$_{eco}$ depend on assumptions embedded in the models associated in the partitioning process (Section \ref{sub:NEE_partition}).\\
+The root mean squared error (RMSE) and bias for the monthly values of LE, H and GPP are presented in Tables \ref{tab:sta_mon_LE}, \ref{tab:sta_mon_H} and \ref{tab:sta_mon_GPP}, respectively. The statistics have also been calculated between both models to compare them directly.
+%
+\begin{threeparttable}
+\caption{Latent heat (LE) monthly means root mean squared error and bias for both models with respect observations and between both models.}
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}}l *{7}{c}}
+     \hline
+     \hline\noalign{\smallskip}
+\multirow{2}{*}{Sites} &
+\multicolumn{3}{c}{RMSE} & 
+\multicolumn{3}{c}{Bias}\\\cline{2-4}\cline{5-7}
+ & JU-Obs & CT-Obs & JU-CT &
+JU-Obs & CT-Obs & JU-CT \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+FR-Hes        &   47.99 & 25.38 &  29.36& 42.22 &21.04 & 21.18 \\
+
+BE-Vie      &  41.16 &  13.93&  32.73 & 35.95& 10.24& 25.71 \\
+
+BE-Bra    &   40.16 &  10.59 &  33.42& 37.08& 7.53&  29.55\\
+ 
+NL-Loo      &  10.82 & 18.29 &  17.92& 0.00 & -14.76 & 14.76\\
+ 
+DE-Tha     &   15.99 &  9.01&  16.96& 12.76& -2.31& 15.07\\
+ 
+IT-Ro1       &   20.96 &  14.63 & 11.52&12.26 & 6.78& 5.37\\
+ 
+ES-ES1      &  21.37 &  19.81 &  11.68& -6.61& -12.17& 5.57\\
+  
+CZ-BK1      &   37.76 &   17.83&   22.64& 27.50& 9.23& 18.26 \\
+ 
+FI-Hyy     &  17.58 &  15.42&  5.96& 13.18& 9.67&  3.54\\
+ 
+NL-Ca1       & 17.51&  12.06&  25.53& 11.60 & -8.77 & 20.37\\
+\hline
+\hline\noalign{\bigskip}
+\end{tabular*}
+\label{tab:sta_mon_LE}
+%\end{threeparttable}
+%\begin{threeparttable}
+\caption{Sensible heat (H) monthly means root mean square ed error and bias for both models with respect observations and between both models.}
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}}l *{7}{c}}
+     \hline
+     \hline\noalign{\smallskip}
+\multirow{2}{*}{Sites} &
+\multicolumn{3}{c}{RMSE} & 
+\multicolumn{3}{c}{Bias}\\\cline{2-4}\cline{5-7}  % horizontal line spanning some columns only
+ & Obs-JU & Obs-CT & JU-CT &
+Obs-JU & Obs-CT & JU-CT \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+FR-Hes        &   17.60 & 25.36 &  23.49& -2.80 &-14.56 & -17.36 \\
+
+BE-Vie      &  18.20 &  23.73&  32.73 & -4.31& 17.85& -22.17 \\
+
+BE-Bra    &   24.97 &  15.09 &  26.53 & -20.68 & 3.64&  -24.32\\
+ 
+NL-Loo      &  24.05 & 33.22 &  13.03 & 18.70 & 29.23 & -10.54\\
+ 
+DE-Tha     &   17.88 &  11.86 &  11.95 & -12.73& -3.32& -9.40\\
+ 
+IT-Ro1       &   32.43 &  26.53 & 13.36 & 6.39 & 11.17& -4.98\\
+ 
+ES-ES1      &  28.12 &  25.15 &  10.54 & 5.31& 5.00 & 0.31\\
+  
+CZ-BK1      &   22.74 &   27.55 &   15.78 & -6.17 & 0.01& -6.17 \\
+ 
+FI-Hyy     &  11.47 &  17.95 &  15.29 & 4.67 & 9.84&  -5.17\\
+ 
+NL-Ca1       & 13.43&  20.87&  16.33& 5.46 & -18.23 & -12.87\\
+\hline
+\hline
+\end{tabular*}
+\label{tab:sta_mon_H}
+\label{tab:corr_anom}
+\end{threeparttable}
+%
+\begin{threeparttable}
+\caption{Gross primary productivity (GPP) monthly means root mean square ed error and bias for both models with respect observations and between both models.}
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}}l *{7}{c}}
+     \hline
+     \hline\noalign{\smallskip}
+\multirow{2}{*}{Sites} &
+\multicolumn{3}{c}{RMSE} & 
+\multicolumn{3}{c}{Bias}\\\cline{2-4}\cline{5-7}  % horizontal line spanning some columns only
+ & JU-Obs & CT-Obs & JU-CT &
+JU-Obs& CT-Obs & JU-CT \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+FR-Hes        &   2.20 & 1.96  & 1.00 & 0.60& 0.18&  0.42\\
+
+BE-Vie      &  1.47 &    1.91 & 0.66 & -0.87&-1.47 &  0.60\\
+
+BE-Bra    &   1.14 &   0.86  &  0.67& -0.18& -0.10 & -0.08 \\
+ 
+NL-Loo      &  2.27  &   2.23 &0.59 & -1.67& -1.86& 0.19\\
+ 
+DE-Tha     &  3.26 &  3.11   & 0.65 & -2.34& -2.48& 0.14\\
+ 
+IT-Ro1       & 2.90   &  1.97 & 1.75  & -1.72& -0.21& -1.48\\
+ 
+ES-ES1      &  2.40  &  1.75 & 1.06& -2.02& -1.52 & -0.50\\
+  
+CZ-BK1      &  2.08  &  1.73 & 0.76 &-1.16 & -1.04 &  -0.11\\
+ 
+FI-Hyy     & 0.94  & 0.91  &  0.44 & -0.38& -0.50&  0.12\\
+ 
+NL-Ca1       & 1.82    &  2.06&  2.30 & 0.10 & -1.44 & 1.57\\
+\hline
+\hline\noalign{\bigskip}
+\end{tabular*}
+\label{tab:sta_mon_GPP}
+\end{threeparttable}
+
+%Energy 
+Net radiation (NR) is the sum of shortwave and longwave net fluxes. It is dominated by the incoming solar radiation which is directly obtained from measurements to drive both models.  Longwave incoming radiation is calculated by JULES from observed solar and net radiation and is used to drive both models. Because the snow-free albedo is the same in both models, The small difference in net radiation can only be attributed to differences in surface temperature altering longwave upward radiation. CTESSEL NR values are slightly lower at most sites, revealing slightly stronger longwave upward radiation. This is related to the small differences in the energy balance solved by the each model, JULES includes a term to account for the surface's thermal inertia (Equation \ref{2-Eq:JULES_energy}) while CTESSEL does not (Equation \ref{2-Eq:CT_energy}). The magnitude of the NR is higher in the Mediterranean sites (ES-ES1 and IT-Ro1) in agreement with stronger insolation at these lower latitudes and in CZ-BK1 during the second year of simulation.
+
+ Latent heat flux at the temperate forests presents positive bias (except CTESSEL in DE-Tha and NL-Loo). JULES  estimates of latent heat are higher than those predicted by CTESSEL for all sites, as indicated by the positive bias (JU-CT) shown in Table \ref{tab:sta_mon_LE} and can be seen in the plots. CTESSEL seems to have tighter controls on evaporation. The extra energy in CTESSEL is partly put into sensible heat and partly put into ground heat flux. CTESSEL has higher or similar values of sensible heat negative bias (JU-CT in Table \ref{tab:sta_mon_H}). This energy partition means that CTESSEL usually presents a higher Bowen ratio (H/LE); the only exception occurs during some summers at the Mediterranean sites when the latent heat in JULES is severely restricted by soil moisture, increasing the Bowen ratio. The ground heat flux modelled by CTESSEL presents a larger amplitude than the ground heat flux modelled by JULES, with higher values both in summer and in winter. This translates into more energy being propagated towards the ground in summer and being released in winter in CTESSEL. The differences in G relate to the different terms used in the expressions of ground heat flux (Equations \ref{2-Eq:JULES_G} and \ref{2-Eq:CT_G}).
+
+%Carbon
+With regard to carbon fluxes, both models tend to underestimate the carbon dioxide assimilated by vegetation. This is seen in the GPP negative biases when comparing models against observations in Table \ref{tab:sta_mon_GPP}.
+%temperate
+The temperate broadleaf forest in FR-Hesse is the only site where both models' predictions are slightly above the observed values (Table \ref{tab:sta_mon_GPP}). At this site, the small positive bias is dominated by the high values of GPP predicted by both models during winter and early spring.  The burst of vegetation occurs very rapidly between April and May, which is not well reproduced by models. During summer the GPP is underestimated, in line with the general trend seen for the other sites. %Models overestimate GPP in the early spring and predict a more progressive greening towards the peak in summer. The same feature can be seen in  Roccarespampani during the leaf onset. \\
+In terms of RMSE, CTESSEL exceeds JULES for all the forest sites. The worst model score for carbon occurs at the needle leaf forest in Tharandt, where the models' underestimation of GPP is about half of the measured uptake in summer. The reason behind this poor performance is not clear, excessive soil moisture stress has been discarded (JULES soil moisture factor for all sites is shown in Figure \ref{fig:beta}). A possible explanation is that the models' parameters that apply to needle leaf trees have typically been adjusted for forests in cold environments. This is in agreement by the results at other needle leaf forests: large RMSE is also seen at NL-Loo and ES-ES1, whereas both models perform well at the boreal site FI-Hyy. In general at the temperate and boreal sites the models' predictions for GPP agree better with each other than with observations (see the RMSE between models in Table \ref{tab:sta_mon_GPP}).
+
+Despite the underestimation in carbon assimilation, the seasonal cycle at the temperate sites is generally well represented. The main difference between models appears associated with the representation of soil moisture stress, with JULES restricting more the GPP due to scarce levels of soil water, this will be further discussed in Section \ref{sub:smc}. During the summers 2006 and 2007 at BE-Bra JULES GPP sees a decrease driven by low soil moisture content (4th layer in Figure \ref{fig:sm_BEBra}) as revealed by soil moisture factor $\beta$ values shown in Figure \ref{fig:BEBra_beta}. However, observed GPP values do not support this reduction in carbon assimilation. \\
+% Mediterranean
+At the Mediterranean sites, IT-Ro1, Italy and ES-ES1 Spain, there is more model disagreement in the carbon assimilation. Both models fail to correctly reproduce the magnitude and evolution of the GPP seasonal cycle. The observed carbon uptake exhibits more interannual variability in the seasonal cycle, which models show trouble reproducing. The RMSE for GPP are higher than the ones for temperate sites for both models, with CTESSEL performing slightly better. For these Mediterranean sites, the RMSE between models is higher than for the other sites, indicating model disagreement. In the case of the Italian site, IT-Ro1, CTESSEL reproduces a fair seasonal cycle although it predicts a drop around August followed by recovery in September for all simulated years. In the observed data this drop is more gradual or it occurs later, and the September recovery is only seen for years 2002, 2003 and slightly for 2008. For some years  JULES fails to reproduce a seasonal cycle at this site. GPP estimates are very low due to excessive soil moisture stress on vegetation (Figure \ref{fig:ITRo1_beta}). Photosynthesis is restricted by the available soil water during the whole period, especially in the summer time. Winter 2002 and all year 2003 present particularly low values of soil moisture in the deeper layers leading to the low GPP, similarly during the second half of 2007 is GPP severely reduced due to lack of soil moisture. These correspond with the lowest estimates of GPP. These years also coincide with the years where a dip was shown in summer in observations, possibly related with a heatwave. Conversely, at the Spanish site the low GPP cannot be fully explained by lack of soil moisture since the soil moisture factor for the last 3 years is above 0.7 (Figure \ref{fig:ESES1_beta}) and the model estimates are still too low.\\ 
+%Boreal
+At the boreal site FI-Hyy GPP estimates from both models are very similar and agree well with measurements except for some underestimation during some summers. Both models agree quite well in turbulent fluxes at this site.\\
+At Bily Kriz forest in Czech Republic, the analysis is limited to two years of data. The climate classification of this site is continental. The pattern found is similar to the temperate forests, GPP flux is underestimated and LE is overestimated with both models showing strong agreement between them.\\ 
+%grass
+At the grass site, Cabauw, the strongest disagreement between the models for GPP is found. While CTESSEL estimates continue to be lower than observed, JULES overestimates GPP. The higher GPP modelled by JULES is consistent with leaf level photosynthesis findings, larger values of A$_n$ where predicted by JULES for C$_3$ grasses (Appendix \ref{3-app:PFT}: Figures \ref{3-fig:A_temp_allpfts} and \ref{3-fig_A_ppfd}). JULES predicts a drastic fall during some summers (2003, 2004 and 2006) beginning in June which is not seen in observations. The drop is caused by a reduction of available soil moisture content in the in summer as revealed in Figure \ref{fig:sm_NLCa1} and reflected in the the soil moisture factor (Figure \ref{fig:NLCa1_beta}). Short vegetation is strongly affected by low levels of soil moisture content in the top soil layer, due to the fact that roots do not penetrate deep into the soil (high root density in the top layer). CTESSEL tends to maintain higher levels of soil moisture content than JULES in the 4 soil layers.\\
+%
+The ecosystem respiration analysis must be taken with care, as model's formulations are very sensitive to the carbon content of the soil pool (JULES Eq. \ref{}) or the reference ecosystem respiration (CTESSEL Eq. \ref{}). JULES seems to be able to reproduce the observed reduction in R$_{eco}$ during summer at the Mediterranean sites. This is driven by a reduction in the soil component of the total respiration due to lack of soil moisture. 
+For all forest sites the ecosystem carbon sink (NEE, Eq, \ref{eq:nee}) is underestimated due to the underestimation of carbon assimilation by vegetation (GPP). At NL-Ca1, summer NEE is overestimated, in JULES due to the GPP overestimation an in CTESSEL due to the a low R$_{eco}$.
+
+%general comments
+Despite a general underestimation of gross primary productivity in the forest sites by both models, the carbon assimilation in forests located in boreal and temperate climate tends to be better reproduced than that of Mediterranean ecosystems. The GPP underestimation could be a consequence of the choice of using only the main tree species to describe the whole ecosystem and assuming a full coverage so no low vegetation or understory is included. Another possibility is the choice of prescribed LAI, adopted from ECMWF's procedures from MODIS imagery (Values shown in Appendix \ref{app:LAI}).\\
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/FRHes_energy_monthly.png}
+        \label{fig:FRHes_en}}
+        \subfloat[Carbon fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/FRHes_carbon_monthly.png}
+        \label{fig:FRHes_ca}}
+\caption{Flux monthly means for the full simulation period, Hesse Forest-Sarrebourg, France. Broadleaf forest in temperate climate.} 
+\label{fig:FRHes}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/BEVie_energy_monthly.png}
+        \label{fig:BEVie_en}}
+        \subfloat[Carbon fluxes]{    
+	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/BEVie_carbon_monthly.png}
+        \label{fig:BEVie_ca}}
+\caption{Flux monthly means for the full simulation period, Vielsam, Belgium. Broadleaf forest in temperate climate.} 
+\label{fig:BEVie}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/BEBra_energy_monthly.png}
+        \label{fig:BEBra_en}}
+        \subfloat[Carbon fluxes]{    
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/BEBra_carbon_monthly.png}
+        \label{fig:BEBra_ca}}
+\caption{Flux monthly means for the full simulation period, Brasschaat, Belgium. Broadleaf forest in temperate climate.}
+\label{fig:BEBra}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/NLLoo_energy_monthly.png}
+        \label{fig:NLLoo_en}}
+        \subfloat[Carbon fluxes]{    
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/NLLoo_carbon_monthly.png}
+        \label{fig:NLLoo_ca}}
+\caption{Flux monthly means for the full simulation period, Loobos, The Netherlands. Needle leaf forest in temperate climate.} 
+\label{fig:NLLoo}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/DETha_energy_monthly.png}
+        \label{fig:DETha_en}}
+        \subfloat[Carbon fluxes]{    
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/DETha_carbon_monthly.png}
+        \label{fig:DETha_ca}}
+\caption{Flux monthly means for the full simulation period, Tharandt, Germany. Needle leaf forest in temperate climate.}
+\label{fig:DETha}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/ITRo1_energy_monthly.png}
+        \label{fig:ITRo1_en}}
+        \subfloat[Carbon fluxes]{    
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/ITRo1_carbon_monthly.png}
+        \label{fig:ITRo1_ca}}
+\caption{Flux monthly means for the full simulation period, Roccarespampani, Italy. Broadleaf forest in Mediterranean climate.} 
+\label{fig:ITRo1}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/ESES1_energy_monthly.png}
+        \label{fig:ESES1_en}}
+        \subfloat[Carbon fluxes]{    
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/ESES1_carbon_monthly.png}
+        \label{fig:ESES1_ca}}
+\caption{Flux monthly means for the full simulation period, El Saler, Spain. Needle leaf forest in Mediterranean climate.} 
+\label{fig:ESES1}
+\end{figure}
+%%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/CZBK1_energy_monthly.png}
+        \label{fig:CZBK1_en}}
+        \subfloat[Carbon fluxes]{    
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/CZBK1_carbon_monthly.png}
+        \label{fig:CZBK1_ca}}
+\caption{Flux monthly means for the full simulation period, Bily Kriz, Czech Republic. Needle leaf forest in cold climate.} 
+\label{fig:CZBK1}
+\end{figure}
+%
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{
+ 	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/FIHyy_energy_monthly.png}
+        \label{fig:FIHyy_en}}
+        \subfloat[Carbon fluxes]{    
+	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/FIHyy_carbon_monthly.png}
+        \label{fig:FIHyy_ca}}
+\caption{Flux monthly means for the full simulation period, Hyyti\:al\:a, Finland. Needle leaf forest in boreal climate} 
+\label{fig:FIHyy}
+\end{figure}
+
+\begin{figure}[ht]
+      	\centering
+        \subfloat[Energy fluxes]{ 
+	\includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/NLCa1_energy_monthly.png}
+        \label{fig:NLCa1_en}}
+        \subfloat[Carbon fluxes]{    
+        \includegraphics[width=0.95\textwidth]{/home/gp030065/FLUXNET_plots/monthly/NLCa1_carbon_monthly.png}
+        \label{fig:NLCa1_ca}}
+\caption{Flux monthly means for the full simulation period, Cabauw, The Netherlands. Grass site in temperate climate.} 
+\label{fig:NLCa1}
+\end{figure}
+\clearpage
+
+\subsubsection{Soil moisture content}\label{sub:smc}
+Both models were initialised with the same soil moisture content. It was found that for all sites the soil moisture content in JULES was generally lower than in CTESSEL for al soil layers. The precipitation is the same in both cases and both models use \citet{VanGenuchten1980} hydraulic scheme with equal parameters where possible (Table \ref{tab:soil_VG}). However despite these efforts there are inherent differences in the computation of the soil water fluxes. As an example, the volumetric soil moisture content for each soil layer at two of the simulated sites is shown in Figure \ref{fig:sm}. Each panel corresponds to each of the soil layers. The different time scale of variations in soil moisture content can be appreciated at each layer. The soil moisture content in the top layer is varies more quickly following the precipitation signal. As depth increases, the soil moisture content variability decreases. 
+The soil moisture content used as initialisation state was chosen to be in equilibrium for JULES, it can be seen in the 4th panel how both models are started with the same soil moisture, however CTESSEL's soil moisture increases towards a higher equilibrium. Despite the possible discrepancies in the hydraulic scheme and equilibrium state, larger evaporation seen in JULES also plays a role in the drier layers found for JULES for all soil layers. Soil evaporation affects exclusively the first layer whereas vegetation's transpiration has the potential to deplete moisture from all layers trough root extraction. The lower water content has implications as it restricts GPP quite strongly. The JULES soil moisture factor for these two and all other sites is shown in Figure \ref{fig:beta}.
+% 
+\begin{figure}
+    \centering
+    \subfloat[]{
+    \includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/sm_m3_m3_BEBra.png}
+    \label{fig:sm_BEBra}}
+%\subfloat[]{
+%\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/sm_m3_m3_ITRo1.png}
+%\label{fig:sm_ITRo1}}
+    \subfloat[]{
+    \includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/sm_m3_m3_NLCa1.png}
+    \label{fig:sm_NLCa1}}
+    \caption{Volumetric soil moisture at each soil layer as reproduced by both models for two sites: BE-Bra at a forest site \protect\subref{fig:sm_BEBra} and NL-Ca1 at a grass site \protect\subref{fig:sm_NLCa1}. For JULES, it can be noted how for BE-Bra the deepest layer has a strong role in determining the soil moisture stress on photosynthesis, as seen by the low soil moisture content in years 2006 and 2007 matching the low values of \protect$\beta$ in Figure \protect\ref{fig:BEBra_beta}; whereas in NL-Ca1, the uppermost layer determines the soil moisture stress, as seen by the low  soil moisture content in years 2003, 2004 and 2006 matching the low values of \protect$\beta$ in Figure \protect\ref{fig:NLCa1_beta}.}
+\label{fig:sm}
+\end{figure}
+%
+\begin{figure}
+      	\centering
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_FRHes.png}
+        \label{fig:FRHes_beta}}
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_BEVie.png}
+        \label{fig:BEVie_beta}}
+      
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_BEBra.png}
+        \label{fig:BEBra_beta}}
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_NLLoo.png}
+        \label{fig:NLLoo_beta}}
+      
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_DETha.png}
+        \label{fig:DETha_beta}}
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_ITRo1.png}
+        \label{fig:ITRo1_beta}}
+     
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_ESES1.png}
+        \label{fig:ESES1_beta}}
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_CZBK1.png}
+        \label{fig:CZBK1_beta}}
+     	
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_FIHyy.png}
+        \label{fig:FIHyy_beta}}
+ 	\subfloat[]{\includegraphics[width=0.45\textwidth]{/home/gp030065/FLUXNET_plots/soilmoisture/beta_NLCa1.png}
+        \label{fig:NLCa1_beta}}
+\caption{Soil moisture stress factor ($\beta$) for each JULES simulation.}
+\label{fig:beta}
+\end{figure}
+\clearpage
+\subsubsection{Seasonal means and ecosystem water use efficiency}
+%year averages
+The monthly means of GPP and LE of all modelled years have been averaged together for a better illustration of the seasonal variation at each site (first two columns in Figure \ref{fig:avg}). In the third column, the relation between latent heat and carbon assimilation is presented. It has been denominated as water use efficiency and has been calculated simply as:
+\begin{equation}
+WUE = \frac{GPP}{LE} 
+\end{equation}
+It must be noted that the latent heat in the denominator includes evaporative flux from soil and direct evaporation from the canopy interception as well as stomatal transpiration,  while other definitions of WUE relate the GPP to only the transpired water. This extended calculation can be compared against observations, as the GPP/LE ratio can be derived from the measured fluxes. The units of WUE calculated in this manner are $\mu$mol of carbon per unit of evaporative energy. In winter due to the small magnitude of both fluxes, the WUE values are more variable and should not be considered,  in Figure \ref{fig:CZBK1_avg} some values of CTESSEL were removed.\\
+%
+\begin{figure}
+      	\centering
+ 	\subfloat[FR-Hes]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/FRHesGPP_LE_WUE_seasonal.png}
+        \label{fig:FRHes_avg}}
+	\subfloat[BE-Vie]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/BEVieGPP_LE_WUE_seasonal.png}
+        \label{fig:BEVie_avg}}
+        \subfloat[BE-Bra]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/BEBraGPP_LE_WUE_seasonal.png}
+        \label{fig:BEBra_avg}}
+ 	\subfloat[NL-Loo]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/NLLooGPP_LE_WUE_seasonal.png}
+        \label{fig:NLLoo_avg}}
+        \caption{Seasonal average}
+\end{figure}
+\begin{figure}
+        \centering
+        \ContinuedFloat
+ 	\subfloat[DE-Tha]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/DEThaGPP_LE_WUE_seasonal.png}
+        \label{fig:DETha_avg}}
+ 	\subfloat[IT-Ro1]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/ITRo1GPP_LE_WUE_seasonal.png}
+        \label{fig:ITRo1_avg}}
+ 	\subfloat[ES-ES1]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/ESES1GPP_LE_WUE_seasonal.png}
+        \label{fig:ESES1_avg}}
+ 	\subfloat[CZ-BK1]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/CZBK1GPP_LE_WUE_seasonal.png}
+        \label{fig:CZBK1_avg}}
+        \caption{Seasonal average (Cont.)}
+\end{figure}
+\begin{figure}[t]
+        \centering
+        \ContinuedFloat
+ 	\subfloat[FI-Hyy]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/FIHyyGPP_LE_WUE_seasonal.png}
+        \label{fig:FIHyy_avg}}
+ 	\subfloat[NL-Ca1]{\includegraphics[width=0.85\textwidth]{/home/gp030065/FLUXNET_plots/seasonal/NLCa1GPP_LE_WUE_seasonal.png}
+        \label{fig:NLCa1_avg}}
+\caption{Seasonal average (Cont.)}
+\label{fig:avg}
+\end{figure}
+ As already discussed, GPP is typically underestimated by both models while LE is  overestimated by JULES. Figure \ref{fig:avg} summarises this result and also highlights how close to each other the models' estimates of GPP are, while more variability arises for the latent heat fluxes, with JULES typically predicting higher values. This was already seen in the model-to-model errors shown in Tables \ref{tab:sta_mon_LE} and \ref{tab:sta_mon_GPP}. The similarity in GPP is more evident for the sites located in temperate climate. For the Mediterranean sites (\ref{fig:ITRo1_avg} and \ref{fig:ESES1_avg}) and the grass site NL-Ca1 (\ref{fig:NLCa1_avg}) the differences in carbon assimilation are larger. This is partly due to differences in the soil moisture stress parameterization and the actual soil moisture content. \\
+%
+In terms of WUE, it can be seen that the ecosystem WUE derived from the observed fluxes is generally higher than that of the models. Between the models, JULES has the lowest WUE, due to its higher LE flux. 
+The model disagreement in latent heat fluxes can be disentangled at two levels: at the leaf level and at the ecosystem level. A the leaf level, both models present different sensitivity of stomatal pores to air humidity. Leaf level analysis in Section \ref{3-sub:gs_hum} showed how for relative humidities above 30\% stomatal conductance in JULES was larger than in CTESSEL (Figure \ref{3-fig_gs_RH}). This effect was reflected in the lower intrinsic WUE (A$_n$/g$_s$) in JULES (Figure \ref{3-fig_WUE_ca}). In those leaf level experiments, the aerodynamic conductance was fixed to the same high value in both models, ensuring good coupling between vegetation and the atmosphere and thus little or none disturbance on g$_s$. However when dealing with the ecosystem as a whole, the degree of coupling between canopy and atmosphere affects WUE \citep{deKauwe2013}. The degree of decoupling increases as the ratio of boundary layer conductance to stomatal conductance increases; the canopy becomes decoupled when boundary later conductance is low or when stomatal conductance is high \citep{Jarvis1986}. The boundary layer between the forest and the atmophere affects the calculation of g$_s$, and reduces the effect of stomatal conductance on tranpiration. In the studied models the boundary layer conductance is represented by the aerodynamic conductance, determined by   surface winspeed and the surface exchange coefficents, which are a function of roughness length and  surface layer stability. Therefore the aerodynamic conductance and consequently the degree of canopy-atmosphere coupling is a source of model discrapancy that could affect the differences in latent heat as well as determing determining the stomatal conductance. 
+%Therefore the degree of coupling between canopy and atomsphere is affected by the synoptic conditions and the models parameterization of  turbulent transport at the surface.
+%Although in the performed offline simulations the driving variables are the same, the structure of the model LE fluxes could be influenced not only by the leaf level stomatal conductance but also the degree of coupling assumed in both models. 
+%\clearpage
+%
+\subsection{Diurnal validation} 
+The analysis is further extended to analyse the diurnal evolution of fluxes. The 30 minute values of GPP and LE were averaged daily for the winter months (DJF: December-January-February) and summer months (JJA: June-July-August). Figures \ref{fig:BEBra_DJF_JJA}, \ref{fig:NLLoo_DJF_JJA}, \ref{fig:ITRo1_DJF_JJA} and \ref{fig:NLCa1_DJF_JJA} show the diurnal cycles at four of the modelled sites.
+
+GPP is better reproduced in the morning and evening than in the middle of the day, corresponding to low levels of radiation, and hence photosynthesis being light limited. The relation between models' skill in reproducing GPP and the limiting factor for photosynthesis will be discussed in section \ref{sub:lim_reg}. 
+The diurnal amplitude of GPP in JJA is lower than observed at all sites, in accordance to the underestimation seen at the seasonal time scale. In winter however, the diurnal amplitude modelled by JULES is higher than observed at some temperate sites, for instance Braaschat (Figure \ref{fig:BEBra_DJF_JJA}). \\
+%Midday stomatal closiye
+
+JULES presents a midday depression of CO$_2$ uptake during the summer months for many of the studied sites (the two Mediterranean sites: ES-ES1, IT-Ro1, the two continental: FI-Hyy, CZ-BK1 and one of the temperate sites: NL-Loo). The dip in GPP can be appreciated for IT-Ro1 and NL-Loo in Figures \ref{fig:ITRo1_DJF_JJA} and \ref{fig:NLLoo_DJF_JJA}. It is caused by midday stomatal closure driven by the low air humidity. However, in the majority of sites it is not seen in the the eddy covariance data nor is it reproduced by the other model. The only exception is IT-Ro1, where CTESSEL also develops a depression for both fluxes and the observations show a slight reduction (Figure \ref{fig:NLLoo_DJF_JJA}). Overall however, the feature is associated to JULES. Section \ref{3-sub:gs_hum} showed that JULES had higher sensitivity than CTESSEL to relative humidity (Figure \ref{3-fig_gs_RH}). However the strong reduction in g$_s$ was not translated into a strong reduction in A$_n$ (Figure \ref{3-fig_An_RH}). In the full model simulations, the midday depression occurs more often in GPP than in LE. In fact, the midday stomatal closure only affects the latent heat flux in the case of the Mediterranean sites, as can be seen for IT-Ro1 in Figure \ref{fig:ITRo1_DJF_JJA}, whereas at the other sites latent heat does nor reflect the stomatal closure (as seen in NL-Loo, Figure \ref{fig:NLLoo_DJF_JJA}). This seems to show that g$_s$ is not determining the evaporative flux, due to canopy being decoupled from the atmosphere or transpiration not being the main component of the total evaporation.%The reason behind LE not showing the drop at midday is most likely that at these sites transpiration, which is directly controlled by the stomatal aperture, is not the main driver of the total evapotranspiration.  
+%
+\begin{figure}
+      	\centering
+ 	\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/diurnal/BEBra_GPP_LE_diu_DJF_JJA_10_6.png}
+        \caption{Mean diurnal GPP and LE for December-January-February (DJF) and June-July-August (JJA)}
+        \label{fig:BEBra_DJF_JJA}
+\end{figure}
+\begin{figure}
+      	\centering
+ 	\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/diurnal/NLLoo_GPP_LE_diu_DJF_JJA_10_6.png}
+        \caption{Mean diurnal GPP and LE for December-January-February (DJF) and June-July-August (JJA)}
+        \label{fig:NLLoo_DJF_JJA}
+\end{figure}
+\begin{figure}
+      	\centering
+ 	\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/diurnal/ITRo1_GPP_LE_diu_DJF_JJA_10_6.png}
+        \caption{Mean diurnal GPP and LE for December-January-February (DJF) and June-July-August (JJA)}
+        \label{fig:ITRo1_DJF_JJA}
+\end{figure}
+\begin{figure}
+      	\centering
+ 	\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_plots/diurnal/NLCa1_GPP_LE_diu_DJF_JJA_10_6.png}
+        \caption{Mean diurnal GPP and LE for December-January-February (DJF) and June-July-August (JJA)}
+        \label{fig:NLCa1_DJF_JJA}
+\end{figure}
+\clearpage
+\subsection{Interannual variability}
+In this section the interannual variability in the observed GPP is analysed for each site. Furthermore, the interannual variability in the studied models is also analysed, in order to determine the ability of the models to reproduce the interannual variations in GPP. Two metrics are used: the annual coefficient of variation (ACV) for year to year variations in the annual mean and monthly scaled anomalies to address the interannual variability for each particular month. These statistics were calculated for all sites that had more than two years worth of data.
+%
+\subsubsection{Annual coefficient of variation}
+The annual coefficient of variation (ACV) is computed as the ratio of the standard deviation of the mean annual GPP of all available years to the long-term mean annual.
+\begin{equation}
+ ACV = \frac{stdev(GPP(yr))}{\overline{GPP(yr)}}
+\end{equation}
+where GPP(\textit{yr}) is the mean GPP flux for year \textit{yr}. The higher ACV, the more variation is found in the annual mean form year to year. The values of ACV calculated for the eddy covariance data, JULES simulated GPP and CTESSEL simulated GPP are presented in Figure \ref{fig:ACV}. For the forest sites located in temperate climates (FR-Hes, Be-Vie, BE-Bra, NL-Loo ,DE-Tha) models tend to produce less year to year variability than observed (except CTESSEL at NL-Loo). On the other hand, at the Mediterranean sites both models exaggerate the variability, with JULES showing the highest ACV. At IT-Ro1 JULES's ACV is particularly high, due to the excessive soil moisture stress at some years.\\
+%From a PFT perspective, sites with needle leaf trees showed the least year to year variability (Be-Vie, NL-Loo, DE-Tha) not very clear
+It is interesting that the largest coefficient of variation is found for the grass site NL-Ca1, possibly due to the effect of dry years on short grass. Both models reproduce well the variability, coinciding in high ACV at this site. 
+%
+\begin{figure}
+      	\centering
+ 	\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/ACV_GPP_tri.png}
+        \caption{Annual coefficient of variation (ACV) of GPP. High coefficients indicate high interannual variation.}
+        \label{fig:ACV}
+\end{figure}
+%
+\subsubsection{Monthly scaled anomalies}
+As an additional measure of interannual variability, the monthly scaled anomaly is calculated for the measurements and both models. Each month of each year is attributed an anomaly value based on the average GPP for that month over all available years. The monthly anomalies are calculated as: 
+\begin{equation}
+ Ano_{GPP}(m,yr) = \frac{GPP(m,yr)-\overline{GPP(m,:)}}{stdev(GPP(m,yr)-\overline{GPP(m,:)})}
+\end{equation}
+where $m$ represents each month and $yr$ each year. This metric informs of how a monthly mean of a particular year stands compared to the average value of that month across all years scaled by the standard deviation. The values are shown by the mesh plots in Figures \ref{fig:anom}. Each box represents one month, green colours indicate positive anomaly (GPP above the average of the considered years) and brown colors indicate negative anomaly (GPP below the average of the considered years). Note that the number of year varies for each site. The comparison is fair between models and observations for a specific site but not across sites. \\
+% drought 2003
+The effects of the 2003 heatwave can be attributed to the lower GPP at some sites: FR-Hes, DE-Tha and NL-Loo. In FR-Hes, the lowest GPP is found during the summer of 2004. Models reproduce this reduction, however in JULES the negative anomaly is propagated into 2007, due to a water depletion in lower layer in the subsoil. In DE-Tha 2003 heatwave effects can also be identified both in the eddy covariance data and the observations. In BE-Bra, both models do not show the high GPP anomaly seen in observations in the two fist years. Later, JULES shows negative GPP anomaly in 2006 and 2007, years which the model wrongly had soil moisture stress affecting GPP (Figure \ref{fig:FRHes_ca}).
+%
+In ES-ES1 and NL-Ca1 there is a progressive greening towards the last years of each data set and seems to be reproduced by the models. \\
+%
+\begin{figure}
+      	\centering
+        \subfloat[FRHes]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_FRHes.png}
+        \label{fig:anom_FRHes}}
+        \subfloat[BEVie]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_BEVie.png}
+        \label{fig:anom_BEVie}}        \subfloat[BEBra]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_BEBra.png}
+        \label{fig:anom_BEBra}}
+\caption{Scaled GPP monthly anomalies. Units are dimensionless and correspond to standard deviations.}
+\end{figure}
+%
+\begin{figure}
+        \centering
+        \ContinuedFloat
+        \subfloat[NLLoo]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_NLLoo.png}
+        \label{fig:anom_NLLoo}}
+        \subfloat[DETha]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_DETha.png}
+        \label{fig:anom_DETha}}
+        \subfloat[ITRo1]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_ITRo1.png}
+        \label{fig:anom_ITRo1}}
+\caption{(Cont.) Scaled GPP monthly anomalies. Units are dimensionless and correspond to standard deviations.}
+\end{figure}
+%
+\begin{figure}
+        \centering
+        \ContinuedFloat
+        \subfloat[ESES1]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_ESES1.png}
+        \label{fig:anom_ESES1}}
+        \subfloat[NLCa1]{\includegraphics[width=1\textwidth]{/home/gp030065/FLUXNET_stats/anomaly_plots/GPP_scaled_anomaly_mesh_NLCa1.png}
+        \label{fig:anom_NLCa1}}
+\caption{(Cont.) Scaled GPP monthly anomalies. Units are dimensionless and correspond to standard deviations.}
+\label{fig:anom}
+\end{figure}
+To assess the the interannual variability of the whole timeseries, the monthly anomalies were put end to end and a Pearson correlation coefficient was calculated for the whole timeseries, between models and observations. The significant correlations  (p values $<$ 0.05) are shown in Table \ref{tab:corr_anom}. Also the correlation coefficient between the two models was computed. 
+None of the models shows a clear advantage over the other one in terms of reproducing the observed GPP monthly variability. CTESSEL has slightly higher coefficients for the forest the sites (except ES-ES1), and JULES shows better correlation for the grass site. In fact for the sites where the best correlations were found, both models showed similar skill (DE-Tha and NL-Loo).\\
+The correlations between both models are higher than those of the models with the observations (except for IT-Ro1, where CTESSEL correlates better with the observations). This indicates that both models represent the interannual variation in a similar fashion which does not always agree with the eddy covariance data. The higher correlations were found for the sites located in temperate climate, except Braaschaat where no significant correlation was found for any model. At these sites, the correlation coefficients between each model and the observations were very similar to each other. Lower correlations were found for the Mediterranean sites and the boreal site. \\
+\begin{threeparttable}
+\caption{Pearson correlation coefficient of the scaled monthly anomaly correlations of GPP. Only coefficients for significant  correlations are shown}
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}}l *{4}{c}}
+     \hline
+     \hline
+\textbf{Site}   & \textbf{Obs-JULES} & \textbf{Obs-CTESSEL} &\textbf{JULES-CTESSEL}\\
+\noalign{\smallskip}\hline
+FR-Hes  & 0.39   & 0.41   & 0.58 \\
+BE-Vie  & 0.45   & 0.46   & 0.92 \\
+BE-Bra  & -      & -      & 0.61 \\
+NL-Loo  & 0.50   & 0.50   & 0.73 \\ 
+DE-Tha  & 0.69   & 0.68   & 0.71 \\
+IT-Ro1  & 0.29   & 0.56   & 0.49 \\
+ES-ES1  & 0.53   & 0.44   & 0.67 \\
+FI-Hyy  & 0.39   & 0.47   & 0.61\\
+NL-Ca1  & 0.59     & 0.37 &  0.68\\ 
+\hline
+\hline
+\end{tabular*}
+\label{tab:corr_anom}
+\end{threeparttable}
+%
+\subsection{Photosynthesis limiting regimes in JULES}\label{sub:lim_reg}
+In this section carbon assimilation by the canopy is analysed in the context of the limiting regimes. For each model timestep the computation of the leaf level photosynthesis rate as the co-limited rate from the three limiting regimes is performed for each of the 10 vertical canopy layers. Then the values are averaged and upscaled to canopy level using the LAI (See Section \ref{2-sub:upscaling}). Therefore the limitation on photosynthesis is not unique but varies within the canopy (e.g. the upper layers in a dense forest canopy maybe be carbon limited while the lower layers are light limited if the penetrating radiation is sufficiently attenuated). To be able to associate one limiting regime for each timestep, the dominant limitation on photosynthesis throughout the whole canopy was determined as the regime that limited the maximum number of layers at each given timestep. The separation into limiting regimes was only performed for timesteps with net leaf level photosynthesis above zero, corresponding to daytime.
+\begin{figure}
+	\centering
+	\subfloat[BE-Vie, year 1998]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/corr/gpp_corr_1998_BEVie_allcanopy14.png}
+   
+        \label{fig:corr_gpp_BEVie}}
+      
+	\subfloat[ES-ES1, year 1999]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/corr/gpp_corr_1999_ESES1_allcanopy14.png}
+
+        \label{fig:corr_gpp_ESES1}}
+
+	\subfloat[FI-Hyy, year 1998]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/corr/gpp_corr_1998_FIHyy_allcanopy14.png}
+       
+        \label{fig:corr_gpp_FIHyy}}
+
+   \caption{Correlation between JULES and observed GPP for one simulated year during daytime. GPP values have been binned according to the dominating limiting regime across the 10 canopy layers. \protect\subref{fig:corr_gpp_BEVie} BE-Vie, broadleaf forest in a temperate climate, \protect\subref{fig:corr_gpp_ESES1} ES-ES1 needle leaf forest in a Mediterranean climate and  \protect\subref{fig:corr_gpp_FIHyy} FI-Hyy needle leaf forest in a boreal climate.}
+   \label{fig:corr_gpp}
+\end{figure}
+% THis figure is teh same but only for point at which onnly one limitimg regime occurs at all layers
+%\begin{figure}
+%	\centering
+	%\subfloat[BE-Vie, year 1998]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/gpp_corr_1998_BEVie_allcanopy14.png}
+       
+        %\label{fig:corr_gpp_BEVie}}
+      
+	%\subfloat[ES-ES1, year 1999]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/gpp_corr_1999_ESES1_allcanopy14.png}
+      
+        %\label{fig:corr_gpp_ESES1}}
+
+	%\subfloat[FI-Hyy,year 1998]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/gpp_corr_1998_FIHyy_allcanopy14.png}
+   
+        %\label{fig:corr_gpp_FIHyy}}
+
+   %\caption{Correlation between JULES and Obs GPP for all timesteps of one simulated year. GPP values have been binned according to the dominating limiting regime accross the 10 canopy layers}
+   %\label{fig:corr_gpp2}
+%\end{figure}
+In Figure \ref{fig:corr_gpp}, the carbon uptake at the canopy level represented by GPP is related to the limitation on photosynthesis at the leaf level. GPP has been used because it is the model output variable linked more closely with photosynthesis. From the point of view of observations, the assumptions made in the partitioning process add some uncertainty to observed GPP. In Figure \ref{fig:corr_gpp} GPP modelled by JULES is correlated with measured GPP. For each site, GPP values have been binned into three groups, according to the regime that was limiting photosynthesis (or was the dominant limitation). Carbon limited points are shown in orange in the left plot, light limited points are shown in yellow in the middle plot and export limited points are shown in green in the right plot. Each point corresponds to one timestep ($\Delta$t = 30 min) during one year of simulation. Only three representative sites are shown: \begin{inparaenum}[(a)]\item BE-Vie, broadleaf forest in a temperate climate, \item[(b)] ES-ES1, needle leaf forest in a Mediterranean climate \item[(c)] FI-Hyy, needle leaf forest in a boreal climate\end{inparaenum}. \\
+%
+%The best correlation between model predictions and observations is found at low levels of GPP.
+ The best match between modelled and observed GPP occurs for light limited photosynthesis. From these correlations it emanates that the negative biases in GPP (Table \ref{tab:sta_mon_GPP}) are mostly related to situations when carbon (rubisco activity) or export (triose phosphate consumption) are limiting the photosynthesis process in the leaves. JULES' limitations on photosynthesis from carbon and export are too strict and constrain photosynthesis to values that are lower than observed. On the top left hand corner of each figure, the number of points which are limited by that particular regime is indicated, the total number varies from site to site and is about half of timesteps in a year, because only cases with positive net leaf photosynthesis are considered, corresponding to daytime. From this distribution it can be derived how often each limiting regime occurs at each site. El Saler in Spain is mainly carbon limited, while at Vielsalm light is the principal limitation. At the boreal site, both light and export play an important role. \\
+
+The relative occurrence of each limiting regime during the one year period for these and all the other sites is shown in Table \ref{tab:limiting}.
+The distribution over a year of carbon, light and export regime is well balanced (each regime limits for at least 12\% of the time and no more than 63\% of the time at each site). As can be seen from these distributions, the apparent irrelevance of the export limiting regime found in the leaf level validation with grapevine data in Section \ref{3-sub:lim} was in fact due to the time of the year being July. The fraction of export limitation is larger at the sites located in cold climates, boreal Hyyti\"{a}l\"{a} and mountainous Bily Kriz-Beskidy forest. At Hyyti\"{a}l\"{a} photosynthesis is limited roughly equally by export and light. At Tharandt, the export limitation also has a significant presence. Carbon is the dominant factor at the Mediterranean sites (IT-Ro1 and ES-ES1), followed by light and slightly by export during the colder months, especially at the beginning of the growing season. Note that these percentages represent the fraction of time spent in each regime, not the fraction of carbon assimilated under each regime. Typically the highest rates of CO$_2$ are assimilated when photosynthesis is carbon limited. In the next section the temporal distribution of the limiting regimes at the seasonal and daily scales is shown as well as the relative importance of each regime based on the amount of carbon assimilated by vegetation.\\
+%
+\begin{threeparttable}
+\caption{Relative occurrence of the limiting regimes for a year, calculated at 30 minutes temporal resolution and aggregating canopy layers. The percentages indicate the fraction of time spent on each regime and are calculated for daytime only determined as the timesteps with positive net leaf photosynthesis.}
+
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}}l *{4}{c}}
+     \hline
+     \hline\noalign{\smallskip}
+\textbf{Site} & \textbf{\parbox{1.5cm}{Carbon \\limitation}} & \textbf{\parbox{1.5cm}{Light \\limitation}} & \textbf{\parbox{1.5cm}{Export \\limitation}}\\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+FR-Hes (1998)     &   25 \% & 63 \% & 12 \% \\
+BE-Vie (1998)     &   25 \% & 42 \% & 33 \% \\
+BE-Bra (2004)     &   38 \% & 36 \% & 26 \% \\
+NL-Loo (1998)     &   32 \% & 37 \% & 31 \% \\
+DE-Tha (1998)     &   33 \% & 31 \% & 36 \% \\
+IT-Ro1 (2000)     &   50 \% & 30 \% & 20 \% \\
+ES-ES1 (1999)     &   61 \% & 24 \% & 15 \% \\
+CZ-BK1 (2004)     &   29 \% & 35 \% & 36 \% \\
+FI-Hyy (1998)     &   23 \% & 39 \% & 38 \% \\
+NL-Ca1 (2004)     &   35 \% & 42 \% & 23 \% \\
+\hline
+\hline\noalign{\bigskip}
+\end{tabular*}
+\label{tab:limiting}
+\end{threeparttable}
+
+%\clearpage
+\subsubsection{Temporal analysis of the limiting regimes} 
+The competition between limiting regimes is highly dependent on temperature and levels of radiation, consequently the limiting factor for photosynthesis varies throughout the year and throughout the day. %The importance of each limiting regime was analysed during one year of each simulation.\\
+The fraction corresponding to each limiting regime has been derived by determining the dominant factor at each timestep across the 10 canopy layers for the cases with positive net photosynthesis (daytime). Then each fraction is scaled by the accumulated net photosynthesis, so instead of representing time spent in each regime (as in Table \ref{tab:limiting}), they represent the amount of carbon that was assimilated under each limiting regime accounting for all canopy layers. Figure \ref{fig:lim_year} shows the monthly means of daytime leaf net photosynthesis. Each bar is divided into the fractions to show the contribution to assimilated carbon from photosynthesis limited by each regime. Four representative sites are shown, FR-Hes, IT-Ro1, FI-Hyy, NL-Ca1.\\
+A common pattern emerges across all sites. During winter, photosynthesis is only limited by light or export, which is in line with the analysis performed in Section \ref{3-sub_limiting}, where export limitation was associated to low temperatures. Then, between February and March, associated with the beginning of the growing season, photosynthesis begins to be carbon limited. The carbon limitation becomes progressively more dominant towards the summer months, and the export limitation declines. In the case of the Mediterranean sites, export limitation is negligible in the middle of summer. The light limitation on photosynthesis occurs during the whole year, but its importance varies across sites, with FR-Hes (Figure \ref{fig:lim_year_FRHes}) presenting larger fractions of light limited photosynthesis especially towards late summer early autumn. 
+\begin{figure}
+	\centering
+	\subfloat[FR-Hes, year 1998]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_FRHes_1998_daytime_div10.png}
+
+        \label{fig:lim_year_FRHes}}
+
+%	\subfloat[BE-Vie, year 1998]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_BEVie_1998_daytime_div10.png}
+%        \label{fig:lim_year_BEVie}}
+
+%	\subfloat[BE-Bra, year 2004]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_BEBra_2004_daytime_div10.png}
+%        \label{fig:lim_year_BEBra}}
+
+%	\subfloat[NL-Loo, year 1998]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_NLLoo_1998_daytime_div10.png}
+%        \label{fig:lim_year_NLLoo}}
+%\end{figure}
+%\begin{figure}
+%        \centering
+%        \ContinuedFloat
+%	\subfloat[DE-Tha, year 1998]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_DETha_1998_daytime_div10.png}
+%        \label{fig:lim_year_DETha}}
+
+	\subfloat[IT-Ro1, year 2000]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_ITRo1_2000_daytime_div10.png}
+     
+        \label{fig:lim_year_ITRo1}}
+
+%	\subfloat[ES-ES1, year 1999]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_ESES1_1999_daytime_div10.png}
+%        \label{fig:lim_year_ESES1}}
+
+%	\subfloat[CZ-BK1, year 2004]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_CZBK1_2004_daytime_div10.png}
+%        \label{fig:lim_year_CZBK1}}
+%\end{figure}
+%\begin{figure}
+%        \centering
+%        \ContinuedFloat
+	\subfloat[FI-Hyy, year 1998]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_FIHyy_1998_daytime_div10.png}
+      
+        \label{fig:lim_year_FIHyy}}
+
+	\subfloat[NL-Ca1, year 2005]{\includegraphics[width=0.8\textwidth]{/home/gp030065/JULES/plots/ws/year/sum_allcanopy_bars_NLCa1_2005_daytime_div10.png}
+       
+        \label{fig:lim_year_NLCa1}}
+
+   \caption{Monthly averaged net leaf level photosynthesis divided according to the limiting regimes}
+   \label{fig:lim_year}
+\end{figure}
+%
+\begin{figure}
+      	\centering
+ 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_FRHes_1998_daytime.png}
+      
+        \label{fig:diu_sea_FRHes}}
+% 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_BEVie_1998_daytime.png}
+%        \label{fig:diu_sea_BEVie}}
+%\end{figure}
+%\begin{figure}
+%        \centering
+%        \ContinuedFloat
+% 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_BEBra_2004_daytime.png}
+%        \label{fig:diu_sea_BEBra}}
+
+% 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_NLLoo_1998_daytime.png}
+%        \label{fig:diu_sea_NLLoo}}
+%\end{figure}
+%\begin{figure}
+%        \centering
+%        \ContinuedFloat
+
+% 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_DETha_1998_daytime.png}
+%        \label{fig:diu_sea_DETha}}
+
+ 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_ITRo1_2000_daytime.png}
+       
+        \label{fig:diu_sea_ITRo1}}
+         \caption{Mean diurnal rate of leaf net photosynthesis averaged in 3 hour blocks for each season: December-January-February (DJF), March-April-May (MAM), June-July-August (JJA) and September- October-November (SON). Times are local. The colors indicate the fraction of assimilated carbon under each limiting regime.}
+\end{figure}
+\begin{figure}
+        \centering
+        \ContinuedFloat
+
+% 	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_ESES1_1999_daytime.png}
+%        \label{fig:diu_sea_ESES1}}
+
+ %  	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_CZBK1_2004_daytime.png}}
+%        \label{fig:diu_sea_CZBK1}}
+%\end{figure}
+%\begin{figure}
+%        \centering
+%        \ContinuedFloat
+
+   	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_FIHyy_1998_daytime.png}
+      
+        \label{fig:diu_sea_FIHyy}}
+
+  	\subfloat[]{\includegraphics[width=1\textwidth]{/home/gp030065/JULES/plots/ws/diurnal/seasonal_sum_allcanopy_bars_NLCa1_2005_daytime.png}
+      
+        \label{fig:diu_sea_NLCa1}}
+
+      \caption{Mean diurnal rate of leaf net photosynthesis averaged in 3 hour blocks for each season: December-January-February (DJF), March-April-May (MAM), June-July-August (JJA) and September- October-November (SON). Times are local. The colors indicate the fraction of assimilated carbon under each limiting regime.}
+        \label{fig:diu_sea}
+\end{figure}
+
+In Figure \ref{fig:diu_sea} the same partition into limiting regimes is shown for the same sites but this time at the daily timescale and aggregated by seasons. Positive values of leaf net photosynthesis rate were averaged in three hours blocks.\\
+Export limitation occurs mainly in the mornings during growing period (MAM and JJA). It is associated to colder temperatures found in the mornings, due to the soil's thermal inertia after the cool night. In the hours around midday carbon becomes the most important limitation during growing period. For the continental sites (FI-Hyy (Figure \ref{fig:lim_year_FIHyy}), CZ-BK1 (not shown)) in spring (MAM), the export limitation predominates over carbon during the rest of the day as well. This is also the case in NL-Loo (no shown). Photosynthesis is limited by light when the radiation levels are low, hence the hours close to dawn and sunset. The attenuation of radiation at high zenith angles as well as the increased attenuation within the canopy reduces the incident radiation reaching the leaves. The larger influence of radiation seen for FR-Hes (Figure \ref{fig:lim_year_FRHes}) can now be associated to the afternoons 15:00-18:00 (Figure \ref{fig:diu_sea_FRHes}).
+
+\section{Conclusions and discussion}
+In this Chapter both models were tested for 10 European sites from the FLUXNET network. The model settings were specified to be as similar as possible to provide a fair model comparison on how models reproduce the energy and carbon fluxes. A monthly climatology of LAI was prescribed, hence all differences in seasonal cycle can attributed to the models' response to external variables. The emphasis was put on carbon assimilation but also in how GPP and LE are linked. Using JULES simulations, the extent to which each limiting regime controls photosynthesis at each site has been exposed, as well as the temporal evolution. The conditions under which each regime is favoured were already analysed under a theoretical framework in Chapter 3, however the FLUXNET sites complete the analysis providing realistic scenarios, with specific climates and plant types.
+%general - monthly - gpp, LE soil moisture
+
+Despite differences in photosynthesis formulation, both models predictions of GPP were shown to be similar. The carbon assimilation produced by both models was lower than the one derived from measurements. However eddy covariance towers measure NEE directly, and GPP has to be derived, opening possibilities to some error in its estimates.
+%
+The main differences in GPP between models were caused by the soil moisture stress. JULES' restriction on GPP due to the unavailability of moisture was at times too strong.
+This feature was aggravated by the lower levels of soil moisture found in JULES simulation after a few months of run. \\
+Although GPP estimates from both models were similar, this was not the case for LE estimates. JULES consistently predicted larger LE than CTESSEL. This could in part be explained by larger g$_s$ shown by JULES at the leaf level but also due to the differences the aerodynamic conductances of both models that control the turbulent exchange in the models. The ratio between both conductances determines the degree of coupling between canopy and atmophere, which has already been identidied as a source of model discrepancy \citep{deKauwe2013}. Furthermore, the excessive evaporation contributes to the stronger drying of soils seen in JULES, exacervating the soil water stress on GPP.\\
+%diurnal 
+The GPP diurnal cycle was well reproduced by both models (despite the underestimation in the amplitude). Radiation is an important driver of GPP at the diurnal time scale. It is of vital importance that the radiative scheme provides the photosynthesis scheme an appropriate profile of solar radiation within the canopy. CTESSEL's big leaf approach combined with Beer's law has proved to perform just as well as JULES' multilayer scheme by which the canopy is divided into 10 layers combined with the 2 streams radiative scheme. The key in the success of CTESSEL's simpler parameterization is that the attenuation coefficient used in Beer's attenuation law varies with the angle of incidence of the solar radiation. Radiation is attenuated more efficiently (by scattering and absorption within the canopy) when the solar beams enter the canopy with a high inclination.\\
+JULES GPP during summer months suffered from midday stomatal closure, which was not justified by the observations. This feature can be related to an exaggerated stomatal sensitivity to water vapour pressure deficit, but there must be another canopy level mechanism exacerbating it. At the leaf level, although g$_s$ was found to be more sensitive in JULES than in CTESSEL, this was not translated into high sensitivity in net photosynthesis, therefore cannot completely explain the observed midday stomatal closure.\\
+%interannual
+In terms of interannual variability, both models showed less variability than the observations at most sites. The exception was found at the Mediterranean sites, were the excessive variability was attributed to soil moisture changes from year to year. The correlation of monthly anomalies between each model and the observation was quite similar for each site, particularly at the temperate sites.\\
+%
+All sites were found to have photosynthesis limited by the 3 limiting regimes during a considerable amount of time. In general the distribution of the limitations on photosynthesis was well balanced. Export and light limitations occur during the whole year. Export is most important during spring. Carbon limitation starts in spring and lasts until autumn. It becomes the main limitation during the growing season, reducing the limitations from the other regimes. Some similarities could be extracted for the sites belonging to the same climate. Continental sites had more export limitation, associated to the colder temperatures. Mediterranean sites on the other hand were mostly limited by carbon, with export limitation being negligible during the peak of summer. Because carbon limitation controls photosynthesis when the the assimilation rate is greater, the carbon dioxide assimilated under carbon limitation is the greatest at most sites.  \\
+%link to last Chapter
+
+It was seen in Chapter 3 how the limiting regime controlling the photosynthesis reaction determines the degree of leaf level CO$_2$ fertilization effect (Chapter 3). Therefore, the fact that sites located in different climates have more or less limitation through a certain regime, will have an impact in JULES estimates of CO$_2$ fertilization effect. At the same time, the varying environmental conditions may modify the distribution of limiting regimes found for the present conditions. Next Chapter explores the effects of increased levels of CO$_2$ and temperature on GPP fluxes for both JULES and CTESSEL, as well as the forced changes in limiting regimes in JULES.
+\newpage
+
+\appendix
+
+\chapter{LAI}
+\label{app:LAI}
+\input{../Appendices/ch4_LAI.tex}
+
+%\chapter{JULES soil moisture stress factor}
+%\label{app:beta}
+%\input{../Appendices/ch4_beta.tex}
+
+\newpage
+\bibliography{../bib_docs/library_15_7_2016}
+%\bibliography{../bib_docs/library_24_3_2016}
+\bibliographystyle{abbrvnat}   % initials
+
+\end{document}

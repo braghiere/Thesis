@@ -1,0 +1,27 @@
+\contentsline {chapter}{\numberline {4}Vegetation structure in Radiative Transfer schemes}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}The effects of different vegetation canopy arrangements on PAR partitioning}{9}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Using 3D models to address the impacts of canopy structure on PAR partitioning}{9}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}`Local' sensitivity analysis of related canopy radiative transfer variables}{21}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Can LAI take into account vegetation canopy structural variability?}{24}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Considering structural effects in 1D radiative transfer treatments: parameterisations}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The clumping index by Kucharik et al. (1999)}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}The clumping index by Ni-Meister et al. (2010)}{32}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}The structure factor parameterisation}{33}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Minimising the `structure factor'}{36}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Evaluating structural parameterisations}{37}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The RAMI4PILPS}{38}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}`Clumping indices' vs. 3D model: direct transmissivity}{39}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Impacts of the structure factor parameterisation on direct transmissivity}{44}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Angular impacts of the structure factor parameters on absorption}{45}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Evaluating the `Structure Factor' Radiation Partitioning: Zenith Profile}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}MAESTRA/MAESPA}{48}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}GORT}{48}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Two-Stream: JULES (the Joint UK Land Environment Simulator)}{49}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Vegetation cover approach}{50}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Solar Zenith Angular evaluations}{51}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Evaluating the structure factor parameterisation impacts on absorption and reflectance}{54}{subsection.4.4.6}
+\contentsline {section}{\numberline {4.5}Evaluating the `Structure Factor' Radiation Partitioning: Vertical Profile}{60}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Vertical impacts of `structure factor': Black Canopy}{62}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Vertical impacts of `structure factor': RAMI4PILPS}{65}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Vertical impacts of albedo by the `structure factor'}{67}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Summary of Findings}{69}{section.4.6}

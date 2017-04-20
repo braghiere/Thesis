@@ -1,0 +1,65 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fraction of absorbed and reflected photosynthetically active radiation, fAPAR and albedo PAR, respectively; and NIR, fANIR and albedo NIR with respect to the Two-Stream scheme (black line) and MAESPA (coloured lines) for three different vegetation canopies densities and same scene LAI. Details are described in Table\nobreakspace {}\ref {tab:parameters_laisense}.}}{10}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {fAPAR}}}{10}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {albedo PAR}}}{10}{figure.4.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {fANIR}}}{10}{figure.4.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {albedo NIR}}}{10}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the difference between vegetation fraction ($f_{veg}$) and gap probability (P$_{gap}$($\theta $ = 0)) for a model grid cell (from \citet {Loew2014}).}}{13}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Root-Mean-Squared-Error for Two-Stream scheme with the structure factor parameterisation and MAESPA for three canopies densities (sparse, medium and dense).}}{20}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {LAI = 0.5 m$^2$.m$^{-2}$}}}{20}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {LAI = 1.5 m$^2$.m$^{-2}$}}}{20}{figure.4.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {LAI = 2.5 m$^2$.m$^{-2}$}}}{20}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Graphical representation of the open forest canopy environments used in RAMI4PILPS. The images represent three different canopy structures \citep {Widlowski2011}.}}{22}{figure.4.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse Canopy}}}{22}{figure.4.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium Canopy}}}{22}{figure.4.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense Canopy}}}{22}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison between different ways to calculate clumping index and its impact on gap fraction.}}{24}{figure.4.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse Canopy}}}{24}{figure.4.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium Canopy}}}{24}{figure.4.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense Canopy}}}{24}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Root-Mean-Squared-Error of gap probability generated with three structural parameterisations and MAESPA for three different canopies densities (sparse, medium and dense) and the average.}}{27}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces P$_{gap}$ calculated over all possible solar zenith angles with the modified Two-stream scheme with the structure factor varying $a$ and $b$ from 0 to 1 for three canopies densities (sparse, medium and dense).}}{28}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{28}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{28}{figure.4.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{28}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Sensitivity analysis of fAPAR for a range of structure factor parameters $a$ and $b$ varying from 0.0 to 1.0, for a set of three different canopy densities and three sun zenith angles (see Table\nobreakspace {}\ref {tab:RAMI4PILPS}).}}{29}{figure.4.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{29}{figure.4.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{29}{figure.4.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{29}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) absorbed PAR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{36}{figure.4.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{36}{figure.4.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{36}{figure.4.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{36}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) reflected PAR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{37}{figure.4.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{37}{figure.4.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{37}{figure.4.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{37}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) absorbed NIR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{38}{figure.4.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{38}{figure.4.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{38}{figure.4.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{38}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) reflected NIR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{39}{figure.4.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{39}{figure.4.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{39}{figure.4.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{39}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Evaluation of absorption ($+$) and reflectance ($\bigcirc $) (a) PAR and (b) NIR with the default Two-stream radiative transfer scheme in comparison with the RAMI4PILPS reference values (3D Monte Carlo reference values), for all evaluated PAR cases. The colours indicate different soil albedos: {\color {black}BLACK}, {\color {red}MEDIUM} and {\color {blue}SNOW}.}}{41}{figure.4.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PAR}}}{41}{figure.4.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NIR}}}{41}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Evaluation of absorption ($+$) and reflectance ($\bigcirc $) with the default Two-stream radiative transfer scheme in comparison with the RAMI4PILPS reference values (3D Monte Carlo reference values), for all evaluated PAR cases. The colours indicate different soil albedos: {\color {black}BLACK}, {\color {red}MEDIUM} and {\color {blue}SNOW}.}}{43}{figure.4.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PAR}}}{43}{figure.4.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NIR}}}{43}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Graphical representation of an open forest canopy with LAI = 1.0 m$^2$.m$^{-2}$ and vegetation cover of 20\%. 160 black spheres distributed over 250 m x 250 m.}}{45}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces a. LAI normal distribution versus canopy height (m); b. LAI profile and normalised cumulative probability density (CPD) from the top to the bottom of the canopy.}}{46}{figure.4.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {LAI vs. height}}}{46}{figure.4.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CPD}}}{46}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces a. Height vertical profile and b. Layer vertical profile of fAPAR ($\approx $ 1 - P$_{gap}$) with LAI = 1.0 m$^2$.m$^{-2}$, vegetation cover of 20\% and $\alpha _{soil}$ = 0.0 for three zenith angles: 27.5$^{\circ }$, 60.0$^{\circ }$ and 83.5$^{\circ }$; and three different mathematical approaches: GORT, MAESPA, Two-Stream.}}{47}{figure.4.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Height}}}{47}{figure.4.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Layer}}}{47}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Height vertical profile of a proxy of fAPAR (1 - P$_{gap}$(1-$\alpha _{soil}$) for three canopy structures: LAI = 0.5 m$^2$.m$^{-2}$, vegetation cover of 10\%; LAI = 1.5 m$^2$.m$^{-2}$, vegetation cover of 30\%; LAI = 2.5 m$^2$.m$^{-2}$, vegetation cover of 50\%; and three zenith angles: 27.5$^{\circ }$, 60.0$^{\circ }$ and 83.5$^{\circ }$; and three different mathematical approaches: GORT, MAESPA, Two-stream scheme and Two-stream structure which is the vertical profile calculated by the structure factor parameterisation (Table\nobreakspace {}\ref {tab:structureparameters}).}}{49}{figure.4.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{49}{figure.4.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{49}{figure.4.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{49}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Vertical profile of fraction of absorbed PAR calculated with the homogeneous 1D case (continuous line) and the structure factor parameterisation (dashed line) for a Sun zenith angle of 27.5$^{\circ }$ through 20 levels (inverted y-axis to represent top of the canopy at the top of the figure), for three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$ = 0.96), and three canopy densities (sparse = 050; medium = 150; and dense = 250).}}{51}{figure.4.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {BLK}}}{51}{figure.4.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MED}}}{51}{figure.4.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {SNW}}}{51}{figure.4.19}

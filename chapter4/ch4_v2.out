@@ -1,0 +1,19 @@
+\BOOKMARK [0][-]{chapter.4}{Parameterising vegetation canopy structure in radiative transfer models}{}
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Can LAI alone take into account vegetation canopy structural heterogeneity?}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Evaluating vegetation structural effects in the two-stream scheme: direct transmissivity}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{The RAMI4PILPS scenes}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{The clumping index of Nilson \(1971\)}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{The clumping index of Kucharik et al. \(1999\)}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.4}{The clumping index of Pinty et al. \(2006\)}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.5}{The clumping index by Ni-Meister et al. \(2010\)}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.6}{Comparing clumping indices}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Evaluating vegetation structural effects in the two-stream scheme: zenith profile}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Absorption}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Reflectance}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Discussion}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Evaluating vegetation structural effects in the two-stream scheme: vertical profile}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Direct transmissivity}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{Absorption}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Summary of Findings}{chapter.4}
+\BOOKMARK [0][-]{Appendix.1.A}{fAPAR vertical distribution}{}

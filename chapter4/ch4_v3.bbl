@@ -1,0 +1,338 @@
+\begin{thebibliography}{52}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{doi:}\fi
+
+\bibitem[{Anav et~al.(2015)Anav, Friedlingstein, Beer, Ciais, Harper, Jones,
+  Murray-Tortarolo, Papale, Parazoo, Peylin, Piao, Sitch, Viovy, Wiltshire, and
+  Zhao}]{Anav2015}
+Anav, A., P.~Friedlingstein, C.~Beer, P.~Ciais, A.~Harper, C.~Jones,
+  G.~Murray-Tortarolo, D.~Papale, N.~C. Parazoo, P.~Peylin, S.~Piao, S.~Sitch,
+  N.~Viovy, A.~Wiltshire, and M.~Zhao, 2015: {Spatiotemporal patterns of
+  terrestrial gross primary production: A review}. {\it Reviews of
+  Geophysics\/}, {\bf 53}, 785--818, doi:10.1002/2015RG000483.
+
+\bibitem[{Andrieu and Sinoquet(1993)}]{Andrieu1993}
+Andrieu, B. and H.~Sinoquet, 1993: {Evaluation of structure description
+  requirements for predicting gap fraction of vegetation canopies}.
+}
+
+\bibitem[{Best et~al.(2011)Best, Pryor, Clark, Rooney, Essery, Menard, Edwards,
+  Hendry, Porson, Gedney, Mercado, Sitch, Blyth, Boucher, Cox, Grimmond, and
+  Harding}]{Best2011}
+Best, M., M.~Pryor, D.~Clark, G.~Rooney, R.~Essery, C.~Menard, J.~Edwards,
+  M.~Hendry, a.~Porson, N.~Gedney, L.~Mercado, S.~Sitch, E.~Blyth, O.~Boucher,
+  P.~Cox, C.~Grimmond, and R.~Harding, 2011: {The Joint UK Land Environment
+  Simulator (JULES), model description. Part 1: Energy and water fluxes}. {\it
+  Geoscientific Model Development\/}, {\bf 4}, 677--699.
+
+\bibitem[{Cescatti(1997)}]{Cescatti1997}
+Cescatti, A., 1997: {Modelling the radiative transfer in discontinuous canopies
+  of asymmetric crowns. II. Model testing and application in a Norway spruce
+  stand}. {\it Ecological Modelling\/}, {\bf 101}, 275--284.
+
+\bibitem[{Chen and Rich(1997)}]{Chen1997}
+Chen, J. and P.~Rich, 1997: {Leaf area index of boreal forests: Theory,
+  techniques, and measurements}. {\it Journal of Geophysical Research\/}, {\bf
+  102}, 29429, doi:10.1029/97JD01107.
+
+\bibitem[{Chen(1996)}]{Chen1996}
+Chen, J.~M., 1996: {Optically-based methods for measuring seasonal variation of
+  leaf area index in boreal conifer stands}. {\it Agricultural and Forest
+  Meteorology\/}, {\bf 80}, 135--163, doi:10.1016/0168-1923(95)02291-0.
+
+\bibitem[{Chen and Black(1992)}]{chen1992}
+Chen, J.~M. and T.~a. Black, 1992: {Defining leaf area index for non-flat
+  leaves}. {\it Plant, Cell and Environment\/}, {\bf 15}, 421--429.
+
+\bibitem[{Chen and Leblanc(1997)}]{Chen1997a}
+Chen, J.~M. and S.~G. Leblanc, 1997: {Four-scale bidirectional reflectance
+  model based on canopy architecture}. {\it IEEE Transactions on Geoscience and
+  Remote Sensing\/}, {\bf 35}, 1316--1337.
+
+\bibitem[{Chen et~al.(2008)Chen, Baldocchi, Gong, and Dawson}]{Chen2008}
+Chen, Q., D.~Baldocchi, P.~Gong, and T.~Dawson, 2008: {Modeling radiation and
+  photosynthesis of a heterogeneous savanna woodland landscape with a hierarchy
+  of model complexities}. {\it Agricultural and Forest Meteorology\/}, {\bf
+  148}, 1005--1020.
+
+\bibitem[{Clark et~al.(2011)Clark, Mercado, Sitch, Jones, Gedney, Best, Pryor,
+  Rooney, Essery, Blyth, Harding, Hutingford, and Cox}]{Clark2011}
+Clark, D., L.~Mercado, S.~Sitch, C.~D. Jones, N.~Gedney, M.~Best, M.~Pryor,
+  G.~Rooney, R.~Essery, E.~Blyth, R.~Harding, C.~Hutingford, and P.~Cox, 2011:
+  {The Joint UK Land Environment Simulator (JULES), model description. Part 2:
+  Carbon fluxes and vegetation dynamics}. {\it Geoscientific Model
+  Development\/}, {\bf 4}, 701--722, doi:10.5194/gmd-4-701-2011.
+
+\bibitem[{Duursma and Medlyn(2012)}]{Duursma2012}
+Duursma, R.~A. and B.~E. Medlyn, 2012: {MAESPA: A model to study interactions
+  between water limitation, environmental drivers and vegetation function at
+  tree and stand levels, with an example application to [CO2] x drought
+  interactions}. {\it Geoscientific Model Development\/}, {\bf 5}, 919--940.
+
+\bibitem[{Govaerts and Verstraete(1995)}]{Govaerts1995}
+Govaerts, Y. and M.~M. Verstraete, 1995: {Modeling the scattering of light in
+  three-dimensional canopies: Contribution of a Monte Carlo ray tracing
+  approach}. {\it Combined Optical-Microwave Earth and Atmosphere Sensing -
+  Conference Proceedings\/}, 31--34.
+}
+
+\bibitem[{Govaerts and Verstraete(1998)}]{Govaerts1998}
+Govaerts, Y.~M. and M.~M. Verstraete, 1998: {Raytran: A Monte Carlo ray-tracing
+  model to compute light scattering in three-dimensional heterogeneous media}.
+  {\it IEEE Transactions on Geoscience and Remote Sensing\/}, {\bf 36},
+  493--505, doi:10.1109/36.662732.
+
+\bibitem[{Jonckheere et~al.(2004)Jonckheere, Fleck, Nackaerts, Muys, Coppin,
+  Weiss, and Baret}]{Jonckheere2004}
+Jonckheere, I., S.~Fleck, K.~Nackaerts, B.~Muys, P.~Coppin, M.~Weiss, and
+  F.~Baret, 2004: {Review of methods for in situ leaf area index determination
+  Part I. Theories, sensors and hemispherical photography}.
+}
+
+\bibitem[{Kitajima et~al.(2004)Kitajima, Mulkey, and Wright}]{Kitajima2004}
+Kitajima, K., S.~S. Mulkey, and S.~J. Wright, 2004: {Variation in crown light
+  utilization characteristics among tropical canopy trees}. {\it Annals of
+  Botany\/}, {\bf 95}, 535--547, doi:10.1093/aob/mci051.
+
+\bibitem[{Kobayashi et~al.(2012)Kobayashi, Baldocchi, Ryu, Chen, Ma, Osuna, and
+  Ustin}]{Kobayashi2012}
+Kobayashi, H., D.~D. Baldocchi, Y.~Ryu, Q.~Chen, S.~Ma, J.~L. Osuna, and S.~L.
+  Ustin, 2012: {Modeling energy and carbon fluxes in a heterogeneous oak
+  woodland: A three-dimensional approach}. {\it Agricultural and Forest
+  Meteorology\/}, {\bf 152}, 83--100.
+
+\bibitem[{Kucharik et~al.(1999)Kucharik, Norman, and Gower}]{Kucharik1999}
+Kucharik, C.~J., J.~M. Norman, and S.~T. Gower, 1999: {Characterization of
+  radiation regimes in nonrandom forest canopies: theory, measurements, and a
+  simplified modeling approach}. {\it Tree Physiology\/}, {\bf 19}, 695--706.
+
+\bibitem[{Law et~al.(2001)Law, Cescatti, and Baldocchi}]{Law2001a}
+Law, B.~E., a.~Cescatti, and D.~D. Baldocchi, 2001: {Leaf area distribution and
+  radiative transfer in open-canopy forests: implications for mass and energy
+  exchange.} {\it Tree physiology\/}, {\bf 21}, 777--787.
+
+\bibitem[{Leblanc et~al.(2005)Leblanc, Chen, Fernandes, Deering, and
+  Conley}]{Leblanc2005}
+Leblanc, S.~G., J.~M. Chen, R.~Fernandes, D.~W. Deering, and A.~Conley, 2005:
+  {Methodology comparison for canopy structure parameters extraction from
+  digital hemispherical photography in boreal forests}. {\it Agricultural and
+  Forest Meteorology\/}, {\bf 129}, 187--207.
+
+\bibitem[{Li and Strahler(1988)}]{Li1988}
+Li, X. and A.~H. Strahler, 1988: {Modeling the gap probability of a
+  discontinuous vegetation canopy}. {\it Geoscience and Remote Sensing, IEEE
+  Transactions on\/}, {\bf 26}, 161--170, doi:10.1109/36.3017.
+
+\bibitem[{Li et~al.(1995)Li, Strahler, and Woodcock}]{Li1995}
+Li, X., A.~H. Strahler, and C.~E. Woodcock, 1995: {Hybrid geometric
+  optical-radiative transfer approach for modeling albedo and directional
+  reflectance of discontinuous canopies}. {\it IEEE Transactions on Geoscience
+  and Remote Sensing\/}, {\bf 33}, 466--480.
+
+\bibitem[{Loew et~al.(2014)Loew, {Van Bodegom}, Widlowski, Otto, Quaife, Pinty,
+  and Raddatz}]{loew2014}
+Loew, A., P.~M. {Van Bodegom}, J.~L. Widlowski, J.~Otto, T.~Quaife, B.~Pinty,
+  and T.~Raddatz, 2014: {Do we (need to) care about canopy radiation schemes in
+  DGVMs? Caveats and potential impacts}. {\it Biogeosciences\/}, {\bf 11},
+  1873--1897.
+
+\bibitem[{Malenovsk{\'{y}} et~al.(2008)Malenovsk{\'{y}}, Martin,
+  Homolov{\'{a}}, Gastellu-Etchegorry, Zurita-Milla, Schaepman, Pokorn{\'{y}},
+  Clevers, and Cudl{\'{\i}}n}]{Malenovsky2008}
+Malenovsk{\'{y}}, Z., E.~Martin, L.~Homolov{\'{a}}, J.~P. Gastellu-Etchegorry,
+  R.~Zurita-Milla, M.~E. Schaepman, R.~Pokorn{\'{y}}, J.~G. P.~W. Clevers, and
+  P.~Cudl{\'{\i}}n, 2008: {Influence of woody elements of a Norway spruce
+  canopy on nadir reflectance simulated by the DART model at very high spatial
+  resolution}. {\it Remote Sensing of Environment\/}, {\bf 112}, 1--18.
+
+\bibitem[{Medlyn(2004)}]{Medlyn2004}
+Medlyn, B., 2004: {A MAESTRO retrospective}. {\it Forests at the
+  Land-Atmosphere Interface\/}, M.~Mencuccini, J.~Grace, J.~B. Moncrieff, and
+  K.~McNaughton, eds., CAB International, volume~53, chapter~8, 105--121.
+}
+
+\bibitem[{Medlyn et~al.(2007)Medlyn, Pepper, O'Grady, and Keith}]{Medlyn2007}
+Medlyn, B.~E., D.~A. Pepper, A.~P. O'Grady, and H.~Keith, 2007: {Linking leaf
+  and tree water use with an individual-tree model}. {\it Tree Physiology\/},
+  {\bf 27}, 1687--1699, doi:10.1093/treephys/27.12.1687.
+
+\bibitem[{Nelder and Mead(1964)}]{Nelder1964}
+Nelder, J.~a. and R.~Mead, 1964: {A simplex method for function minimization}.
+  {\it The Computer Journal\/}, {\bf 7}, 308--313, doi:10.1093/comjnl/7.4.308.
+
+\bibitem[{Ni et~al.(1997)Ni, Li, Woodcock, Roujean, and Davis}]{Ni1997}
+Ni, W.~G., X.~W. Li, C.~E. Woodcock, J.~L. Roujean, and R.~E. Davis, 1997:
+  {Transmission of solar radiation in boreal conifer forests: Measurements and
+  models}. {\it Journal of Geophysical Research-Atmospheres\/}, {\bf 102},
+  29555--29566.
+
+\bibitem[{Ni-Meister et~al.(2010)Ni-Meister, Yang, and Kiang}]{Ni-Meister2010}
+Ni-Meister, W., W.~Yang, and N.~Y. Kiang, 2010: {A clumped-foliage canopy
+  radiative transfer model for a global dynamic terrestrial ecosystem model. I:
+  Theory}. {\it Agricultural and Forest Meteorology\/}, {\bf 150}, 881--894.
+
+\bibitem[{Nilson(1971)}]{Nilson1971}
+Nilson, T., 1971: {A theoretical analysis of the frequency of gaps in plant
+  stands}. {\it Agricultural Meteorology\/}, {\bf 8}, 25--38,
+  doi:10.1016/0002-1571(71)90092-6.
+
+\bibitem[{Norman and Welles(1983)}]{Norman1983}
+Norman, J. and J.~Welles, 1983: {Radiative transfer in an array of canopies}.
+  {\it Agronomy Journal\/}, {\bf 75}, 481--488.
+
+\bibitem[{Norman and Jarvis(1974)}]{Norman1974}
+Norman, J.~M. and P.~G. Jarvis, 1974: {Photosynthesis in Sitka spruce (Picea
+  sitchensis (Bong.) Carr.). III. Measurements of canopy structure and
+  interception of radiation}. {\it Journal of Applied Ecology\/}, 375--398.
+
+\bibitem[{North(1996)}]{North1996}
+North, P.~R., 1996: {Three-dimensional forest light interaction model using a
+  Monte Carlo method}. {\it Geoscience and Remote Sensing, IEEE Transactions
+  on\/}, {\bf 34}, 946--956, doi:10.1109/36.508411.
+
+\bibitem[{Pinty et~al.(2001)Pinty, Gobron, Widlowski, Gerstl, Verstraete,
+  Antunes, Bacour, Gascon, Gastellu, Goel, Jacquemoud, North, Qin, and
+  Thompson}]{Pinty2001}
+Pinty, B., N.~Gobron, J.-l. Widlowski, S.~A.~W. Gerstl, M.~M. Verstraete,
+  M.~Antunes, C.~Bacour, F.~Gascon, P.~Gastellu, N.~Goel, S.~Jacquemoud,
+  P.~North, W.~Qin, and R.~Thompson, 2001: {Radiation transfer model
+  intercomparison ( RAMI ) exercise ( a ) - Homogeneous scenes ( b ) -
+  Heterogeneous scenes}. {\bf 106}.
+
+\bibitem[{Pinty et~al.(2004)Pinty, Gobron, Widlowski, Lavergne, and
+  Verstraete}]{Pinty2004}
+Pinty, B., N.~Gobron, J.~L. Widlowski, T.~Lavergne, and M.~M. Verstraete, 2004:
+  {Synergy between 1-D and 3-D radiation transfer models to retrieve vegetation
+  canopy properties from remote sensing data}. {\it Journal of Geophysical
+  Research D: Atmospheres\/}, {\bf 109}.
+
+\bibitem[{Pinty et~al.(2006)Pinty, Lavergne, Dickinson, Widlowski, Gobron, and
+  Verstraete}]{pinty2006}
+Pinty, B., T.~Lavergne, R.~E. Dickinson, J.~L. Widlowski, N.~Gobron, and M.~M.
+  Verstraete, 2006: {Simplifying the interaction of land surfaces with
+  radiation for relating remote sensing products to climate models}. {\it
+  Journal of Geophysical Research: Atmospheres\/}, {\bf 111}.
+
+\bibitem[{Poulter et~al.(2011)Poulter, Frank, Hodson, and
+  Zimmermann}]{poulter2011}
+Poulter, B., D.~C. Frank, E.~L. Hodson, and N.~E. Zimmermann, 2011: {Impacts of
+  land cover and climate data selection on understanding terrestrial carbon
+  dynamics and the CO2 airborne fraction}. {\it Biogeosciences Discussions\/},
+  {\bf 8}, 1617--1642, doi:10.5194/bg-8-2027-2011.
+
+\bibitem[{Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
+  and Bowyer}]{quaife2008}
+Quaife, T., P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+  P.~Bowyer, 2008: {Assimilating canopy reflectance data into an ecosystem
+  model with an Ensemble Kalman Filter}. {\it Remote Sensing of Environment\/},
+  {\bf 112}, 1347--1364.
+
+\bibitem[{Ross(1981)}]{Ross1981}
+Ross, J., 1981: {\it {The radiation regime and architecture of plant
+  stands}\/}. Junk, Boston, 391 pp.
+
+\bibitem[{Ryu et~al.(2010)Ryu, Sonnentag, Nilson, Vargas, Kobayashi, Wenk, and
+  Baldocchi}]{Ryu2010}
+Ryu, Y., O.~Sonnentag, T.~Nilson, R.~Vargas, H.~Kobayashi, R.~Wenk, and D.~D.
+  Baldocchi, 2010: {How to quantify tree leaf area index in an open savanna
+  ecosystem: A multi-instrument and multi-model approach}. {\it Agricultural
+  and Forest Meteorology\/}, {\bf 150}, 63--76,
+  doi:10.1016/j.agrformet.2009.08.007.
+
+\bibitem[{Sellers(1985)}]{Sellers1985}
+Sellers, P., 1985: {Canopy reflectance, photosynthesis and transpiration.} {\it
+  International Journal of Remote Sensing\/}, {\bf 6}, 1335--1372,
+  doi:10.1080/01431168508948283.
+
+\bibitem[{Sinoquet et~al.(2001)Sinoquet, {Le Roux}, Adam, Ameglio, and
+  Daudet}]{Sinoquet2001}
+Sinoquet, H., X.~{Le Roux}, B.~Adam, T.~Ameglio, and F.~A. Daudet, 2001: {RATP:
+  a model for simulating the spatial distribution of radiation absorption,
+  transpiration and photosynthesis within canopies: application to an isolated
+  tree crown}. {\it Plant, Cell and Environment\/}, {\bf 24}, 395--406,
+  doi:10.1046/j.1365-3040.2001.00694.x.
+
+\bibitem[{St{\"{o}}ckli et~al.(2011)St{\"{o}}ckli, Rutishauser, Baker, Liniger,
+  and Denning}]{Stockli2011}
+St{\"{o}}ckli, R., T.~Rutishauser, I.~Baker, M.~A. Liniger, and A.~S. Denning,
+  2011: {A global reanalysis of vegetation phenology}. {\it Journal of
+  Geophysical Research: Biogeosciences\/}, {\bf 116}.
+
+\bibitem[{Taylor(2001)}]{Taylor2001}
+Taylor, K.~E., 2001: {Summarizing multiple aspects of model performance in a
+  single diagram}. {\it Journal of Geophysical Research\/}, {\bf 106},
+  7183--7192.
+
+\bibitem[{Tournebize and Sinoquet(1995)}]{Tournebize1995}
+Tournebize, R. and H.~Sinoquet, 1995: {Light interception and partitioning in a
+  shrub/grass mixture}. {\it Agricultural and Forest Meteorology\/}, {\bf 72},
+  277--294.
+
+\bibitem[{Viterbo and Betts(1999)}]{Viterbo1999}
+Viterbo, P. and A.~K. Betts, 1999: {Impact on ECMWF forecasts of changes to the
+  albedo of the boreal forests in the presence of snow}. {\it Journal Of
+  Geophysical Research-Atmospheres\/}, {\bf 104}, 27803--27810.
+
+\bibitem[{Wang and Jarvis(1990)}]{Wang1990}
+Wang, Y. and P.~Jarvis, 1990: {Description and validation of an array model —
+  MAESTRO}.
+}
+
+\bibitem[{Widlowski et~al.(2011)Widlowski, Pinty, Clerici, Dai, {De Kauwe}, {De
+  Ridder}, Kallel, Kobayashi, Lavergne, Ni-Meister, Olchev, Quaife, Wang, Yang,
+  Yang, and Yuan}]{Widlowski2011}
+Widlowski, J.~L., B.~Pinty, M.~Clerici, Y.~Dai, M.~{De Kauwe}, K.~{De Ridder},
+  A.~Kallel, H.~Kobayashi, T.~Lavergne, W.~Ni-Meister, A.~Olchev, T.~Quaife,
+  S.~Wang, W.~Yang, Y.~Yang, and H.~Yuan, 2011: {RAMI4PILPS: An intercomparison
+  of formulations for the partitioning of solar radiation in land surface
+  models}. {\it Journal of Geophysical Research G: Biogeosciences\/}, {\bf
+  116}.
+
+\bibitem[{Widlowski et~al.(2013)Widlowski, Pinty, Lopatka, Atzberger, Buzica,
+  Chelle, Disney, Gastellu-Etchegorry, Gerboles, Gobron, Grau, Huang, Kallel,
+  Kobayashi, Lewis, Qin, Schlerf, Stuckens, and Xie}]{Widlowski2013}
+Widlowski, J.~L., B.~Pinty, M.~Lopatka, C.~Atzberger, D.~Buzica, M.~Chelle,
+  M.~Disney, J.~P. Gastellu-Etchegorry, M.~Gerboles, N.~Gobron, E.~Grau,
+  H.~Huang, A.~Kallel, H.~Kobayashi, P.~E. Lewis, W.~Qin, M.~Schlerf,
+  J.~Stuckens, and D.~Xie, 2013: {The fourth radiation transfer model
+  intercomparison (RAMI-IV): Proficiency testing of canopy reflectance models
+  with ISO-13528}. {\it Journal of Geophysical Research D: Atmospheres\/}, {\bf
+  118}, 6869--6890.
+
+\bibitem[{Widlowski et~al.(2007)Widlowski, Taberner, Pinty, Bruniquel-Pinel,
+  Disney, Fernandes, Gastellu-Etchegorry, Gobron, Kuusk, Lavergne, Leblanc,
+  Lewis, Martin, M{\~{o}}ttus, North, Qin, Robustelli, Rochdi, Ruiloba, Soler,
+  Thompson, Verhoef, Verstraete, and Xie}]{Widlowski2007}
+Widlowski, J.~L., M.~Taberner, B.~Pinty, V.~Bruniquel-Pinel, M.~Disney,
+  R.~Fernandes, J.~P. Gastellu-Etchegorry, N.~Gobron, A.~Kuusk, T.~Lavergne,
+  S.~Leblanc, P.~E. Lewis, E.~Martin, M.~M{\~{o}}ttus, P.~R.~J. North, W.~Qin,
+  M.~Robustelli, N.~Rochdi, R.~Ruiloba, C.~Soler, R.~Thompson, W.~Verhoef,
+  M.~M. Verstraete, and D.~Xie, 2007: {Third Radiation Transfer Model
+  Intercomparison (RAMI) exercise: Documenting progress in canopy reflectance
+  models}. {\it Journal of Geophysical Research: Atmospheres\/}, {\bf 112},
+  1--28, doi:10.1029/2006JD007821.
+
+\bibitem[{Yang et~al.(2001)Yang, Friedl, and Ni}]{Yang2001}
+Yang, R., M.~A. Friedl, and W.~Ni, 2001: {Parameterization of shortwave
+  radiation fluxes for nonuniform vegetation canopies in land surface models}.
+  {\it Journal of Geophysical Research\/}, {\bf 106}, 14275,
+  doi:10.1029/2001JD900180.
+
+\bibitem[{Yang and Friedl(2003)}]{yang2003}
+Yang, R.~Q. and M.~A. Friedl, 2003: {Modeling the effects of three-dimensional
+  vegetation structure on surface radiation and energy balance in boreal
+  forests}. {\it Journal of Geophysical Research-Atmospheres\/}, {\bf 108},
+  doi:10.1029/2002jd003109.
+
+\bibitem[{Yang et~al.(2010)Yang, Ni-Meister, Kiang, Moorcroft, Strahler, and
+  Oliphant}]{Yang2010}
+Yang, W., W.~Ni-Meister, N.~Y. Kiang, P.~R. Moorcroft, A.~H. Strahler, and
+  A.~Oliphant, 2010: {A clumped-foliage canopy radiative transfer model for a
+  Global Dynamic Terrestrial Ecosystem Model II: Comparison to measurements}.
+  {\it Agricultural and Forest Meteorology\/}, {\bf 150}, 895--907,
+  doi:10.1016/j.agrformet.2010.02.008.
+
+\end{thebibliography}

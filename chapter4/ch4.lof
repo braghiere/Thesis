@@ -1,0 +1,91 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A scheme of the canopy structure in the Geometric Optical Radiative Transfer model as modified from \citet {Ni1998}.}}{10}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PAR partitioning in three components: absorbance (red), reflectance (blue) and transmittance (green) for 12 different structural, geometrical, spectral and optical variables generated with the GORT or MAESPA models.}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$h_1$}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$h_2$}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\lambda $}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$b$}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$R$}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$b/R$}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {LAI}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {$\omega $}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {$\alpha _{soil}$}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {LAD}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Crown shape}}}{13}{figure.4.2}
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {SZA}}}{13}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Representation of available crown shapes in MAESPA (a - f), except for ``box'', and a conical canopy representation in MAESPA from \citet {Medlyn2004} (g).}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Round}}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Cone}}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Cylinder}}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Ellipsoid}}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Half-ellipsoid}}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Paraboloid}}}{17}{figure.4.3}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {MAESPA canopy representation}}}{17}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Leaf angle distribution function is described as the proportion of leaves ($g^{\prime }(\theta _l)$ function) for different angles.}}{19}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces ‘Local’ sensitivity analysis of 12 parameters described in Table\nobreakspace {}\ref {tab:parameters_gort} through the evaluation of the ‘Sensitivity Index’ (SI) \citep {Hoffman1983} for the terms of the radiation partitioning of PAR a) absorption, b) reflectance and c) transmittance.}}{23}{figure.4.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Absorption}}}{23}{figure.4.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reflectance}}}{23}{figure.4.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Transmittance}}}{23}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces a. One hectare (100 m x 100 m) of three different canopy densities: sparse, medium and dense. Red trees represent target trees, i.e., trees reached by radiation (left); b. 3D profile of PAR absorption (right).}}{26}{figure.4.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse Canopy}}}{26}{figure.4.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium Canopy}}}{26}{figure.4.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense Canopy}}}{26}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Fraction of absorbed photosynthetically active radiation (fAPAR) with respect to the Two-Stream scheme (black lines) for a diffuse isotropic case (dashed line) and for a direct illuminated case (dash-dotted line). The colour lines represents three different vegetation canopies in MAESPA, described in Table\nobreakspace {}\ref {tab:parameters_laisense}.}}{28}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Root-Mean-Squared-Error for Two-Stream scheme with the structure factor parameterisation and MAESPA for three canopies densities (sparse, medium and dense).}}{37}{figure.4.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {LAI = 0.5 m$^2$.m$^{-2}$}}}{37}{figure.4.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {LAI = 1.5 m$^2$.m$^{-2}$}}}{37}{figure.4.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {LAI = 2.5 m$^2$.m$^{-2}$}}}{37}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Graphical representation of the open forest canopy environments used in RAMI4PILPS. The images represent three different canopy structures \citep {Widlowski2011}.}}{40}{figure.4.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse Canopy}}}{40}{figure.4.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium Canopy}}}{40}{figure.4.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense Canopy}}}{40}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison between different ways to calculate clumping index and its impact on gap fraction.}}{41}{figure.4.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse Canopy}}}{41}{figure.4.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium Canopy}}}{41}{figure.4.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense Canopy}}}{41}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Root-Mean-Squared-Error of gap probability generated with three structural parameterisations and MAESPA for three different canopies densities (sparse, medium and dense) and the average.}}{44}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces P$_{gap}$ calculated over all possible solar zenith angles with the modified Two-stream scheme with the structure factor varying $a$ and $b$ from 0 to 1 for three canopies densities (sparse, medium and dense).}}{46}{figure.4.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{46}{figure.4.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{46}{figure.4.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{46}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Sensitivity analysis of fAPAR for a range of structure factor parameters $a$ and $b$ varying from 0.0 to 1.0, for a set of three different canopy densities and three sun zenith angles (see Table\nobreakspace {}\ref {tab:RAMI4PILPS}).}}{47}{figure.4.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{47}{figure.4.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{47}{figure.4.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{47}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) absorbed PAR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{55}{figure.4.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{55}{figure.4.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{55}{figure.4.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{55}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) reflected PAR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{56}{figure.4.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{56}{figure.4.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{56}{figure.4.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{56}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) absorbed NIR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{57}{figure.4.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{57}{figure.4.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{57}{figure.4.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{57}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Solar zenith profile of fraction of direct and diffuse (ISO) reflected NIR calculated with 6 different models. JULES$_{Structure}$ parameters were obtained for each canopy density through inversion of fAPAR and albedo PAR values together over three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$= 0.96). The obtained values of each structure factor parameters are described in Table\nobreakspace {}\ref {tab:structureparameters}.}}{58}{figure.4.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{58}{figure.4.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{58}{figure.4.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{58}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Evaluation of absorption ($+$) and reflectance ($\bigcirc $) (a) PAR and (b) NIR with the default Two-stream radiative transfer scheme in comparison with the RAMI4PILPS reference values (3D Monte Carlo reference values), for all evaluated PAR cases. The colours indicate different soil albedos: {\color {black}BLACK}, {\color {red}MEDIUM} and {\color {blue}SNOW}.}}{60}{figure.4.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PAR}}}{60}{figure.4.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NIR}}}{60}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Evaluation of absorption ($+$) and reflectance ($\bigcirc $) with the default Two-stream radiative transfer scheme in comparison with the RAMI4PILPS reference values (3D Monte Carlo reference values), for all evaluated PAR cases. The colours indicate different soil albedos: {\color {black}BLACK}, {\color {red}MEDIUM} and {\color {blue}SNOW}.}}{61}{figure.4.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PAR}}}{61}{figure.4.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {NIR}}}{61}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Graphical representation of an open forest canopy with LAI = 1.0 m$^2$.m$^{-2}$ and vegetation cover of 20\%. 160 black spheres distributed over 250 m x 250 m.}}{63}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces a. LAI normal distribution versus canopy height (m); b. LAI profile and normalised cumulative probability density (CPD) from the top to the bottom of the canopy.}}{64}{figure.4.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {LAI vs. height}}}{64}{figure.4.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CPD}}}{64}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces a. Height vertical profile and b. Layer vertical profile of fAPAR ($\approx $ 1 - P$_{gap}$) with LAI = 1.0 m$^2$.m$^{-2}$, vegetation cover of 20\% and $\alpha _{soil}$ = 0.0 for three zenith angles: 27.5$^{\circ }$, 60.0$^{\circ }$ and 83.5$^{\circ }$; and three different mathematical approaches: GORT, MAESPA, Two-Stream.}}{66}{figure.4.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Height}}}{66}{figure.4.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Layer}}}{66}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Height vertical profile of a proxy of fAPAR (1 - P$_{gap}$(1-$\alpha _{soil}$) for three canopy structures: LAI = 0.5 m$^2$.m$^{-2}$, vegetation cover of 10\%; LAI = 1.5 m$^2$.m$^{-2}$, vegetation cover of 30\%; LAI = 2.5 m$^2$.m$^{-2}$, vegetation cover of 50\%; and three zenith angles: 27.5$^{\circ }$, 60.0$^{\circ }$ and 83.5$^{\circ }$; and three different mathematical approaches: GORT, MAESPA, Two-stream scheme and Two-stream structure which is the vertical profile calculated by the structure factor parameterisation (Table\nobreakspace {}\ref {tab:structureparameters}).}}{68}{figure.4.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sparse}}}{68}{figure.4.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Medium}}}{68}{figure.4.23}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Dense}}}{68}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Vertical profile of fraction of absorbed PAR calculated with the homogeneous 1D case (continuous line) and the structure factor parameterisation (dashed line) for a Sun zenith angle of 27.5$^{\circ }$ through 20 levels (inverted y-axis to represent top of the canopy at the top of the figure), for three soil backgrounds (BLK = black, $\alpha _{soil}$ = 0.00; MED = medium, $\alpha _{soil}$ = 0.12; and SNW = snow, $\alpha _{soil}$ = 0.96), and three canopy densities (sparse = 050; medium = 150; and dense = 250).}}{69}{figure.4.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {BLK}}}{69}{figure.4.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MED}}}{69}{figure.4.24}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {SNW}}}{69}{figure.4.24}

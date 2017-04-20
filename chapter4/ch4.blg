@@ -1,0 +1,115 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: ch4.aux
+Case mismatch error between cite keys Chen1992 and chen1992
+---line 132 of file ch4.aux
+ : \citation{Chen1992
+ :                   }
+I'm skipping whatever remains of this command
+The style file: /home/qq002439/.tex/ametsoc.bst
+url is an unknown function---line 556 of file /home/qq002439/.tex/ametsoc.bst
+url is an unknown function---line 558 of file /home/qq002439/.tex/ametsoc.bst
+Database file #1: /home/mn811042/Thesis/chapter4/ch4/ch4.bib
+Repeated entry---line 937 of file /home/mn811042/Thesis/chapter4/ch4/ch4.bib
+ : @misc{Duursma2012
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1475 of file /home/mn811042/Thesis/chapter4/ch4/ch4.bib
+ : @article{Jonckheere2004
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "("
+You can't pop an empty literal stack for entry Andrieu1993
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Andrieu1993
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Bauer1991
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Bauer1991
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--empty publisher in Crick1987
+Warning--can't use both volume and number fields in Crick1987
+Warning--empty pages in Crick1987
+You can't pop an empty literal stack for entry Crick1987
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Crick1987
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Govaerts1995
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Govaerts1995
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--empty publisher in Hoffman1983
+Warning--empty pages in Hoffman1983
+You can't pop an empty literal stack for entry Hoffman1983
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Hoffman1983
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Jonckheere2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Jonckheere2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--can't use both volume and number fields in Medlyn2004
+You can't pop an empty literal stack for entry Medlyn2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Medlyn2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--can't use both volume and number fields in Monsi2005
+You can't pop an empty literal stack for entry Monsi2005
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Monsi2005
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--can't use both author and editor fields in Ni1998
+You can't pop an empty literal stack for entry Norman1979
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Norman1979
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--empty journal in Pinty2001
+You can't pop an empty literal stack for entry Sellers1997
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Sellers1997
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Wang1990
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Wang1990
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You've used 76 entries,
+            2747 wiz_defined-function locations,
+            1554 strings with 26751 characters,
+and the built_in function-call counts, 45805 in all, are:
+= -- 3954
+> -- 3492
+< -- 44
++ -- 1147
+- -- 1070
+* -- 4638
+:= -- 8043
+add.period$ -- 147
+call.type$ -- 76
+change.case$ -- 732
+chr.to.int$ -- 75
+cite$ -- 85
+duplicate$ -- 1722
+empty$ -- 2738
+format.name$ -- 1323
+if$ -- 8928
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 73
+newline$ -- 247
+num.names$ -- 310
+pop$ -- 714
+preamble$ -- 1
+purify$ -- 658
+quote$ -- 0
+skip$ -- 1031
+stack$ -- 0
+substring$ -- 2311
+swap$ -- 325
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 678
+warning$ -- 9
+while$ -- 352
+width$ -- 0
+write$ -- 874
+(There were 27 error messages)

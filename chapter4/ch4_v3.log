@@ -1,0 +1,1963 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2013.10.8)  3 APR 2017 13:17
+entering extended mode
+**ch4_v3.tex
+(./ch4_v3.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/report.cls
+Document Class: report 2004/02/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size11.clo
+File: size11.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+)
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2003/06/06 7.1 (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 518.
+\c@NAT@ctr=\count88
+)
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2003/11/30 v6.74m Hypertext links for LaTeX
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2003/11/30 v6.74m Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive and teTeX
+)
+Package hyperref Info: Hyper figures OFF on input line 1880.
+Package hyperref Info: Link nesting OFF on input line 1885.
+Package hyperref Info: Hyper index ON on input line 1888.
+Package hyperref Info: Plain pages ON on input line 1893.
+Package hyperref Info: Backreferencing OFF on input line 1900.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2004.
+LaTeX Info: Redefining \url on input line 2143.
+\Fld@menulength=\count91
+\Field@Width=\dimen104
+\Fld@charsize=\dimen105
+\Choice@toks=\toks16
+\Field@toks=\toks17
+Package hyperref Info: Hyper figures OFF on input line 2618.
+Package hyperref Info: Link nesting OFF on input line 2623.
+Package hyperref Info: Hyper index ON on input line 2626.
+Package hyperref Info: backreferencing OFF on input line 2633.
+Package hyperref Info: Link coloring OFF on input line 2638.
+\c@Item=\count92
+\c@Hfootnote=\count93
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2003/11/30 v6.74m Hyperref driver for pdfTeX
+
+(/usr/share/texmf/tex/latex/psnfss/pifont.sty
+Package: pifont 2004/09/15 PSNFSS-v9.2 Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texmf/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texmf/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\Fld@listcount=\count94
+\@outlinefile=\write3
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+)
+(/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen108
+\WF@size=\dimen109
+\c@WF@wrappedlines=\count96
+\WF@box=\box26
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen110
+)
+(/usr/share/texmf/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2003/03/28 v1.618 publication quality tables
+\heavyrulewidth=\dimen111
+\lightrulewidth=\dimen112
+\cmidrulewidth=\dimen113
+\belowrulesep=\dimen114
+\belowbottomsep=\dimen115
+\aboverulesep=\dimen116
+\abovetopsep=\dimen117
+\cmidrulesep=\dimen118
+\cmidrulekern=\dimen119
+\defaultaddspace=\dimen120
+\@cmidla=\count97
+\@cmidlb=\count98
+\@aboverulesep=\dimen121
+\@belowrulesep=\dimen122
+\@thisruleclass=\count99
+\@lastruleclass=\count100
+\@thisrulewidth=\dimen123
+)
+(/usr/share/texmf/tex/latex/subfig/subfig.sty
+Package: subfig 2004/01/28 ver: 1.2 subfig package
+
+(/usr/share/texmf/tex/latex/caption/caption.sty
+Package: caption 2006/01/12 v3.0i Customising captions (AR)
+
+(/usr/share/texmf/tex/latex/caption/caption3.sty
+Package: caption3 2006/01/12 v3.0i caption3 kernel (AR)
+\captionmargin=\dimen124
+\captionmarginx=\dimen125
+\captionwidth=\dimen126
+\captionindent=\dimen127
+\captionparindent=\dimen128
+\captionhangindent=\dimen129
+)
+Package caption Info: hyperref package v6.74m (or newer) detected on input line
+ 292.
+)
+\c@KVtest=\count101
+\sf@farskip=\skip45
+\sf@captopadj=\dimen130
+\sf@capskip=\skip46
+\sf@nearskip=\skip47
+\c@subfigure=\count102
+\c@subfigure@save=\count103
+\c@lofdepth=\count104
+\c@subtable=\count105
+\c@subtable@save=\count106
+\c@lotdepth=\count107
+\sf@top=\skip48
+\sf@bottom=\skip49
+)
+(/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 2003/12/17 v2.4a Tabular extension package (FMi)
+\col@sep=\dimen131
+\extrarowheight=\dimen132
+\NC@list=\toks19
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+(/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count108
+\calc@Bcount=\count109
+\calc@Adimen=\dimen133
+\calc@Bdimen=\dimen134
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count110
+)
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
+)
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+
+(/usr/share/texmf/tex/latex/graphics/color.cfg
+File: color.cfg 2005/02/03 v1.3 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 125.
+)
+(/usr/share/texmf/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2004/02/13 v1.1h fixes to LaTeX
+LaTeX Info: Redefining \@fnsymbol on input line 371.
+LaTeX Info: Redefining \em on input line 403.
+)
+
+! LaTeX Error: Option clash for package natbib.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage
+                {xr}                 % reference anothe chapter
+The package natbib has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [round]
+Adding the global options:
+  ,round
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/usr/share/texmf/tex/latex/tools/xr.sty
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
+)
+(/usr/share/texmf/tex/latex/appendix/appendix.sty
+Package: appendix 2002/08/06 v1.2 extra appendix facilities
+\c@@pps=\count111
+\c@@ppsavesec=\count112
+\c@@ppsaveapp=\count113
+)
+(/usr/share/texmf/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count114
+\float@exts=\toks20
+\float@box=\box27
+\@float@everytoks=\toks21
+\@floatcapt=\box28
+)
+(/usr/share/texmf/tex/latex/paralist/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip63
+\plpartopsep=\skip64
+\plitemsep=\skip65
+\plparsep=\skip66
+\pl@lab=\toks22
+)
+(/usr/share/texmf/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/usr/share/texmf/tex/latex/rotating/rotating.sty
+Package: rotating 1997/09/26 v2.13 Rotation package
+
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count115
+\rot@float@box=\box29
+)
+(/usr/share/texmf/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box30
+)
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip67
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks23
+\ex@=\dimen135
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen136
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count116
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count117
+\leftroot@=\count118
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count119
+\DOTSCASE@=\count120
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count121
+\c@MaxMatrixCols=\count122
+\dotsspace@=\muskip11
+\c@parentequation=\count123
+\dspbrk@lvl=\count124
+\tag@help=\toks24
+\row@=\count125
+\column@=\count126
+\maxfields@=\count127
+\andhelp@=\toks25
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks26
+\multlinegap=\skip68
+\multlinetaggap=\skip69
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf/tex/latex/base/textcomp.sty
+Package: textcomp 2004/02/22 v1.99f Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+\rulewidth=\skip70
+ (./ch4_v3.aux
+
+LaTeX Warning: Label `tab:niclumpparameters' multiply defined.
+
+)
+\openout1 = `ch4_v3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
+ (/usr/share/texmf/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 67.
+Package hyperref Info: Link coloring OFF on input line 67.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2003/12/03 v2.21 Cross-referencing by name of section
+\c@section@level=\count128
+)
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+ (./ch4_v3.out) (./ch4_v3.out)
+\openout3 = `ch4_v3.out'.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count129
+\scratchcounter=\count130
+\scratchtoks=\toks28
+\scratchdimen=\dimen144
+\scratchskip=\skip71
+\scratchmuskip=\muskip12
+\scratchbox=\box33
+\scratchread=\read1
+\scratchwrite=\write4
+\zeropoint=\dimen145
+\onepoint=\dimen146
+\onebasepoint=\dimen147
+\minusone=\count131
+\thousandpoint=\dimen148
+\onerealpoint=\dimen149
+\emptytoks=\toks29
+\nextbox=\box34
+\nextdepth=\dimen150
+\everyline=\toks30
+\!!counta=\count132
+\!!countb=\count133
+\recursecounter=\count134
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen151
+\MPnumerator=\count138
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texmf/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
+
+(/usr/share/texmf/tex/latex/ms/everysel.sty
+Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 125.
+)
+\CenteringLeftskip=\skip72
+\RaggedLeftLeftskip=\skip73
+\RaggedRightLeftskip=\skip74
+\CenteringRightskip=\skip75
+\RaggedLeftRightskip=\skip76
+\RaggedRightRightskip=\skip77
+\CenteringParfillskip=\skip78
+\RaggedLeftParfillskip=\skip79
+\RaggedRightParfillskip=\skip80
+\JustifyingParfillskip=\skip81
+\CenteringParindent=\skip82
+\RaggedLeftParindent=\skip83
+\RaggedRightParindent=\skip84
+\JustifyingParindent=\skip85
+)
+Package caption Info: float package v1.3 (or newer) detected on input line 67.
+Package caption Info: rotating package v2.0 (or newer) detected on input line 6
+7.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 67.
+Package gensymb Info: Math companion symbols declared on input line 67.
+LaTeX Info: Redefining \degree on input line 67.
+LaTeX Info: Redefining \celsius on input line 67.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 67.
+LaTeX Info: Redefining \ohm on input line 67.
+Package gensymb Info: Using \textohm for \ohm on input line 67.
+Package gensymb Info: Using \textmu for \micro on input line 67.
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+) [1
+
+{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Chapter 4.
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.81 
+      [1
+
+]
+Overfull \hbox (6.92966pt too wide) in paragraph at lines 84--84
+[]\OT1/cmr/bx/n/14.4 Can LAI alone take into ac-count veg-e-ta-tion canopy stru
+c-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+
+LaTeX Warning: Reference `tab:RAMI4PILPS' on page 3 undefined on input line 101
+.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+</home/mn811042/Thesis/chapter4/figures/Sec_4.1/fapar_test.png, id=156, 2168.1p
+t x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/figures/Sec_4.1/fapar_test.png Graphic fil
+e (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/Sec_4.1/fapar_test.png>
+</home/mn811042/Thesis/chapter4/figures/Sec_4.1/albpar_test.png, id=157, 2168.1
+pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/figures/Sec_4.1/albpar_test.png Graphic fi
+le (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/Sec_4.1/albpar_test.png>
+Overfull \hbox (15.65pt too wide) in paragraph at lines 106--110
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.125 
+       </home/mn811042/Thesis/chapter4/figures/Sec_4.1/fapar_test.png> </home/m
+n811042/Thesis/chapter4/figures/Sec_4.1/albpar_test.png>]
+Overfull \hbox (8.98647pt too wide) in paragraph at lines 168--168
+[]\OT1/cmr/bx/n/14.4 Evaluating veg-e-ta-tion struc-tural ef-fects in the two-s
+tream
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5
+! pdfTeX warning (ext4): destination with the same identifier (name{table.4.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.171 
+      ]
+
+LaTeX Warning: Reference `tab:RAMI4PILPS' on page 6 undefined on input line 192
+.
+
+
+LaTeX Warning: Reference `fig:rami' on page 6 undefined on input line 192.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8
+! pdfTeX warning (ext4): destination with the same identifier (name{table.4.2})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.292 \end{equation}
+                    ]
+
+LaTeX Warning: Reference `tab:RAMI4PILPS' on page 9 undefined on input line 295
+.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9
+! pdfTeX warning (ext4): destination with the same identifier (name{table.4.3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.331  \begin{equation}
+                       ]
+! Missing { inserted.
+<to be read again> 
+                   $
+l.348 ...ination of $a$\textquotesingle s and $b^$
+                                                  \textquotesingle s, and  $...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.348 ...ination of $a$\textquotesingle s and $b^$
+                                                  \textquotesingle s, and  $...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA_050.
+png, id=322, 655.248pt x 561.297pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA
+_050.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA_
+050.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA_150.
+png, id=323, 655.248pt x 561.297pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA
+_150.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA_
+150.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA_250.
+png, id=324, 655.248pt x 561.297pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA
+_250.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAESPA_
+250.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 356--361
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.388 
+       </home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2_MAES
+PA_050.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULESRT_v2
+_MAESPA_150.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/RMSE_JULES
+RT_v2_MAESPA_250.png>]
+
+LaTeX Warning: Reference `tab:RAMI4PILPS' on page 12 undefined on input line 39
+7.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
+! pdfTeX warning (ext4): destination with the same identifier (name{table.4.4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.422 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13
+! pdfTeX warning (ext4): destination with the same identifier (name{table.4.5})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.433 \end{equation}
+                    ]
+</home/mn811042/Thesis/chapter4/figures/CI_comparison_050_v2.png, id=421, 582.6
+7688pt x 448.67625pt>
+File: /home/mn811042/Thesis/chapter4/figures/CI_comparison_050_v2.png Graphic f
+ile (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/CI_comparison_050_v2.png>
+</home/mn811042/Thesis/chapter4/figures/pgap_comparison_050.png, id=422, 582.67
+688pt x 448.67625pt>
+File: /home/mn811042/Thesis/chapter4/figures/pgap_comparison_050.png Graphic fi
+le (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/pgap_comparison_050.png>
+Overfull \hbox (15.65pt too wide) in paragraph at lines 444--448
+ [][] 
+ []
+
+
+</home/mn811042/Thesis/chapter4/figures/CI_comparison_150_v2.png, id=423, 582.6
+7688pt x 449.42906pt>
+File: /home/mn811042/Thesis/chapter4/figures/CI_comparison_150_v2.png Graphic f
+ile (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/CI_comparison_150_v2.png>
+</home/mn811042/Thesis/chapter4/figures/pgap_comparison_150.png, id=424, 582.67
+688pt x 449.42906pt>
+File: /home/mn811042/Thesis/chapter4/figures/pgap_comparison_150.png Graphic fi
+le (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/pgap_comparison_150.png>
+Overfull \hbox (15.65pt too wide) in paragraph at lines 449--453
+ [][] 
+ []
+
+
+</home/mn811042/Thesis/chapter4/figures/CI_comparison_250_v2.png, id=425, 582.6
+7688pt x 449.42906pt>
+File: /home/mn811042/Thesis/chapter4/figures/CI_comparison_250_v2.png Graphic f
+ile (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/CI_comparison_250_v2.png>
+</home/mn811042/Thesis/chapter4/figures/pgap_comparison_250.png, id=426, 582.67
+688pt x 449.42906pt>
+File: /home/mn811042/Thesis/chapter4/figures/pgap_comparison_250.png Graphic fi
+le (type png)
+
+<use /home/mn811042/Thesis/chapter4/figures/pgap_comparison_250.png>
+Overfull \hbox (15.65pt too wide) in paragraph at lines 454--458
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.470 
+       </home/mn811042/Thesis/chapter4/figures/CI_comparison_050_v2.png> </home
+/mn811042/Thesis/chapter4/figures/pgap_comparison_050.png> </home/mn811042/Thes
+is/chapter4/figures/CI_comparison_150_v2.png> </home/mn811042/Thesis/chapter4/f
+igures/pgap_comparison_150.png> </home/mn811042/Thesis/chapter4/figures/CI_comp
+arison_250_v2.png> </home/mn811042/Thesis/chapter4/figures/pgap_comparison_250.
+png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+! Undefined control sequence.
+l.481 ...n the average, Ni-Meister\textsinglequote
+                                                   s clumping index fairly a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+</home/mn811042/Thesis/chapter4/figures/CI_rmse_v2.png, id=479, 791.95876pt x 4
+85.56406pt>
+File: /home/mn811042/Thesis/chapter4/figures/CI_rmse_v2.png Graphic file (type 
+png)
+ <use /home/mn811042/Thesis/chapter4/figures/CI_rmse_v2.png>
+Overfull \hbox (8.98647pt too wide) in paragraph at lines 498--498
+[]\OT1/cmr/bx/n/14.4 Evaluating veg-e-ta-tion struc-tural ef-fects in the two-s
+tream
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.505 
+       </home/mn811042/Thesis/chapter4/figures/CI_rmse_v2.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_050_BLK.png, id=544, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_050_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_050_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_050_MED.png, id=545, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_050_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_050_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_050_SNW.png, id=546, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_050_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_050_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_150_BLK.png, id=547, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_150_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_150_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_150_MED.png, id=548, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_150_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_150_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_150_SNW.png, id=549, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_150_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_150_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_250_BLK.png, id=550, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_250_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_250_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_250_MED.png, id=551, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_250_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_250_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fap
+ar_250_SNW.png, id=552, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fapar_250_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fapar_250_SNW.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 538--563
+ [][] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 538--563
+ [] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 538--563
+ [] 
+ []
+
+
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_050_BLK.png, id=553, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_050_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_050_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_050_MED.png, id=554, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_050_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_050_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_050_SNW.png, id=555, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_050_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_050_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_150_BLK.png, id=556, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_150_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_150_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_150_MED.png, id=557, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_150_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_150_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_150_SNW.png, id=558, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_150_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_150_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_250_BLK.png, id=559, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_250_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_250_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_250_MED.png, id=560, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_250_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_250_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fan
+ir_250_SNW.png, id=561, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/fanir_250_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/fanir_250_SNW.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 585--610
+ [][] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 585--610
+ [] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 585--610
+ [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.619 
+       </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figu
+res/fapar_050_BLK.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/data
+_comparison/figures/fapar_050_MED.png> </home/mn811042/src/julesRT_struct_2/jul
+esRT_struct/data_comparison/figures/fapar_050_SNW.png> </home/mn811042/src/jule
+sRT_struct_2/julesRT_struct/data_comparison/figures/fapar_150_BLK.png> </home/m
+n811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fapar_150_M
+ED.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/fig
+ures/fapar_150_SNW.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/dat
+a_comparison/figures/fapar_250_BLK.png> </home/mn811042/src/julesRT_struct_2/ju
+lesRT_struct/data_comparison/figures/fapar_250_MED.png> </home/mn811042/src/jul
+esRT_struct_2/julesRT_struct/data_comparison/figures/fapar_250_SNW.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.619 
+       </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figu
+res/fanir_050_BLK.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/data
+_comparison/figures/fanir_050_MED.png> </home/mn811042/src/julesRT_struct_2/jul
+esRT_struct/data_comparison/figures/fanir_050_SNW.png> </home/mn811042/src/jule
+sRT_struct_2/julesRT_struct/data_comparison/figures/fanir_150_BLK.png> </home/m
+n811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/fanir_150_M
+ED.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/fig
+ures/fanir_150_SNW.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/dat
+a_comparison/figures/fanir_250_BLK.png> </home/mn811042/src/julesRT_struct_2/ju
+lesRT_struct/data_comparison/figures/fanir_250_MED.png> </home/mn811042/src/jul
+esRT_struct_2/julesRT_struct/data_comparison/figures/fanir_250_SNW.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_050_BLK.png, id=603, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_050_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_050_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_050_MED.png, id=604, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_050_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_050_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_050_SNW.png, id=605, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_050_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_050_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_150_BLK.png, id=606, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_150_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_150_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_150_MED.png, id=607, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_150_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_150_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_150_SNW.png, id=608, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_150_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_150_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_250_BLK.png, id=609, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_250_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_250_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_250_MED.png, id=610, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_250_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_250_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+par_250_SNW.png, id=611, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albpar_250_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albpar_250_SNW.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 659--683
+ [][] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 659--683
+ [] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 659--683
+ [] 
+ []
+
+
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_050_BLK.png, id=612, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_050_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_050_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_050_MED.png, id=613, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_050_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_050_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_050_SNW.png, id=614, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_050_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_050_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_150_BLK.png, id=615, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_150_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_150_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_150_MED.png, id=616, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_150_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_150_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_150_SNW.png, id=617, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_150_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_150_SNW.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_250_BLK.png, id=618, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_250_BLK.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_250_BLK.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_250_MED.png, id=619, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_250_MED.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_250_MED.png>
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/alb
+nir_250_SNW.png, id=620, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figure
+s/albnir_250_SNW.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures
+/albnir_250_SNW.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 708--733
+ [][] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 708--733
+ [] 
+ []
+
+
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 708--733
+ [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.742 
+       </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figu
+res/albpar_050_BLK.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/dat
+a_comparison/figures/albpar_050_MED.png> </home/mn811042/src/julesRT_struct_2/j
+ulesRT_struct/data_comparison/figures/albpar_050_SNW.png> </home/mn811042/src/j
+ulesRT_struct_2/julesRT_struct/data_comparison/figures/albpar_150_BLK.png> </ho
+me/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/albpar_
+150_MED.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_compariso
+n/figures/albpar_150_SNW.png> </home/mn811042/src/julesRT_struct_2/julesRT_stru
+ct/data_comparison/figures/albpar_250_BLK.png> </home/mn811042/src/julesRT_stru
+ct_2/julesRT_struct/data_comparison/figures/albpar_250_MED.png> </home/mn811042
+/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/albpar_250_SNW.png
+>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.742 
+       </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figu
+res/albnir_050_BLK.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/dat
+a_comparison/figures/albnir_050_MED.png> </home/mn811042/src/julesRT_struct_2/j
+ulesRT_struct/data_comparison/figures/albnir_050_SNW.png> </home/mn811042/src/j
+ulesRT_struct_2/julesRT_struct/data_comparison/figures/albnir_150_BLK.png> </ho
+me/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/albnir_
+150_MED.png> </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_compariso
+n/figures/albnir_150_SNW.png> </home/mn811042/src/julesRT_struct_2/julesRT_stru
+ct/data_comparison/figures/albnir_250_BLK.png> </home/mn811042/src/julesRT_stru
+ct_2/julesRT_struct/data_comparison/figures/albnir_250_MED.png> </home/mn811042
+/src/julesRT_struct_2/julesRT_struct/data_comparison/figures/albnir_250_SNW.png
+>]
+! Undefined control sequence.
+l.749 ...anopy, and that the Pinty\textsinglequote
+                                                   s structure factor improv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+! Undefined control sequence.
+l.753 ...mance of Pinty and Nilson\textsinglequote
+                                                   s clumping indices for al...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+</home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/summary_4pa
+nel_taylordiagram.png, id=678, 1589.94pt x 1156.32pt>
+File: /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/summar
+y_4panel_taylordiagram.png Graphic file (type png)
+
+<use /home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/summary
+_4panel_taylordiagram.png>
+Overfull \hbox (8.98647pt too wide) in paragraph at lines 768--768
+[]\OT1/cmr/bx/n/14.4 Evaluating veg-e-ta-tion struc-tural ef-fects in the two-s
+tream
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.780 
+       </home/mn811042/src/julesRT_struct_2/julesRT_struct/data_comparison/summ
+ary_4panel_taylordiagram.png>]
+
+LaTeX Warning: Reference `tab:RAMI4PILPS' on page 32 undefined on input line 79
+3.
+
+
+</home/mn811042/Thesis/chapter4/experiment3/lai_vertical_profile.png, id=693, 2
+168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/lai_vertical_profile.png Graph
+ic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/lai_vertical_profile.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.806 \end{equation}
+                     </home/mn811042/Thesis/chapter4/experiment3/lai_vertical_p
+rofile.png>]
+Overfull \hbox (2.05681pt too wide) in paragraph at lines 806--808
+\OT1/cmr/m/n/10.95 where P$[]$($\OML/cmm/m/it/10.95 ^^R$\OT1/cmr/m/n/10.95 ) is
+ the di-rect trans-mis-siv-ity, fAPAR($\OML/cmm/m/it/10.95 ^^R$\OT1/cmr/m/n/10.
+95 ) is the frac-tion ab-sorbed PAR, $\OML/cmm/m/it/10.95 []$\OT1/cmr/m/n/10.9
+5 ($\OML/cmm/m/it/10.95 ^^R$\OT1/cmr/m/n/10.95 )
+ []
+
+
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_050_012_27.png, id=702, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_050_012_27.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_050_012_27.png>
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_050_012_60.png, id=703, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_050_012_60.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_050_012_60.png>
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_050_012_83.png, id=704, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_050_012_83.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_050_012_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 819--827
+ [][] 
+ []
+
+
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_150_012_27.png, id=705, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_150_012_27.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_150_012_27.png>
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_150_012_60.png, id=706, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_150_012_60.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_150_012_60.png>
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_150_012_83.png, id=707, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_150_012_83.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_150_012_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 828--836
+ [][] 
+ []
+
+
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_250_012_27.png, id=708, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_250_012_27.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_250_012_27.png>
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_250_012_60.png, id=709, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_250_012_60.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_250_012_60.png>
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_250_012_83.png, id=710, 2168.1pt x 2023.56pt>
+File: /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_
+height_250_012_83.png Graphic file (type png)
+
+<use /home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_h
+eight_250_012_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 837--845
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.850 
+       </home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/tran
+s_height_050_012_27.png> </home/mn811042/Thesis/chapter4/experiment3/data_compa
+rison/figures/trans_height_050_012_60.png> </home/mn811042/Thesis/chapter4/expe
+riment3/data_comparison/figures/trans_height_050_012_83.png> </home/mn811042/Th
+esis/chapter4/experiment3/data_comparison/figures/trans_height_150_012_27.png> 
+</home/mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_heigh
+t_150_012_60.png> </home/mn811042/Thesis/chapter4/experiment3/data_comparison/f
+igures/trans_height_150_012_83.png> </home/mn811042/Thesis/chapter4/experiment3
+/data_comparison/figures/trans_height_250_012_27.png> </home/mn811042/Thesis/ch
+apter4/experiment3/data_comparison/figures/trans_height_250_012_60.png> </home/
+mn811042/Thesis/chapter4/experiment3/data_comparison/figures/trans_height_250_0
+12_83.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_09
+6_27.png, id=737, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_096_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_096_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_09
+6_60.png, id=738, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_096_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_096_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_09
+6_83.png, id=739, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_096_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_096_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 871--876
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_09
+6_27.png, id=740, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_096_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_096_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_09
+6_60.png, id=741, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_096_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_096_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_09
+6_83.png, id=742, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_096_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_096_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 877--882
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_09
+6_27.png, id=743, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_096_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_096_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_09
+6_60.png, id=744, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_096_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_096_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_09
+6_83.png, id=745, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_096_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_096_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 883--888
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.898 
+       </home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar
+_050_096_27.png> </home/mn811042/src/pySellers/structure_factor_sensitivity/fig
+ures/fapar_050_096_60.png> </home/mn811042/src/pySellers/structure_factor_sensi
+tivity/figures/fapar_050_096_83.png> </home/mn811042/src/pySellers/structure_fa
+ctor_sensitivity/figures/fapar_150_096_27.png> </home/mn811042/src/pySellers/st
+ructure_factor_sensitivity/figures/fapar_150_096_60.png> </home/mn811042/src/py
+Sellers/structure_factor_sensitivity/figures/fapar_150_096_83.png> </home/mn811
+042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_096_27.png> </
+home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_096_
+60.png> </home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapa
+r_250_096_83.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39] (./ch4_v3.bbl
+! Extra }, or forgotten \endgroup.
+l.20 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[40
+
+]
+! Extra }, or forgotten \endgroup.
+l.80 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+l.93 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[41]
+! Extra }, or forgotten \endgroup.
+l.155 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[42] [43]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+
+! Extra }, or forgotten \endgroup.
+l.282 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[44]) [45]
+Appendix A.
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_00
+0_27.png, id=829, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_000_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_000_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_00
+0_60.png, id=830, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_000_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_000_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_00
+0_83.png, id=831, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_000_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_000_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 938--943
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_00
+0_27.png, id=832, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_000_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_000_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_00
+0_60.png, id=833, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_000_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_000_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_00
+0_83.png, id=834, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_000_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_000_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 944--949
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_00
+0_27.png, id=835, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_000_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_000_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_00
+0_60.png, id=836, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_000_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_000_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_00
+0_83.png, id=837, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_000_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_000_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 950--955
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_01
+2_27.png, id=838, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_012_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_012_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_01
+2_60.png, id=839, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_012_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_012_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_050_01
+2_83.png, id=840, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_0
+50_012_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_05
+0_012_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 961--966
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_01
+2_27.png, id=841, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_012_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_012_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_01
+2_60.png, id=842, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_012_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_012_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_01
+2_83.png, id=843, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_1
+50_012_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_15
+0_012_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 967--972
+ [][] 
+ []
+
+
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_01
+2_27.png, id=844, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_012_27.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_012_27.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_01
+2_60.png, id=845, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_012_60.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_012_60.png>
+</home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_01
+2_83.png, id=846, 2168.1pt x 2023.56pt>
+File: /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_2
+50_012_83.png Graphic file (type png)
+
+<use /home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_25
+0_012_83.png>
+Overfull \hbox (15.03442pt too wide) in paragraph at lines 973--978
+ [][] 
+ []
+
+
+! LaTeX Error: \begin{appendices} on input line 933 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.982 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[46
+
+] [47
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.1.A.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.982 \end{document}
+                     </home/mn811042/src/pySellers/structure_factor_sensitivity
+/figures/fapar_050_000_27.png> </home/mn811042/src/pySellers/structure_factor_s
+ensitivity/figures/fapar_050_000_60.png> </home/mn811042/src/pySellers/structur
+e_factor_sensitivity/figures/fapar_050_000_83.png> </home/mn811042/src/pySeller
+s/structure_factor_sensitivity/figures/fapar_150_000_27.png> </home/mn811042/sr
+c/pySellers/structure_factor_sensitivity/figures/fapar_150_000_60.png> </home/m
+n811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_000_83.png
+> </home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_
+000_27.png> </home/mn811042/src/pySellers/structure_factor_sensitivity/figures/
+fapar_250_000_60.png> </home/mn811042/src/pySellers/structure_factor_sensitivit
+y/figures/fapar_250_000_83.png>] [48
+! pdfTeX warning (ext4): destination with the same identifier (name{figure.1.A.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.982 \end{document}
+                     </home/mn811042/src/pySellers/structure_factor_sensitivity
+/figures/fapar_050_012_27.png> </home/mn811042/src/pySellers/structure_factor_s
+ensitivity/figures/fapar_050_012_60.png> </home/mn811042/src/pySellers/structur
+e_factor_sensitivity/figures/fapar_050_012_83.png> </home/mn811042/src/pySeller
+s/structure_factor_sensitivity/figures/fapar_150_012_27.png> </home/mn811042/sr
+c/pySellers/structure_factor_sensitivity/figures/fapar_150_012_60.png> </home/m
+n811042/src/pySellers/structure_factor_sensitivity/figures/fapar_150_012_83.png
+> </home/mn811042/src/pySellers/structure_factor_sensitivity/figures/fapar_250_
+012_27.png> </home/mn811042/src/pySellers/structure_factor_sensitivity/figures/
+fapar_250_012_60.png> </home/mn811042/src/pySellers/structure_factor_sensitivit
+y/figures/fapar_250_012_83.png>] (./ch4_v3.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 933 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 6392 strings out of 94500
+ 113838 string characters out of 1176766
+ 144721 words of memory out of 1000000
+ 9144 multiletter control sequences out of 10000+50000
+ 17839 words of font info for 65 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 41i,17n,45p,1531b,449s stack positions out of 1500i,500n,5000p,200000b,5000s
+PDF statistics:
+ 867 PDF objects out of 300000
+ 187 named destinations out of 131072
+ 605 words of extra memory for PDF output out of 65536
+</usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share
+/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/c
+m/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb> </var/lib/texmf
+/pk/ljfour/jknappen/tc/tcrm1095.600pk></usr/share/texmf/fonts/type1/bluesky/cm/
+cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf
+/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr
+9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fon
+ts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb>
+Output written on ch4_v3.pdf (49 pages, 23953750 bytes).

@@ -1,0 +1,107 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: ch4_v2.aux
+Case mismatch error between cite keys Pinty2006 and pinty2006
+---line 182 of file ch4_v2.aux
+ : \citation{Pinty2006
+ :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Pinty2006 and pinty2006
+---line 184 of file ch4_v2.aux
+ : \citation{Pinty2006
+ :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Pinty2006 and pinty2006
+---line 205 of file ch4_v2.aux
+ : \citation{Pinty2006
+ :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Pinty2006 and pinty2006
+---line 274 of file ch4_v2.aux
+ : \citation{Pinty2006
+ :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Loew2014 and loew2014
+---line 315 of file ch4_v2.aux
+ : \citation{Loew2014
+ :                   }
+I'm skipping whatever remains of this command
+The style file: /home/qq002439/.tex/ametsoc.bst
+url is an unknown function---line 556 of file /home/qq002439/.tex/ametsoc.bst
+url is an unknown function---line 558 of file /home/qq002439/.tex/ametsoc.bst
+Database file #1: /home/mn811042/Thesis/chapter4/ch4/ch4_v2.bib
+Repeated entry---line 937 of file /home/mn811042/Thesis/chapter4/ch4/ch4_v2.bib
+ : @misc{Duursma2012
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1475 of file /home/mn811042/Thesis/chapter4/ch4/ch4_v2.bib
+ : @article{Jonckheere2004
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3556 of file /home/mn811042/Thesis/chapter4/ch4/ch4_v2.bib
+ : @article{Anav2015
+ :                  ,
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry Andrieu1993
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Andrieu1993
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Govaerts1995
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Govaerts1995
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Jonckheere2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Jonckheere2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--can't use both volume and number fields in Medlyn2004
+You can't pop an empty literal stack for entry Medlyn2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Medlyn2004
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+Warning--empty journal in Pinty2001
+You can't pop an empty literal stack for entry Wang1990
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You can't pop an empty literal stack for entry Wang1990
+while executing---line 1732 of file /home/qq002439/.tex/ametsoc.bst
+You've used 52 entries,
+            2747 wiz_defined-function locations,
+            1378 strings with 21606 characters,
+and the built_in function-call counts, 32536 in all, are:
+= -- 2775
+> -- 2609
+< -- 25
++ -- 857
+- -- 805
+* -- 3344
+:= -- 5739
+add.period$ -- 101
+call.type$ -- 52
+change.case$ -- 526
+chr.to.int$ -- 52
+cite$ -- 54
+duplicate$ -- 1172
+empty$ -- 1867
+format.name$ -- 976
+if$ -- 6304
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 50
+newline$ -- 169
+num.names$ -- 210
+pop$ -- 507
+preamble$ -- 1
+purify$ -- 475
+quote$ -- 0
+skip$ -- 689
+stack$ -- 0
+substring$ -- 1653
+swap$ -- 214
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 465
+warning$ -- 2
+while$ -- 241
+width$ -- 0
+write$ -- 598
+(There were 20 error messages)
