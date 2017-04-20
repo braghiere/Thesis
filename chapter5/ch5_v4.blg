@@ -1,0 +1,96 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: ch5_v4.aux
+The style file: /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 556 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 558 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+Database file #1: /home/mn811042/Thesis/chapter5/ch5_v4.bib
+Repeated entry---line 3701 of file /home/mn811042/Thesis/chapter5/ch5_v4.bib
+ : @misc{Walter2012
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3812 of file /home/mn811042/Thesis/chapter5/ch5_v4.bib
+ : @article{Benham2012
+ :                    ,
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry Akaike1973
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Akaike1973
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Baldocchi2006
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Baldocchi2006
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Black1991
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Black1991
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Duursma2015
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Duursma2015
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry LI-COR1992
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry LI-COR1992
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999b
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999b
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999a
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999a
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Sellers1997
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Sellers1997
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Spencer1999
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Spencer1999
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Walter2012
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Walter2012
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You've used 33 entries,
+            2747 wiz_defined-function locations,
+            1244 strings with 16085 characters,
+and the built_in function-call counts, 17622 in all, are:
+= -- 1558
+> -- 1254
+< -- 13
++ -- 413
+- -- 379
+* -- 1735
+:= -- 3149
+add.period$ -- 58
+call.type$ -- 33
+change.case$ -- 292
+chr.to.int$ -- 32
+cite$ -- 33
+duplicate$ -- 696
+empty$ -- 1071
+format.name$ -- 472
+if$ -- 3416
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 24
+newline$ -- 117
+num.names$ -- 134
+pop$ -- 268
+preamble$ -- 1
+purify$ -- 258
+quote$ -- 0
+skip$ -- 421
+stack$ -- 0
+substring$ -- 865
+swap$ -- 112
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 297
+warning$ -- 0
+while$ -- 140
+width$ -- 0
+write$ -- 378
+(There were 24 error messages)

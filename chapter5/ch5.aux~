@@ -1,0 +1,55 @@
+\relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Deriving vegetation architectural parameters from observed data}{1}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{1}{section.5.1}}
+\newlabel{introduction}{{5.1}{1}{Introduction\relax }{section.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Addressing gap fraction}{1}{section.5.2}}
+\newlabel{section:hemiphotos}{{5.2}{1}{Addressing gap fraction\relax }{section.5.2}{}}
+\citation{Baldocchi2004}
+\citation{Chen2008}
+\citation{Baldocchi2004}
+\citation{Ma2007}
+\citation{Chen2008}
+\citation{Ryu2010}
+\citation{Kim2006}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Tonzi Ranch}{2}{subsection.5.2.1}}
+\citation{Walter2012}
+\citation{Ridler1978}
+\citation{Ryu2010}
+\citation{Ryu2010}
+\citation{Frazer1997}
+\citation{Ryu2010}
+\citation{Ryu2010}
+\newlabel{equation:rmseab}{{5.1}{4}{Tonzi Ranch\relax }{equation.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}BOREAS}{4}{subsection.5.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces a. Hemispherical photograph taken on the 6$^{th}$ (sunset) of August, 2008, at the Tonzi Ranch \citep  {Ryu2010}; b. Digital Hemispherical Photograph in the blue channel after threshold = 195 and classified into a binary 8-bits image (black and white); c. gap fraction (P$_{gap}$($\phi $,$\theta $)), with 108 segments (9 zenith angles x 12 azimuth angles). Note the inversion of E and W; d. gap fraction (P${_gap}$($\theta $)) averaged over the azimuth ($\phi $) for each zenith angle. }}{5}{figure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Original DHP}}}{5}{figure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Thresholded DHP}}}{5}{figure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {P$_{gap}$($\phi $,$\theta $)}}}{5}{figure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {P$_{gap}$($\theta $)}}}{5}{figure.5.1}}
+\newlabel{f:bluepic}{{5.1}{5}{Tonzi Ranch\relax }{figure.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces a. Hemispherical photograph taken on the 6$^{th}$ (sunset) of August, 2008, at the Tonzi Ranch \citep  {Ryu2010}; b. Digital Hemispherical Photograph in the blue channel after threshold = 195 and classified into a binary 8-bits image (black and white); c. gap fraction (P$_{gap}$($\phi $,$\theta $)), with 108 segments (9 zenith angles x 12 azimuth angles). Note the inversion of E and W; d. gap fraction (P${_gap}$($\theta $)) averaged over the azimuth ($\phi $) for each zenith angle. }}{6}{figure.5.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Original DHP}}}{6}{figure.5.2}}
+\newlabel{f:bluepic}{{5.2}{6}{Tonzi Ranch\relax }{figure.5.2}{}}
+\bibstyle{/home/mn811042/Thesis/format_files/ametsoc}
+\bibdata{/home/mn811042/Thesis/chapter5/ch5}
+\bibcite{Baldocchi2004}{{1}{2004}{{Baldocchi et~al.}}{{Baldocchi, Xu, and Kiang}}}
+\bibcite{Chen2008}{{2}{2008}{{Chen et~al.}}{{Chen, Baldocchi, Gong, and Dawson}}}
+\bibcite{Kim2006}{{3}{2006}{{Kim et~al.}}{{Kim, Guo, Baldocchi, Leclerc, Xu, and Schmid}}}
+\bibcite{Ma2007}{{4}{2007}{{Ma et~al.}}{{Ma, Baldocchi, Xu, and Hehn}}}
+\bibcite{Ridler1978}{{5}{1978}{{Ridler and Calvard}}{{}}}
+\bibcite{Ryu2010}{{6}{2010}{{Ryu et~al.}}{{Ryu, Sonnentag, Nilson, Vargas, Kobayashi, Wenk, and Baldocchi}}}
+\bibcite{Walter2012}{{7}{2012}{{Walter}}{{}}}

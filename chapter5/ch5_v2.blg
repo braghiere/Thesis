@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: ch5_v2.aux
+The style file: /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 556 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 558 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+Database file #1: /home/mn811042/Thesis/chapter5/ch5_v2.bib
+Warning--I didn't find a database entry for "sellers1997;chen1997"
+Warning--I didn't find a database entry for "dekauwe2011;thomas2009"
+Warning--I didn't find a database entry for "dekauwe2011;law2001"
+You've used 5 entries,
+            2747 wiz_defined-function locations,
+            1039 strings with 10139 characters,
+and the built_in function-call counts, 3266 in all, are:
+= -- 282
+> -- 254
+< -- 1
++ -- 83
+- -- 78
+* -- 345
+:= -- 572
+add.period$ -- 10
+call.type$ -- 5
+change.case$ -- 51
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 115
+empty$ -- 188
+format.name$ -- 95
+if$ -- 627
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 5
+newline$ -- 23
+num.names$ -- 20
+pop$ -- 48
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 63
+stack$ -- 0
+substring$ -- 186
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 45
+warning$ -- 0
+while$ -- 25
+width$ -- 0
+write$ -- 65
+(There were 2 error messages)

@@ -1,0 +1,53 @@
+\begin{thebibliography}{7}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{doi:}\fi
+
+\bibitem[{Baldocchi et~al.(2004)Baldocchi, Xu, and Kiang}]{Baldocchi2004}
+Baldocchi, D.~D., L.~Xu, and N.~Kiang, 2004: {How plant functional-type,
+  weather, seasonal drought, and soil physical properties alter water and
+  energy fluxes of an oak-grass savanna and an annual grassland}. {\it
+  Agricultural and Forest Meteorology\/}, {\bf 123}, 13--39,
+  doi:10.1016/j.agrformet.2003.11.006.
+
+\bibitem[{Chen et~al.(2008)Chen, Baldocchi, Gong, and Dawson}]{Chen2008}
+Chen, Q., D.~Baldocchi, P.~Gong, and T.~Dawson, 2008: {Modeling radiation and
+  photosynthesis of a heterogeneous savanna woodland landscape with a hierarchy
+  of model complexities}. {\it Agricultural and Forest Meteorology\/}, {\bf
+  148}, 1005--1020.
+
+\bibitem[{Kim et~al.(2006)Kim, Guo, Baldocchi, Leclerc, Xu, and
+  Schmid}]{Kim2006}
+Kim, J., Q.~Guo, D.~D. Baldocchi, M.~Y. Leclerc, L.~Xu, and H.~P. Schmid, 2006:
+  {Upscaling fluxes from tower to landscape: Overlaying flux footprints on
+  high-resolution (IKONOS) images of vegetation cover}. {\it Agricultural and
+  Forest Meteorology\/}, {\bf 136}, 132--146,
+  doi:10.1016/j.agrformet.2004.11.015.
+
+\bibitem[{Ma et~al.(2007)Ma, Baldocchi, Xu, and Hehn}]{Ma2007}
+Ma, S., D.~D. Baldocchi, L.~Xu, and T.~Hehn, 2007: {Inter-annual variability in
+  carbon dioxide exchange of an oak/grass savanna and open grassland in
+  California}. {\it Agricultural and Forest Meteorology\/}, {\bf 147},
+  157--171.
+
+\bibitem[{Ridler and Calvard(1978)}]{Ridler1978}
+Ridler, S. and T.~Calvard, 1978: {Picture Thresholding Using an Iterative
+  Selection Method}. {\it IEEE Transactions on Systems, Man, and
+  Cybernetics\/}, {\bf 8}, 630--632, doi:10.1109/TSMC.1978.4310039.
+
+\bibitem[{Ryu et~al.(2010)Ryu, Sonnentag, Nilson, Vargas, Kobayashi, Wenk, and
+  Baldocchi}]{Ryu2010}
+Ryu, Y., O.~Sonnentag, T.~Nilson, R.~Vargas, H.~Kobayashi, R.~Wenk, and D.~D.
+  Baldocchi, 2010: {How to quantify tree leaf area index in an open savanna
+  ecosystem: A multi-instrument and multi-model approach}. {\it Agricultural
+  and Forest Meteorology\/}, {\bf 150}, 63--76,
+  doi:10.1016/j.agrformet.2009.08.007.
+
+\bibitem[{Walter(2012)}]{Walter2012}
+Walter, J.-M., 2012: {CIMES-FISHEYE © 2009–2015 HEMISPHERICAL PHOTOGRAPHY OF
+  FOREST CANOPIES}.
+}
+
+\end{thebibliography}

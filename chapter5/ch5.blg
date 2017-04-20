@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: ch5.aux
+The style file: /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 556 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 558 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+Database file #1: /home/mn811042/Thesis/chapter5/ch5.bib
+Repeated entry---line 3627 of file /home/mn811042/Thesis/chapter5/ch5.bib
+ : @misc{Walter2012
+ :                 ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Frazer1997"
+You can't pop an empty literal stack for entry Walter2012
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Walter2012
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You've used 7 entries,
+            2747 wiz_defined-function locations,
+            1054 strings with 10389 characters,
+and the built_in function-call counts, 3929 in all, are:
+= -- 352
+> -- 269
+< -- 2
++ -- 88
+- -- 81
+* -- 398
+:= -- 693
+add.period$ -- 13
+call.type$ -- 7
+change.case$ -- 62
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 153
+empty$ -- 243
+format.name$ -- 102
+if$ -- 758
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 6
+newline$ -- 30
+num.names$ -- 28
+pop$ -- 56
+preamble$ -- 1
+purify$ -- 55
+quote$ -- 0
+skip$ -- 87
+stack$ -- 0
+substring$ -- 221
+swap$ -- 25
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 63
+warning$ -- 0
+while$ -- 33
+width$ -- 0
+write$ -- 87
+(There were 5 error messages)

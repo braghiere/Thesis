@@ -1,0 +1,42 @@
+\begin{thebibliography}{5}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{doi:}\fi
+
+\bibitem[{{De Kauwe} et~al.(2011){De Kauwe}, Disney, Quaife, Lewis, and
+  Williams}]{DeKauwe2011}
+{De Kauwe}, M.~G., M.~I. Disney, T.~Quaife, P.~Lewis, and M.~Williams, 2011:
+  {An assessment of the MODIS collection 5 leaf area index product for a region
+  of mixed coniferous forest}. {\it Remote Sensing of Environment\/}, {\bf
+  115}, 767--780.
+
+\bibitem[{Hadley and Schedlbauer(2002)}]{Hadley2002}
+Hadley, J.~L. and J.~L. Schedlbauer, 2002: {Carbon exchange of an old-growth
+  eastern hemlock (Tsuga canadensis) forest in central New England}. {\it Tree
+  Physiology\/}, {\bf 22}, 1079--1092, doi:10.1093/treephys/22.15-16.1079.
+
+\bibitem[{Ryu et~al.(2010)Ryu, Sonnentag, Nilson, Vargas, Kobayashi, Wenk, and
+  Baldocchi}]{Ryu2010}
+Ryu, Y., O.~Sonnentag, T.~Nilson, R.~Vargas, H.~Kobayashi, R.~Wenk, and D.~D.
+  Baldocchi, 2010: {How to quantify tree leaf area index in an open savanna
+  ecosystem: A multi-instrument and multi-model approach}. {\it Agricultural
+  and Forest Meteorology\/}, {\bf 150}, 63--76,
+  doi:10.1016/j.agrformet.2009.08.007.
+
+\bibitem[{Ryu et~al.(2012)Ryu, Verfaillie, Macfarlane, Kobayashi, Sonnentag,
+  Vargas, Ma, and Baldocchi}]{ryu2012}
+Ryu, Y., J.~Verfaillie, C.~Macfarlane, H.~Kobayashi, O.~Sonnentag, R.~Vargas,
+  S.~Ma, and D.~D. Baldocchi, 2012: {Continuous observation of tree leaf area
+  index at ecosystem scale using upward-pointing digital cameras}. {\it Remote
+  Sensing of Environment\/}, {\bf 126}, 116--125.
+
+\bibitem[{Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
+  Morison}]{Wilkinson2012}
+Wilkinson, M., E.~L. Eaton, M.~S.~J. Broadmeadow, and J.~I.~L. Morison, 2012:
+  {Inter-annual variation of carbon uptake by a plantation oak woodland in
+  south-eastern England}. {\it Biogeosciences\/}, {\bf 9}, 5373--5389,
+  doi:10.5194/bg-9-5373-2012.
+
+\end{thebibliography}

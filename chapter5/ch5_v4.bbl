@@ -1,0 +1,203 @@
+\begin{thebibliography}{33}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{doi:}\fi
+
+\bibitem[{Aho et~al.(2014)Aho, Derryberry, and Peterson}]{Aho2014}
+Aho, K., D.~Derryberry, and T.~Peterson, 2014: {Model selection for ecologists:
+  the worldviews of AIC and BIC}. {\it Ecology\/}, {\bf 95}, 631--636,
+  doi:10.1890/13-1452.1.
+
+\bibitem[{Akaike(1973)}]{Akaike1973}
+Akaike, H., 1973: {Information theory and an extension of the maximum
+  likelihood principle}. {\it Second International Symposium on Information
+  Theory\/}, A.~Kaido, ed., Budapest, Hungary, 267 -- 281.
+}
+
+\bibitem[{Baldocchi(2006)}]{Baldocchi2006}
+Baldocchi, D., 2006: {Measuring and Modeling Carbon, Water Vapor and Energy
+  Exchange over Grassland and Tree/Grass Ecosystems}. Technical report,
+  University of California, Berkeley, California, USA.
+}
+
+\bibitem[{Benham et~al.(2012)Benham, Vanguelova, and Pitman}]{Benham2012}
+Benham, S.~E., E.~I. Vanguelova, and R.~M. Pitman, 2012: {Short and long term
+  changes in carbon, nitrogen and acidity in the forest soils under oak at the
+  Alice Holt Environmental Change Network site}. {\it Science of the Total
+  Environment\/}, {\bf 421-422}, 82--93, doi:10.1016/j.scitotenv.2012.02.004.
+
+\bibitem[{Betts and Ball(1997)}]{Betts1997}
+Betts, A.~K. and J.~H. Ball, 1997: {Albedo over the boreal forest}. {\it
+  Journal of Geophysical Research: Atmospheres\/}, {\bf 102}, 28901--28909,
+  doi:10.1029/96JD03876.
+
+\bibitem[{Black et~al.(1991)Black, Chen, Lee, and Sagar}]{Black1991}
+Black, T.~A., J.-M. Chen, X.~Lee, and R.~M. Sagar, 1991: {Characteristics of
+  shortwave and longwave irradiances under a Douglas-fir forest stand}.
+}
+
+\bibitem[{Chen et~al.(1997)Chen, Rich, Gower, Norman, and S}]{chen1997}
+Chen, J., P.~Rich, S.~Gower, J.~Norman, and P.~S, 1997: {Leaf area index of
+  boreal forests: Theory, techniques, and measurements}. {\it Journal of
+  Geophysical Research\/}, {\bf 102}, 29429, doi:10.1029/97JD01107.
+
+\bibitem[{Chen et~al.(2006)Chen, Baldocchi, Gong, and Kelly}]{Chen2006}
+Chen, Q., D.~Baldocchi, P.~Gong, and M.~Kelly, 2006: {Isolating Individual
+  Trees in a Savanna Woodland Using Small Footprint Lidar Data}. {\it
+  Photogrammetric Engineering {\&} Remote Sensing\/}, {\bf 72}, 923--932,
+  doi:10.14358/PERS.72.8.923.
+
+\bibitem[{Dai et~al.(2004)Dai, Dickinson, and Wang}]{Dai2004}
+Dai, Y., R.~Dickinson, and Y.~Wang, 2004: {A Two-Big-Leaf Model for Canopy
+  Temperature , Photosynthesis , and Stomatal Conductance}. {\it Journal of
+  Climate\/}, {\bf 17}, 2281--2299,
+  doi:10.1175/1520-0442(2004)017<2281:ATMFCT>2.0.CO;2.
+
+\bibitem[{{De Kauwe} et~al.(2011){De Kauwe}, Disney, Quaife, Lewis, and
+  Williams}]{DeKauwe2011}
+{De Kauwe}, M.~G., M.~I. Disney, T.~Quaife, P.~Lewis, and M.~Williams, 2011:
+  {An assessment of the MODIS collection 5 leaf area index product for a region
+  of mixed coniferous forest}. {\it Remote Sensing of Environment\/}, {\bf
+  115}, 767--780.
+
+\bibitem[{Duursma(2015)}]{Duursma2015}
+Duursma, R., 2015: {Maeswrap: Wrapper functions for MAESTRA/MAESPA}.
+}
+
+\bibitem[{Erbs et~al.(1982)Erbs, Klein, and Duffie}]{Erbs1982}
+Erbs, D.~G., S.~A. Klein, and J.~A. Duffie, 1982: {Estimation of the diffuse
+  radiation fraction for hourly, daily and monthly-average global radiation}.
+  {\it Solar Energy\/}, {\bf 28}, 293--302.
+
+\bibitem[{Farquhar et~al.(1980)Farquhar, Caemmerer, and Berry}]{farquhar1980}
+Farquhar, G.~D., S.~Caemmerer, and J.~A. Berry, 1980: {A biochemical model of
+  photosynthetic CO2 assimilation in leaves of C3 species}. {\it Planta\/},
+  {\bf 149}, 78--90, doi:10.1007/BF00386231.
+
+\bibitem[{Hadley and Schedlbauer(2002)}]{Hadley2002}
+Hadley, J.~L. and J.~L. Schedlbauer, 2002: {Carbon exchange of an old-growth
+  eastern hemlock (Tsuga canadensis) forest in central New England}. {\it Tree
+  Physiology\/}, {\bf 22}, 1079--1092, doi:10.1093/treephys/22.15-16.1079.
+
+\bibitem[{Kobayashi et~al.(2012)Kobayashi, Baldocchi, Ryu, Chen, Ma, Osuna, and
+  Ustin}]{Kobayashi2012}
+Kobayashi, H., D.~D. Baldocchi, Y.~Ryu, Q.~Chen, S.~Ma, J.~L. Osuna, and S.~L.
+  Ustin, 2012: {Modeling energy and carbon fluxes in a heterogeneous oak
+  woodland: A three-dimensional approach}. {\it Agricultural and Forest
+  Meteorology\/}, {\bf 152}, 83--100.
+
+\bibitem[{Law et~al.(2001{\natexlab{a}})Law, Cescatti, and
+  Baldocchi}]{Law2001b}
+Law, B.~E., A.~Cescatti, and D.~D. Baldocchi, 2001{\natexlab{a}}: {Leaf area
+  distribution and radiative transfer in open-canopy forests: implications for
+  mass and energy exchange}. {\it Tree Physiology\/},
+  doi:10.1093/treephys/21.12-13.777.
+
+\bibitem[{Law et~al.(2001{\natexlab{b}})Law, Thornton, Irvine, Anthoni, and
+  {Van Tuyl}}]{Law2001}
+Law, B.~E., P.~E. Thornton, J.~Irvine, P.~M. Anthoni, and S.~{Van Tuyl},
+  2001{\natexlab{b}}: {Carbon storage and fluxes in ponderosa pine forests at
+  different developmental stages}. {\it Global Change Biology\/}, {\bf 7},
+  755--777.
+
+\bibitem[{LI-COR(1992)}]{LI-COR1992}
+LI-COR, 1992: {LAI-2000 Plant Canopy Analyzer:}.
+}
+
+\bibitem[{Loveland and Belward(1997)}]{Loveland1997}
+Loveland, T.~R. and A.~S. Belward, 1997: {The IGBP-DIS global 1 km land cover
+  data set , DISCover : first results}. {\it int. j. remote sensing\/}.
+
+\bibitem[{Mercado et~al.(2007)Mercado, Huntingford, Gash, Cox, and
+  Jogireddy}]{Mercado2007}
+Mercado, L.~M., C.~Huntingford, J.~H.~C. Gash, P.~M. Cox, and V.~Jogireddy,
+  2007: {Improving the representation of radiation interception and
+  photosynthesis for climate model applications}. {\it Tellus, Series B:
+  Chemical and Physical Meteorology\/}, {\bf 59}, 553--565,
+  doi:10.1111/j.1600-0889.2007.00256.x.
+
+\bibitem[{Nilson(1971)}]{Nilson1971}
+Nilson, T., 1971: {A theoretical analysis of the frequency of gaps in plant
+  stands}. {\it Agricultural Meteorology\/}, {\bf 8}, 25--38,
+  doi:10.1016/0002-1571(71)90092-6.
+
+\bibitem[{Otsu(1979)}]{Otsu1979}
+Otsu, N., 1979: {Threshold selection method from grey-level histograms}. {\it
+  IEEE Trans Syst Man Cybern\/}, {\bf SMC-9}, 62--66,
+  doi:10.1109/TSMC.1979.4310076.
+
+\bibitem[{Pinty et~al.(2006)Pinty, Lavergne, Dickinson, Widlowski, Gobron, and
+  Verstraete}]{pinty2006}
+Pinty, B., T.~Lavergne, R.~E. Dickinson, J.~L. Widlowski, N.~Gobron, and M.~M.
+  Verstraete, 2006: {Simplifying the interaction of land surfaces with
+  radiation for relating remote sensing products to climate models}. {\it
+  Journal of Geophysical Research: Atmospheres\/}, {\bf 111}.
+
+\bibitem[{Rich and Fournier(1999)}]{Rich1999b}
+Rich, P. and R.~Fournier, 1999: {Data, BOREAS TE-23 Map Plot}.
+}
+
+\bibitem[{Rich et~al.(1999)Rich, Hall, and Papagno}]{Rich1999a}
+Rich, P.~M., F.~G. Hall, and A.~Papagno, 1999: {BOREAS TE-23 Canopy
+  Architecture and Spectral Data from Hemispherical Photographs}.
+}
+
+\bibitem[{Ryu et~al.(2010)Ryu, Sonnentag, Nilson, Vargas, Kobayashi, Wenk, and
+  Baldocchi}]{Ryu2010}
+Ryu, Y., O.~Sonnentag, T.~Nilson, R.~Vargas, H.~Kobayashi, R.~Wenk, and D.~D.
+  Baldocchi, 2010: {How to quantify tree leaf area index in an open savanna
+  ecosystem: A multi-instrument and multi-model approach}. {\it Agricultural
+  and Forest Meteorology\/}, {\bf 150}, 63--76,
+  doi:10.1016/j.agrformet.2009.08.007.
+
+\bibitem[{Ryu et~al.(2012)Ryu, Verfaillie, Macfarlane, Kobayashi, Sonnentag,
+  Vargas, Ma, and Baldocchi}]{ryu2012}
+Ryu, Y., J.~Verfaillie, C.~Macfarlane, H.~Kobayashi, O.~Sonnentag, R.~Vargas,
+  S.~Ma, and D.~D. Baldocchi, 2012: {Continuous observation of tree leaf area
+  index at ecosystem scale using upward-pointing digital cameras}. {\it Remote
+  Sensing of Environment\/}, {\bf 126}, 116--125.
+
+\bibitem[{Schwarz(1978)}]{Schwarz1978}
+Schwarz, G., 1978: {Estimating the dimension of a model}. {\it The Annals of
+  Statistics\/}, {\bf 6}, 461--464.
+
+\bibitem[{Sellers et~al.(1997)Sellers, Hall, Kelly, Black, Baldocchi, Berry,
+  Ryan, Ranson, Crill, Lettenmaier, Margolis, Cihlar, Newcomer, Fitzjarrald,
+  Jarvis, Gower, Halliwell, Williams, Goodison, Wickland, and
+  Guertin}]{Sellers1997}
+Sellers, P.~J., F.~G. Hall, R.~D. Kelly, A.~Black, D.~Baldocchi, J.~Berry,
+  M.~Ryan, K.~J. Ranson, P.~M. Crill, D.~P. Lettenmaier, H.~Margolis,
+  J.~Cihlar, J.~Newcomer, D.~Fitzjarrald, P.~G. Jarvis, S.~T. Gower,
+  D.~Halliwell, D.~Williams, B.~Goodison, D.~E. Wickland, and F.~E. Guertin,
+  1997: {BOREAS in 1997: Experiment overview, scientific results, and future
+  directions}.
+}
+
+\bibitem[{Spencer and Rock(1999)}]{Spencer1999}
+Spencer, S. and B.~N. Rock, 1999: {BOREAS TE-08 Aspen Bark Spectral Reflectance
+  Data}.
+}
+
+\bibitem[{Thomas et~al.(2009)Thomas, Law, Irvine, Martin, Pettijohn, and
+  Davis}]{Thomas2009}
+Thomas, C.~K., B.~E. Law, J.~Irvine, J.~G. Martin, J.~C. Pettijohn, and K.~J.
+  Davis, 2009: {Seasonal hydrology explains interannual and seasonal variation
+  in carbon and water exchange in a semiarid mature ponderosa pine forest in
+  central Oregon}. {\it Journal of Geophysical Research: Biogeosciences\/},
+  {\bf 114}.
+
+\bibitem[{Walter(2012)}]{Walter2012}
+Walter, J.-M., 2012: {CIMES-FISHEYE © 2009–2015 HEMISPHERICAL PHOTOGRAPHY OF
+  FOREST CANOPIES}.
+}
+
+\bibitem[{Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
+  Morison}]{Wilkinson2012}
+Wilkinson, M., E.~L. Eaton, M.~S.~J. Broadmeadow, and J.~I.~L. Morison, 2012:
+  {Inter-annual variation of carbon uptake by a plantation oak woodland in
+  south-eastern England}. {\it Biogeosciences\/}, {\bf 9}, 5373--5389,
+  doi:10.5194/bg-9-5373-2012.
+
+\end{thebibliography}

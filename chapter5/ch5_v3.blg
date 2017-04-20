@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: ch5_v3.aux
+The style file: /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 556 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+url is an unknown function---line 558 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+Database file #1: /home/mn811042/Thesis/chapter5/ch5_v3.bib
+Repeated entry---line 3689 of file /home/mn811042/Thesis/chapter5/ch5_v3.bib
+ : @misc{Walter2012
+ :                 ,
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry Akaike1973
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Akaike1973
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Baldocchi2006
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Baldocchi2006
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Black1991
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Black1991
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Duursma2015
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Duursma2015
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999b
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999b
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999a
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Rich1999a
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Sellers1997
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Sellers1997
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Spencer1999
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Spencer1999
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Walter2012
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You can't pop an empty literal stack for entry Walter2012
+while executing---line 1732 of file /home/mn811042/Thesis/format_files/ametsoc.bst
+You've used 26 entries,
+            2747 wiz_defined-function locations,
+            1191 strings with 14605 characters,
+and the built_in function-call counts, 14215 in all, are:
+= -- 1242
+> -- 1048
+< -- 11
++ -- 345
+- -- 319
+* -- 1401
+:= -- 2546
+add.period$ -- 45
+call.type$ -- 26
+change.case$ -- 237
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 545
+empty$ -- 847
+format.name$ -- 391
+if$ -- 2751
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 18
+newline$ -- 95
+num.names$ -- 106
+pop$ -- 214
+preamble$ -- 1
+purify$ -- 210
+quote$ -- 0
+skip$ -- 338
+stack$ -- 0
+substring$ -- 694
+swap$ -- 87
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 234
+warning$ -- 0
+while$ -- 111
+width$ -- 0
+write$ -- 299
+(There were 21 error messages)

@@ -1,0 +1,430 @@
+\documentclass[a4paper,11pt]{report}
+%\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{url,natbib,amssymb,hyperref,graphicx,wrapfig,setspace,multirow,booktabs,subfig,array,wrapfig,calc}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{booktabs,caption,fixltx2e}
+\usepackage[round]{natbib}      % References with names and years
+%[round]
+\usepackage{xr}                 % reference anothe chapter
+%\externaldocument[2-]{../CHAPTER2/ch2_LSM_v11}
+%\externaldocument[3-]{../CHAPTER3/ch3_sensitivity_v10}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{appendix}
+%\usepackage{subfigure}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{paralist}                % inline lists
+\usepackage{gensymb}    % degrees celsius as {\celsius}
+%\usepackage{textcomp]    % arrows
+\newcommand{\tildetext}{\raise.17ex\hbox{$\scriptstyle\mattt{\sim}$}}
+\usepackage{rotating}   %rotate table
+%\renewcommand{\arraystretch}{1.5}  %increase space between rows in tables (default is 1) because there is already baselinestrech 1.5 tables become too separated, maybe with normal spacing this command should be used
+\usepackage{rotating,booktabs}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{color}% color the text
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{lscape}
+% Page setup from thesis template
+\topmargin=-10mm
+\textwidth=150mm
+\textheight=234mm
+\headsep=12mm
+\oddsidemargin=14mm
+%\oddsidemargin=12mm
+\evensidemargin=-1mm
+%\evensidemargin=1mm
+\parindent=6mm
+\parskip=1em 
+
+\newlength{\rulewidth}
+\setlength{\rulewidth}{150mm} % change to 150mm for printing on
+			      % gordon, 149 otherwise???
+% 1.5 line spacing so my supervisor can scrawl all over it
+\renewcommand{\baselinestretch}{1.50}
+
+\pagestyle{headings}    % chapter number on top
+
+\setcounter{secnumdepth}{4}              %Numbers subsubsections, and lower.
+\setcounter{tocdepth}{4}                 %Sets depth of table of contents to include subsubsections.
+
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{\fancyplain{}{\textit{\nouppercase\rightmark}}}
+\fancyhead[L]{Chapter 5. Deriving vegetation architectural parameters from observed data}
+\fancyfoot[C]{ \thepage\ }
+
+%opening
+\title{}
+\author{Renato Kerches Braghiere \\ This document was written in \LaTeX \\ Number of words: 7272}
+\date{\today}
+
+\begin{document}
+\maketitle
+\setcounter{chapter}{4} %so next one is 5
+
+\chapter{Deriving vegetation architectural parameters from observed data}
+
+\section{Introduction}\label{introduction}
+
+The main goal of this chapter is to investigate to what extent it is possible to retrieve the required parameters of two different vegetation structure parameterisations applied to the two-stream radiative transfer scheme based on two clumping indices, i.e., \citet{Nilson1971} and \citet{pinty2006}, previously presented and evaluated in other chapters but now directly derived from field work observations via digital hemispherical photography (DHP). The experiments described in this chapter make use of field work observations of gap fraction in order to parametrise the radiative transfer two-stream scheme and the MAESPA model over real study sites. 
+
+This chapter evaluates the clumping parameterisation schemes already tested in Chapter~\ref{:ch4_parameterising}(4) and verifies if the parameters are also applicable to real case scenarios. Moreover, the experiments presented here demonstrate in what conditions different parameterisation schemes of vegetation canopy structure in radiative transfer schemes are applicable to real forest canopies, and which one the two clumping indices are the most appropriate for use within different study sites.
+
+%The RAMI4PILPS virtual canopies were formed by spherical crowns randomly distributed over the space, centred at a constant height, with LAI increasing proportionally with canopy density. 
+
+In nature forest canopies can vary quite substantially in structural and spectral terms. Trees can present different heights, widths, and crown shapes, as well as forest canopies can present different tree density and LAI. Some of the questions that are going to be addressed by this chapter are: is it possible to accurately derive the clumping indices from structural datasets, e.g., derived from LiDAR data or dendrometry?; and how accurately is it possible to predict GPP by making use of a LSM parametrise with parameters obtained in nature?
+
+Firstly in Section~\ref{section:hemiphotos} a brief explanation of how the direct transmittance was derived from DHPs is given. P$_{gap}$ databases were available for few study sites, e.g., for the BOREAS sites, but for all the other sites the data were in their raw form as DHPs. The DHPs were pre-processed via the Otsu\textquotesingle s threshold method \citep{Otsu1979} using the CIMES-FISHEYE software \citep{Walter2012}. The first section of this chapter establishes all the estimated values of P$_{gap}$ together for all study sites describing the period when the data were collected. Also a description of how the LAI values were obtained is presented because LAI and P$_{gap}$ are both used in the Beer\textquotesingle s law equation to obtain the clumping indices, and so, it is important to highlight that LAI was not obtained directly from P$_{gap}$ in order to avoid overfitting. The zenith profiles of P$_{gap}$ were then estimated through DHPs, while the LAI values were estimated with different methods, e.g., LAI-2000 canopy analyser \citep{LI-COR1992}.
+
+%Secondly, for two study sites, one sparse blue oak savannah in California (US-Ton), and one dense old aspen deciduos broadleaf boral forest in Canada (SSA-OA), were both virtually built in the MAESPA model with structural data in order to calculate direct transmissivity and compare it with empirically determined observations. This second part has two main purposes: the first one is to determine wether or not one type of measurement could be used in the absence of the other one, i.e., in the presence of a descriptive database of DHPs for a determined field site, is it equivalent to have only structural data from other sources instead? This section verifies if the P$_{gap}$ measurement derived from DHPs, and the P$_{gap}$ calculations with structural data via 3D modelling are comparable. 
+Secondly in Section~\ref{section:MAESPA_build} two study sites had their vegetation structure virtually recreated within the MAESPA model in order to calculate direct transmittance and compare it with empirically determined observations. This second part has two main purposes: the first one is to determine wether or not one type of structural measurement could be used in the absence of the other one, i.e., in the absence of DHPs, is it equivalent to have only structural data derived from other sources, for example LiDAR data? This section verifies if P$_{gap}$ zenith profiles derived from DHPs are comparable to 3D modelling calculations. If the observed data agrees with the modelled one in at least one term of the shortwave radiation partitioning, i.e., transmittance, it indicates that absorbance calculated with the MAESPA model could represent an useful estimate for real study sites in nature. Comparing fAPAR from MAESPA with the ones generated by the two-stream scheme with the structural parameterisation could be used as a validation tool of the clumping indices obtained in the field.
+
+In Section~\ref{section:statistical} the clumping indices are derived from the P$_{gap}$ zenith profiles and statistical values, e.g, the RMSE, AIC, and BIC of the fits are calculated in order to address the question of wether or not considering clumping index variations with Sun zenith angle is important to describe the forest canopy direct transmittance. This section also evaluates which one of the two indices is the best one to describe the observed P$_{gap}$ zenith curves.
+
+%Finally, Section~\ref{section:gpp_evaluations} for the same two sites evaluated in Section~\ref{section:MAESPA_build}, in order to compare the fAPAR obtained with the two-stream scheme with and without both parameterisations with measured spectral and meteorological data; and to compare the flux tower GPP with the calculated one via three different methods in the full JULES v4.6 model: i) two-stream scheme, ii) with the clumping index parameterisation scheme, and iii) with the structure factor parameterisation scheme.
+
+Finally, Section~\ref{section:gpp_evaluations} shows a comparison between flux tower and calculated GPP via three different methods calculated with the full JULES v4.6 model: i) default two-stream scheme, ii) two-stream scheme with clumping index \citep{Nilson1971}, and iii) two-stream scheme with structure factor \citep{pinty2006}. In Section~\ref{section:limiting_evaluations} a brief discussion of the observed changes in modelled GPP based on the analysis of the Farquhar photosynthesis limiting regimes in JULES is presented.
+
+\section{Estimating direct transmittance from DHPs}\label{section:hemiphotos}
+
+The zenith profile of direct transmittance was derived from DHPs for 12 study sites in the Northern hemisphere over four PFTs, i.e., Deciduous Broadleaf Forest, Evergreen Needle-leaf, Mixed Forest, and Woody Savannah, following the IGBP classification \citep{Loveland1997} with more details described in Table~\ref{tab:sites}. The locations of the 12 sites are presented in Figure~\ref{f:studysites}.
+
+%trim={<left> <lower> <right> <upper>}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.8\textwidth,trim={5cm 7cm 5cm 7cm},clip]{/home/mn811042/Thesis/chapter5/figures/section3/sites_map.png}
+\caption{The coloured circles represent study sites spread over the Northern Hemisphere, mainly over North America. Different colours represent different PFTs: \textbf{ENF:} Evergreen Needle-leaf. \textbf{WSA:} Woody Savannah. \textbf{DBF:} Deciduous Broadleaf Forest. \textbf{MF:} Mixed Forest.} 
+\label{f:studysites}
+\end{figure}
+
+\begin{sidewaystable}
+\caption{Study sites categorised by plant functional types (PFT), country, latitude and longitude, climate, and dominant tree species. P$_{gap}$ column indicates the derivation method: DHP for digital hemispherical photographs; and 3D refers to the 3D tree based model MAESPA. Dates indicate the period when DHPs were collected. }
+%\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} *{17}{l}}
+\begin{tabular}{p{1.0cm} p{1.5cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.5cm} p{1.0cm} p{2.1cm}}
+%\begin{tabular*}
+\hline
+\hline   
+\bf PFT & \bf Country & \bf Site & \bf Latitude & \bf Longitude & \bf Climate & \bf Species & \bf P$_{gap}$($\theta$) & \bf Year & \bf Reference\\
+ \hline
+\multirow{9}{*}{ENF} 
+     & Canada &  NSA-OBS-FLXT &   55.880$^{\circ}$ N & 98.481$^{\circ}$ W & Boreal & Black Spruce & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  NSA-OJP-FLXT &   55.928$^{\circ}$ N & 98.624$^{\circ}$ W & Boreal & Jack Pine    & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  NSA-YJP-FLXT &   55.896$^{\circ}$ N & 98.287$^{\circ}$ W & Boreal & Jack Pine & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  SSA-OBS-FLXT &   53.987$^{\circ}$ N & 105.118$^{\circ}$ W & Boreal & Black Spruce & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  SSA-OJP-FLXT &   53.916$^{\circ}$ N & 104.692$^{\circ}$ W & Boreal & Jack Pine & DHP & 1994 & \citet{Sellers1997}\\
+     & Canada &  SSA-YJP-FLXT &   53.876$^{\circ}$ N & 104.645$^{\circ}$ W & Boreal & Jack Pine & DHP & 1994 & \citet{Sellers1997}\\
+     & USA    &  US-Me2       &   44.452$^{\circ}$ N & 121.557$^{\circ}$ W & Temperate Mediterranean & Ponderosa Pine & DHP & 2006 & \citet{DeKauwe2011,Thomas2009}\\
+     & USA    &  US-Me4       &   53.876$^{\circ}$ N & 104.645$^{\circ}$ W & Temperate Mediterranean & Ponderosa Pine & DHP & 2006 & \citet{DeKauwe2011,Law2001}\\
+     & USA    &  US-Ha2       &   42.539$^{\circ}$ N & 72.178$^{\circ}$ W  & Continental & Hemlock & DHP & 2015 & \citet{Hadley2002}\\
+\hline
+\multirow{1}{*}{MF} 
+     & UK   &  Alice Holt   &   51.117$^{\circ}$ N & 0.850$^{\circ}$ W & Temperate oceanic & Oak Woodland & DHP & 2015 & \citet{Wilkinson2012}\\
+\hline
+\multirow{1}{*}{DBF} 
+     &  Canada & SSA-OBS-FLXT &   53.876$^{\circ}$ N & 104.645$^{\circ}$ W & Boreal & Aspen & DHP \newline 3D modelling & 1994 & \citet{chen1997}\\
+\hline
+\multirow{1}{*}{WSA} 
+     &  USA & Us-Ton &  38.432$^{\circ}$ N & 120.966$^{\circ}$ W & Mediterranean & Blue Oak & DHP \newline 3D modelling & 2008 &\citet{ryu2012}\\
+\hline
+\hline
+ \end{tabular}
+\label{tab:sites}
+\begin{tablenotes}
+      \small
+      \item \textbf{ENF:} Evergreen Needle-leaf. \textbf{MF:} Mixed Forest. \textbf{DBF:} Deciduous Broadleaf Forest. \textbf{WSA:} Woody Savannah.
+\end{tablenotes}
+\end{sidewaystable}
+\newpage
+
+For the BOREAS sites the P$_{gap}$ data were already available in the dataset \textbf{BOREAS TE-23 Canopy Architecture and Spectral Data from Hemispherical photos} \citep{Rich1999a}, and more information about experimental design and software used for DHPs post-processing can be found in \citet{chen1997}. For all the other study sites the DHPs were in the format of raw images and in order to keep consistency during the P$_{gap}$ derivation process for all the other sites, the direct transmittance was obtained in the closest way as possible as the one used for the BOREAS sites. 
+
+The DHPs were automatically threshold via the Otsu\textquotesingle s method \citep{Otsu1979} with a python script, where the images were reduced from grey level to a binary image. This method assumes that the image contains two classes of pixels following a bi-modal histogram, i.e., foreground pixels representing the vegetation and background pixels representing the sky, it then calculates the optimum threshold separating the two classes. The binary form of the images were then divided into 5$^{\circ}$ zenith intervals, from 0$^{\circ}$ to 90$^{\circ}$ giving a total of 18 equally divided intervals. The azimuth angles were also divided into 18 parts of 20$^{\circ}$ each. The last 3 points of the zenith profile were excluded from the statistical analysis performed later on in this chapter. A total of 15 points were used to represent the zenith profile of direct transmittance from 0 to 75 degrees. The P$_{gap}$ zenith curve from each DHP is represented in Figure~\ref{f:pgap} by a coloured line and the average is represented by the central thick black line with the 95\% confidence interval of the mean represented by vertical bars.
+
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{lll}
+\subfloat[LAI = 0.70 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_tonzi_18.png}}
+\subfloat[LAI = 4.63 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-9OA-FLXTR.png}}
+\subfloat[LAI = 4.95 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_NSA-OBS-FLXTR.png}}
+\end{tabular}
+
+\begin{tabular}{lll}
+\subfloat[LAI = 2.25 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_NSA-OJP-FLXTR.png}}
+\subfloat[LAI = 1.61 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_NSA-YJP-FLXTR.png}}
+\subfloat[LAI = 4.29 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_all_alice.png}}
+\end{tabular}
+
+\begin{tabular}{lll}
+\subfloat[LAI = 4.76 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-OBS-FLXTR.png}}
+\subfloat[LAI = 3.20 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-OJP-FLXTR.png}}
+\subfloat[LAI = 2.98 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_SSA-YJP-FLXTR.png}}
+\end{tabular}
+
+\begin{tabular}{lll}
+\subfloat[LAI = 2.25 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_oregon_inter.png}}
+\subfloat[LAI = 2.84 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_oregon_mature.png}}
+\subfloat[LAI = 4.37 m$^2$.m$^{-2}$]{\includegraphics[width=0.33\textwidth]{/home/mn811042/Thesis/chapter5/figures/section1/Pgap_average_hemlock_sep_2015.png}}
+\end{tabular}
+\caption{Direct transmittance zenith profile derived from DHPs for 12 study sites described in Table~\ref{tab:sites}. Coloured lines represent individual DHPs and the black line represents the average. Vertical bars represent the 95\% confidence interval of the average. The name of each study site is shown at the top and LAI values are shown in the bottom of the figures.} 
+\label{f:pgap}
+\end{figure}
+
+Note that overall sites with higher LAI present lower values of direct transmittance because LAI is one of the major factors controlling the shape of the P$_{gap}$ zenith curves but not the only one and study sites with same LAI can present distinct direct transmittance zenith profiles. A good example is presented in Figures~\ref{f:pgap}d and j correspondent to an old jack pine site in Canada and a ponderosa pine site in Oregon, USA, respectively. Both study sites are classified as evergreen needle-leaf vegetation with the same average LAI (2.25 m$^2$.m$^{-2}$), however their P$_{gap}$ average curves are substantially different. Direct transmittance is related to a number of different factor, as leaf orientation and spectral characteristics, as well as vegetation structure, which are not completely represented by LAI alone, as discussed in Section~\ref{ch4:lai_alone} (Section 4.1).
+
+Mature sites usually present higher LAI and smaller P$_{gap}$ curves than younger sites, as it can be noticed when comparing NSA-OJP-FLXTR (old jack pine) and NSA-YJP-FLXTR (young jack pine) (Figures~\ref{f:pgap}d and e), SSA-OBS-FLXTR (old black spruce) and SSA-YBS-FLXTR (young black spruce) (Figures~\ref{f:pgap}g and h), and US-Me4 (mature ponderosa pine) and US-Me2 (intermediate ponderosa pine) (Figures~\ref{f:pgap}k and j). As a forest grow old the trees not only become taller but also display more branches in multiple directions, which creates a more structurally complex vegetation. As a result the direct transmittance decreases as LAI increases with time \citep{Law2001b}.
+
+P$_{gap}$ usually decreases with zenith angle among all sites except in Alice Holt, UK, where direct transmittance reaches an optimum value at the middle of the zenith profile. This behaviour indicates that this forest presents more vegetation optical depth above head than at intermediate angles, which is explained by the presence of clearings \citep{Benham2012}.
+
+\section{Comparison between modelled and observed direct transmittance}\label{section:MAESPA_build}
+
+For two substantially different study sites, i.e, an old Aspen forest site in Canada (SSA-OA-FLXTR) and a blue oak savannah in California (US-Ton), the measured P$_{gap}$ from DHPs is compared with the one calculate by the MAESPA model and the two-stream scheme. These two specific sites were selected because they present detailed structural data availability, different canopy structures and LAI values.
+
+For the old aspen site, the BOREAS TE-23 team collected data in a plot map in support of its efforts to characterise and interpret information on canopy architecture at the BOREAS tower flux sites from May to August, 1994. The mapped plot with 300 m$^2$ was used to characterise the forested surrounding of the tower flux. Detailed measurement of the mapped plot includes: 1) stands characteristics (tree location, density, and basal area); 2) DBH of all trees in the designed area; and 3) detailed geometric measures of a subset of trees (height and crown dimensions) \citep{Rich1999b}. For any missing values the average of the available values was considered. The plot is represented in Figure~\ref{f:tree_plot}a. 
+
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{ll}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/SSA-9OA_tree_plot.png}}
+\subfloat[US-Ton]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/Tonzi_ranch_tree_plot.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[trim=0 0 0 0, clip,width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/SSA-OA-BOREAS-3.png}}
+\subfloat[US-Ton]{\includegraphics[trim=1cm 0 0 9cm, clip,width=0.6\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/tonzi_ranch_300.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[SSA-9OA-FLXTR]{\includegraphics[trim=0 0 0 0, clip,width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/Pgap_ssa_oa_dhp_maespa.png}}
+\subfloat[US-Ton]{\includegraphics[trim=0 0 0 0, clip,width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section2/Pgap_tonzi_dhp_maespa.png}}
+\end{tabular}
+\caption{Map plot of a. an old aspen site in Canada (53.88 N,104.65 W), and b. blue oak grassland in California, USA (38.43 N, 120.97 W); 3D representation of forest canopies in MAESPA created with the R package Maeswrap for c. SSA-OA-FLXTR and d. US-Ton; and direct transmittance zenith profile calculated with the 1) the MAESPA 3D, 2) the two-stream scheme, both radiative transfer models, and 3) measured through DHPs for e. SSA-OA-FLXTR and f. US-Ton. The vertical bars represent the 95\% confidence interval of the mean.} 
+\label{f:tree_plot}
+\end{figure}
+
+As it can be noticed, the structural representation of the old aspen forest canopy (trees are represented by green circles) is a partial representation of the canopy, 70 meters away from the flux tower (represented by a red triangle). The DHPs were acquired along a straight line from the flux tower crossing the mapped plot area. DHPs were acquired in places represented by red circles. The BOREAS team assumed that the structural data collected in the mapped plot was representative of the flux tower footprint \citep{chen1997}.
+
+For the savannah site in California,US, the structural data were directly derived from LiDAR data acquired in 2006 by \citet{Chen2006} in a 1000 m x 1000 m plot around the flux tower. While DHPs were acquired in August, 2008, in a 300 m x 300 m plot around the flux tower, subdivided in a 30 x 30 m$^2$ grid. The camera used to take the photographs was in manual mode, with fish-eye lens, fixed with centrally weighted exposure, and high quality JPEG format pictures were acquired \citep{Ryu2010}. Figure~\ref{f:tree_plot}b shows a representation of the mapped plot, where green circles represent the tree trunk centres and red circles represent the places where the DHPs were acquire. The flux tower is represented by the red triangle in the centre of the plot.
+
+Figure~\ref{f:tree_plot}c and d show a structural representation in 3D of both areas recreated with the R package \textit{Maeswrap} \citep{Duursma2015}, where the red element in the centre of Figure~\ref{f:tree_plot}d represents the flux tower. The shape of tree crowns in the old aspen site is an ellipsoid, while in the blue oak savannah the shape of the crowns was set to half-ellipsoids in order to represent the tree shape as close as possible to reality. The impact of considering an ellipsoid or a half-ellipsoid for the evaluated cases with MAESPA on direct transmittance is negligible. The structural data is available over a much larger area over the savannah site, however only the central 300 x 300 m$^2$ area was used in this study to reassure that the DHPs and the LiDAR data were representing vegetation canopy structure over the same area. The footprint of the flux tower in Tonzi Ranch is mostly represented by the surrounding 300 x 300 m$^2$ area under most micrometeorological conditions \citep{Baldocchi2006}.
+
+Given two different study sites the questions to be answered in this sections are: how does the P$_{gap}$ calculated with MAESPA compare with the one derived from DHPs?; and how does the direct transmittance calculated with the two-stream scheme compare with the other methods?
+
+In order to obtain the direct transmittance from MAESPA the same type of black canopy approximation already described in Chapter 4 was used here, where the leaf reflectance and transmittance values were set to zero, as well as soil albedo. After that, P$_{gap}$ is calculated as 1 - fAPAR. In Figure~\ref{f:tree_plot}e and f the red lines represent the P$_{gap}$ from MAESPA and the dashed black lines represent the P$_{gap}$ derived from DHPs.
+
+The agreement between direct transmittance derived from DHPs acquired in the field and the one modelled by MAESPA is quite significant for both sites. For the old aspen site especially, until about 20 degrees the modelled P$_{gap}$ is over the average line, while for the other part of the curve the calculated P$_{gap}$ underestimates the average and agrees with the lower limit of the 95\% confidence interval, which means the model roughly underestimates the observed P$_{gap}$ but still within the statically acceptable interval. Most of the attention should be given however to how the shape of both curves agrees, and how P$_{gap}$ goes to zero for 60 degrees zenith angle. This forest has a high LAI value (LAI = 4.63 m$^{2}$.m$^{-2}$) and it is a quite dense area with 356 trees in a 50 m x 60 m area plot. The results from the two-stream scheme however underestimate both curves in up to 0.30 over zero degrees, and it is not able to reproduce the shape of the other curves either and it could lead to discrepancies in fAPAR and albedo estimates, as well.
+
+The blue oak savannah is a much sparser canopy with 604 trees in a 300 x 300 m$^2$ area with lower LAI (LAI = 0.70 m$^{2}$.m$^{-2}$) and the agreement between the calculated P$_{gap}$ and the one derived from observations is also significant. For this study site the two-stream scheme also underestimates the direct transmittance but not as much as for the old aspen site, because transmittance is exponentially proportional to LAI, so it is expected that the uncertainty also would grow with LAI for the two-stream scheme. 
+The underestimation of P$_{gap}$ via two-stream scheme is in the order of 0.10 for zero degrees Sun zenith angle following a constant spread over the zenith profile. The shapes of direct transmittance with zenith angle are similar between MAESPA and DHPs until about 80 degrees but after that MAESPA underestimates the values obtained through DHPs. 
+Figure~\ref{f:pgap}a shows all P$_{gap}$ curves for Tonzi Ranch and it is possible to note that at high zenith angles the spread between the P$_{gap}$ curves is quite significant, and even though the MAESPA model disagrees with the observation, only values up to 75 degrees are considered in the statistical analysis in this chapter. It is also important to highlight that the canopy representation in MAESPA is finite and limited to the size of the plotted area, while in nature the forest canopy extends over a much larger area.
+
+Based on these evaluations over two sites with distinct values of LAI it possible to provide an accurate value of direct transmittance from 3D radiative transfer modelling with the MAESPA model parametrised with different types of structural data, i.e., human measurements (dendrometry), and through the inversion of LiDAR data. This result points out for the fact that in the absence of DHPs or any other way to measure gap probability, MAESPA could be then parametrised with structural data in order to estimate the direct transmittance.
+
+%It is important to highlight that both sites have different tree densities and LAI, and both sites are located in different latitudes. The structural data were collected with quite different methodologies, e.g., LiDAR \textit{vs.} dendrometry.
+
+\section{Deriving clumping indices from observed data}\label{section:statistical}
+
+The main goal of this section is to derive the relevant parameters for both parameterisation schemes, i.e., the clumping index ($\Omega$) from \citet{Nilson1971} and both parameters ($a$ and $b$) for the structure factor ($\zeta$($\mu$)) from \citet{pinty2006}, by inverting the Beer\textquotesingle s law equation against direct transmittance obtained from DHPs for 12 study sites in order to answer the question of wether or not the inclusion of a zenith dependent structural parameterisation presents a better agreement between the fitted adjust and the observed data of gap probability with DHPs.
+
+An example of fitting is shown in Figure~\ref{f:fitting} for the same two sites evaluated in Section~\ref{section:MAESPA_build} but the same evaluation was performed for all the others sites and the results are summarised in Table~\ref{tab:sites_stats}. The LAI for both sites was estimated from different sources that not DHPs in order to avoid overfitting, as previously mentioned. For the old aspen site the LAI was obtained through LAI-2000, while for the blue oak savannah site the LAI was obtained from multiple sources described in \citet{Ryu2010}.
+
+\begin{figure}[ht!]
+\centering
+\begin{tabular}{ll}
+\subfloat[Clumping index]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/SSA-9OA-FLXTR_adj_nilson.png}}
+\subfloat[Structure factor]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/SSA-9OA-FLXTR_pinty.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[Clumping index]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/tonzi_adj_nilson.png}}
+\subfloat[Structure factor]{\includegraphics[width=0.45\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/tonzi_adj_pinty.png}}
+\end{tabular}
+\caption{Old aspen site in Canada (53.88 N,104.65 W) with LAI = 4.63 m$^2$.m$^{-2}$ for a. clumping index ($\Omega$) from \citet{Nilson1971}, and b. structure factor ($\zeta(\mu)$) from \citet{pinty2006}; and blue oak grassland in California, USA (38.43 N, 120.97 W) with LAI = 0.70 m$^2$.m$^{-2}$ for c. clumping index ($\Omega$) from \citet{Nilson1971}, and d. structure factor ($\zeta(\mu)$) from \citet{pinty2006}} 
+\label{f:fitting}
+\end{figure}
+
+The parameters were isolated through two different methodologies:
+\begin{enumerate}
+ \item to obtain the clumping index from \citet{Nilson1971} the gap fraction probability equation was inverted as:
+\begin{equation}
+P_{gap} \cdot G(\mu) \cdot LAI = \Omega \cdot \frac{1}{\mu}
+\end{equation}\label{eq:isol_nilson}
+A linear fit with one free parameter, i.e., with the fit forcefully crossing zero against 15 data points of direct transmittance obtained from DHPs. The correlation coefficient ($r$), the RMSE, AIC, and BIC were calculated for the fit and are presented in Figure~\ref{f:fitting}a for two sites.
+ \item to obtain the structure factor parameters from \citet{pinty2006} the same equation was inverted as:
+\begin{equation}
+P_{gap} \cdot \mu \cdot G(\mu) \cdot LAI = a + b \cdot (1 - \mu) 
+\end{equation}\label{eq:isol_pinty}
+A linear fit with two free parameters was then adjusted against the same 15 data points of direct transmittance obtained through DHPs. The correlation coefficient, RMSE, AIC, and BIC were also calculate for the second fit. 
+\end{enumerate}
+
+The results for all sites are summarised in Table~\ref{tab:sites_stats}. All values presented in Table~\ref{tab:sites_stats} are statistically significant with \textit{p-value} smaller than 0.05, except for the $b$ parameter of the structure factor for the blue oak savannah in California (US-Ton) as indicated.
+The RMSE associated with the fit of the clumping index is usually larger than the RMSE associated with the fit of the structure factor because the values of the \textit{y-axis} for the clumping index are larger than the values of the \textit{y-axis} for the structure factor, and that is because of the way the P$_{gap}$ equation was rearranged. So, in order to avoid to any dubious interpretation of the data correlations, other statistical tools were evaluated.
+
+\begin{sidewaystable}
+\caption{Summary of statistical evaluations. Values between parentheses indicate the lower and upper 95\% confidence interval, respectively.}
+%The study sites are indicated with LAI, the respective structural index, i.e., clumping index ($\Omega$) or structure factor ($\zeta(\mu)$) represented by two parameters, $a$ and $b$, and the statiscal variables: AIC, BIC, the correlation coefficient ($r$), and RMSE.}
+\begin{tabular}{p{4.0cm} p{2.1cm} p{1.5cm} p{4.1cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm}}
+\hline
+\hline   
+\bf Study site & \bf LAI &  \bf Index & \bf Value & \bf AIC & \bf BIC & \bf $r$ &  \bf RMSE\\
+ \hline
+\multirow{2}{*}{NSA-OBS-FLXT} 
+     & 4.95 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.408(0.372,0.444) & -23.01 &	-22.30	& 0.988 &	0.694\\
+     &       &  \bf $\zeta(\mu)$     &  a =0.280(0.242,0.318);\newline b =0.310(0.199,0.421) & -48.76 & -47.34 & 0.847 & 0.084\\
+\multirow{2}{*}{NSA-OJP-FLXT} 
+     & 2.25 m$^2$.m$^{-2}$ &  \bf $\Omega$     &  0.563(0.529,0.597) & -24.34	& -23.63 & 0.994 & 0.952\\
+     &       &  \bf $\zeta(\mu)$ &  a =0.456(0.441,0.471);\newline b =0.235(0.191,0.279) & -76.73 &	-75.32	& 0.952 &	0.057\\
+\multirow{2}{*}{NSA-YJP-FLXT} 
+     & 1.61 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.4913(0.440,0.543) & -12.27 &	-11.56 &	0.983	& 0.839\\
+     & &  \bf $\zeta(\mu)$          &  a =0.321(0.243,0.398);\newline b =0.427(0.203,0.651) & -27.67 &	-26.25	& 0.730 &	0.132\\
+\multirow{2}{*}{SSA-OBS-FLXT} 
+     & 4.76 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.336(0.300,0.372) & -23.03 & -22.33 & 0.982 & 0.575\\
+     & &  \bf $\zeta(\mu)$          &  a =0.211(0.166,0.256);\newline b =0.312(0.181,0.443) & -43.74	& -42.32 & 0.803 & 0.097
+\\
+\multirow{2}{*}{SSA-OJP-FLXT} 
+     & 3.20 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.531(0.490,0.571) & -19.64 & -18.64 & 0.991 & 0.900\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.395(0.339,0.452);\newline b =0.331(0.167,0.495) & -37.07 & -35.65 & 0.751 & 0.100\\
+\multirow{2}{*}{SSA-YJP-FLXT} 
+     & 2.98 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.236(0.220,0.252) & -47.16 & -46.45 & 0.993 & 0.400\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.194(0.166,0.221);\newline b =0.116(0.037,0.196) & -58.86 & -57.44 & 0.627 & 0.041\\
+\multirow{2}{*}{US-Me2} 
+    & 2.25 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.439(0.383,0.495) & -1.00 & -0.16 & 0.976 & 1.055\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.306(0.239,0.373);\newline b =0.290(0.117,0.464) & -37.59	& -35.93 & 0.595 & 0.094\\
+\multirow{2}{*}{US-Me4} 
+    & 2.84 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.482(0.432,0.532) & 4.08 & 4.91 & 0.969 & 1.079\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.394(0.323,0.466);\newline b =0.210(0.026,0.395) & -36.60 & -34.93 & 0.231 & 0.08
+\\
+\multirow{2}{*}{US-Ha2} 
+    & 4.37 m$^2$.m$^{-2}$ &  \bf $\Omega$        &   0.404(0.373,0.434) & -28.21 & -27.50 & 0.991 & 0.684\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.504(0.498,0.509);\newline b =-0.219(-0.236,-0.203) & -106.52 & -105.52 & 0.992 & 0.052\\
+\hline
+\multirow{1}{*}{Alice Holt} 
+    & 4.29 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.293(0.230,0.356) & -6.09 & -5.38 & 0.932 & 0.526\\
+    &  &  \bf $\zeta(\mu)$          &  a =0.519(0.488,0.549);\newline b =-0.517(-0.604,-0.429) & -55.92 & -54.50 & 0.959 & 0.125\\
+\hline
+\multirow{1}{*}{SSA-9OA-FLXTR} 
+    & 4.63 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.660(0.585,0.734) & -1.02 & -0.31 & 0.980 & 1.130\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.394(0.356,0.432);\newline b =0.627(0.517,0.736) & -49.09	& -47.67 & 0.957 & 0.152\\
+\hline
+\multirow{1}{*}{US-Ton} 
+    & 0.70 m$^2$.m$^{-2}$ &  \bf $\Omega$         &  0.462(0.434,0.490) & -30.60 & -29.89 & 0.994 & 0.781\\
+    &  &  \bf $\zeta(\mu)$         &  a =0.492(0.447,0.537);\newline b$^*$ =-0.097(-0.230,0.031)& -43.89	& -42.47 & 0.331 & 0.056\\
+\hline
+\hline
+ \end{tabular}
+\label{tab:sites_stats}
+\begin{tablenotes}
+      \small
+      \item *\textit{p-value} = 0.123. All other \textit{p-values} $<$ 0.05.
+\end{tablenotes}
+\end{sidewaystable}
+\newpage
+
+\citet{Aho2014} found that for ecological publications from 1993 to 2013, the two most popular measures of model\textsinglequote s parsimony were the Akaike information criterion (AIC; \citet{Akaike1973}) and the Bayesian information criterion (BIC), also called the Schwarz or SIC criterion \citep{Schwarz1978}. The AIC and BIC are statistical variables that represent how accurate is a model fit against the data, and the lower their values are, the better is the evaluated model. 
+%The AIC is usually smaller than the BIC for all the evaluated cases.
+
+Both parameters AIC and BIC obtained for the structure factor fit with Equation~\ref{eq:isol_pinty} are smaller than the ones obtained for the clumping index for all evaluated cases, which indicates that the structure factor accounts for architectural heterogeneity on the zenith variation of direct transmittance more accurately than its peer clumping index. The main differences between AIC and BIC are that i) the former optimises predictive efficiency, for situations when the true model is indescribably complex, and you the best approximation is desired; and ii) the later can consistently choose a true correct model if it is one of the options for situations when the dynamics are actually mathematically simple enough to be exactly written \citep{Aho2014}. One natural question that could arise from this result is: should the AIC and BIC values related to the structure factor be always smaller than the ones related to the clumping index because of a higher number of free parameters in the structure factor parameterisation scheme? Both AIC and BIC depend on the number of free parameters and the BIC is a statistical value that is less susceptible to the impact of the number of free parameters than the AIC. Because both statistical indicators agree upon the structure factor being a better model over all study sites, and to avoid the misconception of smaller AIC only because of the number of free parameters, the absolute difference between AIC for clumping index and structure factor was calculated. The values were then plotted against LAI and are presented in Figure~\ref{f:lai_r}, as well as the the correlation coefficient ($r$) for the structure factor adjusts.
+
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{ll}
+\subfloat[Structure Factor correlation]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/LAI_r_pinty.png}}
+\subfloat[Difference AIC correlation]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section3/LAI_r_AIC_dif.png}}
+\end{tabular}
+\caption{a. The structure factor correlation coefficient ($r^{\zeta(\mu)}$) against LAI for all 12 study sites; and b. The absolute difference in AIC between clumping index and structure factor against LAI.} 
+\label{f:lai_r}
+\end{figure}
+
+There is a statistically significant positive relation between the correlation coefficient for the structure factor adjusts and LAI, and between the absolute difference of AIC for both adjusts and LAI. Both results indicate that for study sites with larger values of LAI the structure factor fits the P$_{gap}$ data better than the clumping index, which indicates the importance of considering zenith variantions on structural parameters to accurately estimate the direct transmittance in a forest canopy, and furthermore, the shortwave radiation partitioning.
+
+A structural variable that is able to account for forest structural variability in a radiative transfer scheme is more depend on zenith variations if the LAI is higher. That means that for denser heterogeneous forest canopies with high LAI, the structure factor is a better fitter of the direct transmittance than the clumping index, and these results have two implications: first, for all evaluated sites the structure factor is a better structural parameter to fit the P$_{gap}$ zenith curve to the observed data from DHPs; and second, it indicates that for higher LAI values, the structure factor is preferred to describe the zenith profile of direct transmittance in comparison to the clumping index.
+
+The majority of places on Earth with higher LAI values are also places with denser vegetation but if in a sparse forest canopy in the presence of big between-crown gaps, the mutual shadowing of trees is not significant for shortwave radiation interaction with those trees until very large Sun zenith angles. On the other hand, if the vegetation canopy is sparse enough to not be considered a randomly distributed cloud of leaves, which is the main assumption of the two-stream scheme, but it presents  small enough between-crown gaps to have an important mutual shadowing effect on the shortwave radiation propagation, then it is important to consider a clumping index that varies with Sun zenith angle.
+
+\section{The impact of structural parameterisations on GPP at site level}\label{section:gpp_evaluations}
+
+For the same two sites evaluated in Section~\ref{section:MAESPA_build}, the two-stream scheme in JULES v4.6 and its modified versions with clumping indices were driven with measured meteorological and spectral data. For the old aspen site spectral data was taken from the \textbf{TE-08 spectral leaf} database \citep{Spencer1999}, while soil albedo was taken from \citet{Betts1997}, and the spectral data for the blue oak savannah is described in \citet{Kobayashi2012}. The model was run for both sites in two distinct periods: \textit{i}) for the old aspen site the model was run for a period of 13 days, from 11$^{th}$ to 24$^{th}$ July, 1996, this period was selected based on meteorological and GPP data availability. The DHPs were taken during Summer 1994, while the models were evaluated during Summer 1996, but because canopy structure does not change substantially in two years, unless some extraordinary event happens, e.g., fire, extreme winds, land use change; therefore it is assumed that the old aspen canopy structure remained unchanged between Summer 1994 and 1996. Also, the relatively short period of analysis was preferred in order to keep consistency within Sun zenith angular variability and meteorological drivers. \textit{ii}) For the blue oak savannah the model evaluations were performed from the 1$^{st}$ to the 14$^{th}$ of August, 2008, and the DHPs were acquired on the 6$^{th}$ and the 7$^{th}$ of August, 2008.
+
+The meteorological and flux data were downloaded from the AMERIFLUX webpage (\url{http://ameriflux.lbl.gov}), and the variables used to drive the model were: shortwave incident radiation, longwave incident radiation, liquid and snow precipitation, surface temperature at 2m, wind speed at 10m, surface pressure, specific moisture, and incident diffuse shortwave radiation. The canopy radiation transfer was calculated accordingly to the multilayer two-stream scheme with the addition of sunfleck penetration following \citet{Dai2004} (can\textunderscore rad\textunderscore mod = 5). For the savannah site the diffuse radiation was directly obtained from the Vaira ranch, which is about 2 km away from the flux tower in Tonzi ranch. For the old aspen site the diffuse radiation was estimated through an empirical formula presented in \citet{Erbs1982}, modified and validated by \citet{Black1991}. This formula was derived based on data obtained under a midlatitude marine air mass near Vancouver, Canada, and therefore it is considered to be applicable to the old aspen study site. The hydraulic soil characteristics for both sites were also prescribed in the models based on observations. The LAI was prescribed as the same one used for obtaining the structural parameters in Section~\ref{section:statistical}. 
+
+The full JULES v4.6 was run for the same amount of time (approximately 2 weeks) for both study sites with three different experimental set ups: 1) the default two-stream scheme with sunfleck penetration (\textbf{JULES}), 2) the parametrised version of two-stream scheme with clumping index (\textbf{$\Omega$}), and 3) with the structure factor (\textbf{$\zeta(\mu)$}). The results fAPAR curves are shown in Figure~\ref{f:fapar_gpp}a and b and GPP are presented in Figure~\ref{f:fapar_gpp}c and d. The fAPAR curves are not smooth because of the presence of diffuse radiation in the calculations. For the old aspen site the differences in fAPAR are limited to 0.15, especially when associated with lower Sun zenith angles, i.e., for the beginning and end of the solar day. Both fAPAR curves calculated with the parametrised two-stream present a lower fAPAR than the default version of the two-stream scheme, which is expected once the total LAI is being modulated by a parameter lower than unit. It is also important to note that the fAPAR obtained through the two-stream scheme with the structure factor parameterisation is the lowest at 12:00 local time. The middle of the day is associated with small values of Sun zenith angle, and the structure factor presented its smallest possible value on that time. Towards the sunrise and sunset times of the day the structure factor is larger because the Sun zenith angle is higher, and the $b$ parameter is positive in this site, i.e., $b$ = 0.627(0.517,0.736).
+In MAESPA calculations 5 random trees at the centre of the plot were directly irradiated and all the other trees were used for shadowing. For small Sun zenith angles the fAPAR from two-stream with structure factor agrees with the MAESPA model but for high Sun zenith angles MAESPA presents numerical instability and shows unrealistic values of fAPAR ($>$ 1.0).
+
+For Tonzi ranch the difference between the default two-stream and the parametrised versions is significant (up to 0.20) and that is because LAI is relatively small (LAI = 0.70 m$^2$.m$^{-2}$). Impacts on fAPAR calculations via two-stream scheme are more significant for smaller values of LAI, because the amount of absorbed radiation grows exponentially with LAI towards saturation, i.e., a constant plateau. For Tonzi ranch the structure factor presents a small value of $b$ ($b$ = -0.097(-0.230,0.031)), and the term $a$ of the structure factor and the clumping index are within the same confidence interval, i.e., $a$ = 0.492(0.447,0.537) and $\Omega$ = 0.462(0.434,0.490), the differences in fAPAR calculated with the two-stream parametrised with clumping index and the one parametrised with structure factor are negligible. Both curves agree with fAPAR from MAESPA for the greatest part of the day, except for the extremity of the solar day.
+
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{ll}
+%\subfloat[]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/SSA-OA-fapar_diff_comparison.png}}SSA-OA-fapar_diff_comparison_MAESPA.png
+\subfloat[SSA-OA-FLXTR]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/SSA-OA-fapar_diff_comparison_MAESPA.png}}
+%\subfloat[]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/Tonzi-fapar_comparison.png}}
+\subfloat[US-Ton]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/Tonzi-_fapar_diff_maespa_comparison.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[SSA-OA-FLXTR]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/SSA-OA-gpp_diff_comparison.png}}
+\subfloat[US-Ton]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/Tonzi-gpp_comparison.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[SSA-OA-FLXTR]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/SSA-OA-RMSE_gpp_diff_comparison.png}}
+\subfloat[US-Ton]{\includegraphics[width=0.5\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/Tonzi_RMSE_gpp_comparison_2.png}}
+\end{tabular}
+\caption{a. fAPAR and b. GPP vs. local time; c. modelled and flux tower GPP correlation for an old aspen site in Canada (SSA-OA-FLXTR) and a blue oak savannah site in California (US-Ton). The shaded areas represent the 25\% and 75\% quartiles of the average.}
+\label{f:fapar_gpp}
+\end{figure}
+
+Although the fAPAR obtained for the old aspen site with the two-stream scheme parametrised with structure factor was the smallest one, the GPP obtained through this parameterisation scheme was the largest one. Both structural parameterisations are actually increasing the model\textquotesingle s light use efficiency (LUE) because the bottom layers of the old aspen site are mostly light limited (Figure~\ref{f:gpp_limiting}a) through the day, and that is because this specific site presents a relatively high value of LAI. Taking vegetation structure into account when calculating shortwave radiative transfer is in reality allowing more shortwave radiation to reach further layers at the bottom of the vegetation canopy, which makes the model photosynthesise more. This behaviour increases even more when a structure factor that varies with Sun zenith angle is considered. The comparison between flux tower and modelled GPP indicates that considering architectural canopy heterogeneity on the radiative transfer scheme in JULES improves the model prediction for the evaluated period in the old aspen site. The results are sustained by the RMSE values going from 2.91 $\mu$mol.CO$_2$.m$^{-2}$.s$^{-1}$ for the default two-stream scheme in JULES v4.6 to 1.75 $\mu$mol.CO$_2$.m$^{-2}$.s$^{-1}$ when the clumping index parameterisation scheme is applied, and 1.57 $\mu$mol.CO$_2$.m$^{-2}$.s$^{-1}$ when the structure factor parameterisation scheme is used. This is a site where the LAI is relatively high (LAI = 4.63 m$^2$.m$^{-2}$), located at a high Northern latitude (53.629 N), and with bottom layers of the vegetation mostly limited by light according to the Farquhar model.
+
+For Tonzi ranch there are three main points worth to be highlighted: first, in the early morning (06:00 AM to 09:00 AM local time) the agreement between the flux tower and modelled GPP within all experimental set ups is relatively high, and even though the difference in fAPAR between the schemes is up to 0.20, the difference in calculated GPP is much smaller; second, the Tonzi ranch is a savannah site with considerable water limitation and in the middle of the day (09:00 AM to 03:00 PM) the surface temperature and VPD increase substantially, which are conditions associated to a more carbon limiting regime in the Farquhar model (Figure~\ref{f:gpp_limiting}b) because the trees close the stomata and reduce total photosynthesis in order to avoid potential water losses. Both, flux tower and modelled GPP, decrease during this period but the calculated one decreases under a higher rate than the one derived from flux tower eddy covariance measurements, which highlights a potential misrepresentation of the stomata inertia by JULES over a savannah site; third, GPP from the model responds positively to the decay on temperature and VPD, with an increase at the very end of the solar day, however, this behaviour is not observed in the flux tower GPP, whose again presents a natural inertia on the stomata positioning.
+
+Water limited sites are mostly under a carbon limiting regime, therefore changes on the radiative transfer scheme are not as impacting on carbon assimilation as other factors could be. This site is a good example of wether considering structural heterogeneity through a parameterisation applied to the radiative transfer scheme could be highly impacting, mainly because this woody savannah site is sparse, and changes in fAPAR due to structure are quite significant (Figure~\ref{f:fapar_gpp}b). Though in reality considering architectural heterogeneity when estimating GPP is not as impacting once light is not the limiting regime of photosynthesis according to the Farquhar model for this study site (Figure~\ref{f:gpp_limiting}b). The RMSE values for the different model representations are roughly the same for this savannah site ($\approx$ 0.83 $\mu$mol.CO$_2$.m$^{-2}$.s$^{-1}$) and smaller than the ones presented in the old aspen site, mainly because the total flux tower GPP in the boreal site is five times larger than the GPP in Tonzi ranch, the same order of difference in LAI.
+
+\section{The impact of structural parameterisations on photosynthesis limiting regimes at site level}\label{section:limiting_evaluations}
+
+Finally the photosynthesis limiting regimes according to the Farquhar model \citep{farquhar1980} were vertically derived from JULES for the same two sites by calculating the potential photosynthesis in each one of the three limiting regimes, i.e., carbon ($\blacktriangle$), light ($\bullet$), and electron export ($+$), and selecting the minimum value as the actual limiting regime. Figure~\ref{f:gpp_limiting}a shows the vertical zenith profile of GPP in $\mu$mol.CO$_2$.m$^{-2}$.s$^{-1}$ and the photosynthesis limiting regimes obtained from JULES v4.6. The vertical GPP values and the vertical photosynthesis limiting regime were averaged through the day and are presented in a zenith profile.
+
+The most productive layers in the old aspen site are located at the top of the canopy under smaller values of Sun zenith angles, i.e., when there is more shortwave radiation available. Carbon limiting regime is associated with higher values of GPP, and light limiting regime is associated with smaller values of GPP for larger Sun zenith angles and deeper layers of the canopy. There is no evident dependence between GPP and Sun zenith angle for the blue oak savannah site in California, though it is possible to observe more GPP on upper layers of the canopy related to higher nitrogen concentration \citep{Mercado2007}.
+
+Accounting for vegetation canopy architecture through the addition of a structural parameterisation in the two-stream scheme in JULES v4.6 had a major impact on the vertical zenith distribution of photosynthesis limiting regime over the old aspen site. The positive difference in GPP comes mainly from the bottom layers associated with smaller values of Sun zenith angle, that are now limited by carbon instead of being limited by light. The structure factor parameterisation scheme switches the photosynthesis limiting regimes of the last four layers of the canopy for angles smaller than 40$^{\circ}$ for the old aspen site, while the clumping index affects layers 7 to 9 but does not affect the very bottom layer. This changes in photosynthesis limiting regime can be perceived by a higher value of GPP obtained through the structure factor parameterisation scheme in the middle of the day (Figure~\ref{f:fapar_gpp}). The impacts on GPP or photosynthesis limiting regimes for the savannah site are neglgible.
+
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{ll}
+\subfloat[SSA-OA]{\includegraphics[width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/gpp_vertical_lai_463_can_rad_5_diff_default_cosz_clearer.png}}
+\subfloat[US-Ton]{\includegraphics[width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/gpp_vertical_lai_070_can_rad_5_diff_default_cosz_clearer.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[Clumping index]{\includegraphics[width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/gpp_anomaly_lai_463_CRM_5_ci_tot_cosz.png}}
+\subfloat[Clumping index]{\includegraphics[width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/gpp_anomaly_lai_070_CRM_5_ci_tot_cosz.png}}
+\end{tabular}
+\begin{tabular}{ll}
+\subfloat[Structure factor]{\includegraphics[width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/gpp_anomaly_lai_463_CRM_5_sf_tot_cosz.png}}
+\subfloat[Structure factor]{\includegraphics[width=0.4\textwidth]{/home/mn811042/Thesis/chapter5/figures/section4/gpp_anomaly_lai_070_CRM_5_sf_tot_cosz.png}}
+\end{tabular}
+\caption{a. Vertical zenith profile of photosynthesis limiting regimes for JULES v4.6 b. GPP difference between the modified two-stream with clumping index ($\Omega$) minus the default version; and  c. GPP difference between the modified two-stream with structure factor ($\zeta(\mu)$) minus the default version.} 
+\label{f:gpp_limiting}
+\end{figure}
+
+\section{Conclusions}
+
+This chapter investigated the impacts of two different vegetation structure parameterisations applied to the two-stream radiative transfer scheme with parameters derived from field work observations of DHPs. The first section was used to describe and obtain direct transmittance over all study sites. For sites with low LAI the direct transmittance was found to be naturally higher, and the opposite for sites with higher LAI, as expected.
+
+In Section~\ref{section:MAESPA_build}, a modelling experiment was built with the MAESPA model and a comparison exercise was performed between modelled direct transmittance and direct transmittance derived from DHPs. It was found that in the absence of DHPs, 3D modelling is an accurate tool to obtain direct transmittance. As mentioned in Chapter 4 for hypothetical scenarios but showed in here for real forest canopies, the two-stream schemes underestimates direct transmittance independent of LAI or canopy density.
+
+In Section~\ref{section:statistical}, for all study sites the correlation coefficient, RMSE, AIC, and BIC were obtained from the Beer\textquotesingle s law fit to the observed data showing that the structure factor has a better performance to fit the P$_{gap}$ data than the clumping index. It was also discussed that this is not only related to the number of free parameters of both parameterisations because the absolute difference of AIC between clumping index and structure factor also increases with LAI, as well as the structure factor Pearson coefficient. This finding indicates that the structure factor should be considered in sites with higher LAI.
+
+Section~\ref{section:gpp_evaluations} shows that the impact of a structural parameterisation on the two-stream scheme can be of the order of 10\% in fAPAR when the LAI is high, and higher than that when LAI is lower. However, when the full land surface model calculates GPP, even though the fAPAR is smaller than the one calculated by the default two-stream, the light use efficiency from the schemes that consider structure is higher than the one that does not consider structure. That is because structure allows more radiation to propagate into deeper layers in the forest canopy causing an extra photosynthesis by the model. The agreement between flux tower GPP and modelled GPP improves with structural parameterisations in the radiative transfer scheme, and improves even more if the Sun zenith angle is considered, because the radiation path length varies throughout the day. 
+
+Finally, the higher agreement between modelled and flux tower derived GPP was only observed in a mostly light limited forest with high LAI located in a high latitude boreal zone. This result was not observed on a carbon limited savannah site, even though the impact of the structure factor parameterisation on fAPAR was substantial (less 20\%), the actual impact on GPP was negligible. Section~\ref{section:limiting_evaluations} shows that vertical zenith distribution of GPP and photosynthesis limiting regimes according to the Farquhar model, and moreover the impact of considering vegetation canopy structure on the two-stream scheme. 
+
+The photosynthesis limiting regime of the old aspen boreal site has changed substantially when vegetation architecture is taken into account. The interpretation of the new version of the model is that canopy architecture has a positive effect on GPP generated by bottom layers, and a slight negative impact on upper layers; while the net effect on photosynthesis is positive. For a site with much lower LAI ($\approx$ 5 times) and with bottom layers mostly limited by carbon, considering vegetation structure has an negligible effect on modelled GPP.
+
+\newpage
+\pagestyle{plain}
+\bibliographystyle{/home/mn811042/Thesis/format_files/ametsoc}
+\bibliography{/home/mn811042/Thesis/chapter5/ch5_v4}
+
+\end{document}
